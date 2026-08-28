@@ -1,0 +1,13 @@
+:root{
+  /* Display — Gotham Black. Always used for headlines; tight, uppercase-friendly. */
+  --text-display-1:clamp(44px,5.2vw,72px);
+  --text-display-2:clamp(34px,3.8vw,52px);
+  --text-h1:40px; --text-h2:32px; --text-h3:24px; --text-h4:20px;
+  --text-lead:20px; --text-body:17px; --text-small:15px; --text-caption:13px; --text-overline:12px;
+
+  --leading-tight:1.08; --leading-snug:1.25; --leading-normal:1.55; --leading-relaxed:1.75;
+  --tracking-display:-0.02em; --tracking-heading:-0.01em; --tracking-normal:0;
+  --tracking-overline:0.14em;
+
+  --weight-regular:400; --weight-medium:500; --weight-semibold:600; --weight-bold:700; --weight-black:900;
+}

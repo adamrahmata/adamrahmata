@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import PhotoBand from '../components/PhotoBand.astro';
+
+/**
+ * Artikel — placeholder topics until real posts are written.
+ *
+ * The prototype marks every entry "Contoh artikel"; that label is kept so the
+ * page never reads as if these are published pieces. When real articles land,
+ * this list is the shape to fill: swap `sample` off and give each an href.
+ */
+
+const articles = [
+  {
+    kicker: 'Budaya K3',
+    title: 'Mengapa safety culture tidak bisa dibeli, hanya bisa ditumbuhkan',
+    excerpt: 'Pelajaran dari proyek Safety Culture Improvement Team di industri manufaktur.',
+    img: '/img/timeline/2014-hse-coordinator.jpg',
+    alt: 'Sesi diskusi K3',
+  },
+  {
+    kicker: 'SMK3',
+    title: 'SMK3 PP 50/2012: dari kewajiban administratif menjadi alat manajemen',
+    excerpt: 'Cara menyiapkan audit SMK3 tanpa drama dokumen di menit terakhir.',
+    img: '/img/timeline/2010-safety-officer.jpg',
+    alt: 'Kegiatan lapangan',
+  },
+  {
+    kicker: 'Training',
+    title: 'Manajemen risiko K3: memulai dari pertanyaan yang tepat',
+    excerpt: 'Rangkuman materi favorit dari 66 sesi training manajemen risiko.',
+    glyph: 'graduation' as const,
+  },
+  {
+    kicker: 'Audit',
+    title: 'Apa yang dicari auditor IFC saat masuk ke site Anda',
+    excerpt: 'Catatan dari EHS audit berbasis standar International Finance Corporation.',
+    glyph: 'clipboard' as const,
+  },
+];
+---
+
+<Layout
+  title="Artikel — Adam Rahmat Agung"
+  description="Tulisan seputar K3, sistem manajemen, dan budaya keselamatan dari praktik training, konsultasi, dan audit QHSE."
+>
+  <PageHero
+    overline="Artikel"
+    title="Berbagi itu bagian dari K3"
+    lead="Tulisan seputar K3, sistem manajemen, dan budaya keselamatan. Berikut contoh topik yang akan hadir."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="grid articles" data-reveal>
+        {
+          articles.map((article, index) => (
+            <article
+              class="card card-hover post"
+              data-anim="rise"
+              style={`animation-delay:${(index * 0.1).toFixed(2)}s`}
+            >
+              <PhotoBand
+                src={article.img}
+                alt={article.alt ?? ''}
+                glyph={article.glyph ?? 'pen'}
+                height={180}
+              />
+              <div class="post-body">
+                <div class="post-kicker">
+                  <span data-t>{article.kicker}</span> · <span data-t>Contoh artikel</span>
+                </div>
+                <h2 class="post-title" data-t>
+                  {article.title}
+                </h2>
+                <p class="post-excerpt" data-t>
+                  {article.excerpt}
+                </p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+
+      <p class="disclaimer" data-reveal data-t>
+        Artikel di atas adalah contoh topik, konten asli akan diterbitkan bertahap.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .articles {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .post {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-body {
+    padding: var(--space-5) var(--space-6) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .post-kicker {
+    font-size: var(--text-overline);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--tracking-overline);
+    text-transform: uppercase;
+    color: var(--green-600);
+  }
+
+  .post-title {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: var(--text-h4);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-heading);
+    color: var(--text-heading);
+    margin: 0;
+  }
+
+  .post-excerpt {
+    margin: 0;
+    font-size: var(--text-small);
+    line-height: var(--leading-normal);
+    color: var(--text-muted);
+  }
+
+  .disclaimer {
+    text-align: center;
+    margin-top: var(--space-12);
+    font-size: var(--text-small);
+    color: var(--text-muted);
+  }
+</style>

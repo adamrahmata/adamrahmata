@@ -1,0 +1,72 @@
+---
+import { waHref } from '../data/site';
+
+/** Closing call-to-action band shared by the inner pages. */
+
+interface Props {
+  title: string;
+  lead?: string;
+  /** Prefilled WhatsApp opener for this page's topic. */
+  message?: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+  tone?: 'dark' | 'mid';
+}
+
+const {
+  title,
+  lead,
+  message = 'Halo Pak Adam, saya ingin berdiskusi tentang jasa QHSE',
+  secondaryLabel = 'Halaman kontak',
+  secondaryHref = '/kontak/',
+  tone = 'mid',
+} = Astro.props;
+---
+
+<section class:list={['cta-band', `tone-${tone}`]}>
+  <div class="container-narrow" data-reveal>
+    <h2 class="h1" data-t>{title}</h2>
+    {lead && <p class="lead" data-t>{lead}</p>}
+    <div class="actions">
+      <a class="btn btn-green" href={waHref(message)} target="_blank" rel="noopener" data-t>
+        Chat via WhatsApp
+      </a>
+      <a class="btn btn-white" href={secondaryHref} data-t>{secondaryLabel}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-band {
+    padding: var(--space-20) var(--gutter);
+    color: #fff;
+    text-align: center;
+  }
+
+  .tone-mid {
+    background: var(--blue-700);
+  }
+
+  .tone-dark {
+    background: var(--blue-900);
+  }
+
+  .h1 {
+    color: #fff;
+    margin-bottom: var(--space-4);
+  }
+
+  .lead {
+    color: var(--blue-200);
+    max-width: 60ch;
+    margin: 0 auto var(--space-8);
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    margin-top: var(--space-6);
+  }
+</style>

@@ -1,0 +1,294 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import clients from '../data/clients.json';
+import partners from '../data/partners.json';
+
+/**
+ * Klien & Rekanan — the logo wall carried over from the legacy site.
+ *
+ * Sector filtering is done in CSS: every card carries its sector as a data
+ * attribute and the active tab drives a single attribute on the wrapper, so
+ * filtering costs no re-render and needs no JS beyond flipping that attribute.
+ */
+
+interface ClientLogo {
+  file: string;
+  name: string;
+  sector: string;
+  sub: string;
+}
+
+interface PartnerLogo {
+  file: string;
+  name: string;
+  type: string;
+}
+
+const clientList = clients as ClientLogo[];
+const partnerList = partners as PartnerLogo[];
+
+const sectors = [
+  { key: 'all', label: 'Semua sektor' },
+  { key: 'energy', label: 'Energi & Migas' },
+  { key: 'manufacturing', label: 'Manufaktur & FMCG' },
+  { key: 'mining-infra', label: 'Pertambangan & Konstruksi' },
+  { key: 'services', label: 'Fasilitas & Layanan' },
+];
+
+const countFor = (key: string): number =>
+  key === 'all' ? clientList.length : clientList.filter((c) => c.sector === key).length;
+---
+
+<Layout
+  title="Klien & Rekanan — Adam Rahmat Agung"
+  description="Dinding logo klien korporasi dari sektor energi, migas, manufaktur, pertambangan, konstruksi, dan layanan, serta 24 lembaga konsultan, PJK3, dan badan sertifikasi mitra."
+>
+  <PageHero
+    overline="Klien & mitra lembaga"
+    title="Dipercaya oleh 90+ perusahaan & lembaga terkemuka"
+    lead="Rekam jejak kerja sama dengan BUMN terdepan, perusahaan multinasional, dan lembaga sertifikasi/PJK3 resmi di seluruh Indonesia."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="tabs" role="tablist" aria-label="Filter sektor klien" data-reveal>
+        {
+          sectors.map((sector, index) => (
+            <button
+              type="button"
+              role="tab"
+              class="tab"
+              data-sector-tab={sector.key}
+              aria-selected={index === 0 ? 'true' : 'false'}
+            >
+              <span data-t>{sector.label}</span>
+              <span class="tab-count">{countFor(sector.key)}</span>
+            </button>
+          ))
+        }
+      </div>
+
+      <div class="logo-wall" data-sector-wall data-active="all" data-reveal>
+        {
+          clientList.map((client, index) => (
+            <article
+              class="card card-hover logo-card"
+              data-sector={client.sector}
+              data-stagger
+              style={`--stagger-delay:${(Math.min(index, 24) * 0.03).toFixed(2)}s`}
+            >
+              <div class="logo-frame">
+                <img src={client.file} alt={client.name} loading="lazy" decoding="async" />
+              </div>
+              <div class="logo-meta">
+                <div class="logo-name">{client.name}</div>
+                <div class="logo-sub">{client.sub}</div>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+
+      <p class="empty-state" data-sector-empty hidden data-t>
+        Tidak ada klien pada sektor ini.
+      </p>
+    </div>
+  </section>
+
+  <section class="section partners-section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="overline" data-t>Kemitraan</div>
+        <h2 class="h1" data-t>Mitra lembaga konsultan, PJK3 & badan sertifikasi</h2>
+      </div>
+
+      <div class="partner-grid" data-reveal>
+        {
+          partnerList.map((partner, index) => (
+            <article
+              class="card card-hover partner-card"
+              data-stagger
+              style={`--stagger-delay:${(Math.min(index, 18) * 0.04).toFixed(2)}s`}
+            >
+              <div class="logo-frame">
+                <img src={partner.file} alt={partner.name} loading="lazy" decoding="async" />
+              </div>
+              <div class="partner-name">{partner.name}</div>
+              <div class="partner-type">{partner.type}</div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+    margin-bottom: var(--space-12);
+  }
+
+  .tab {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font: inherit;
+    font-size: var(--text-small);
+    font-weight: var(--weight-semibold);
+    background: #fff;
+    color: var(--text-body);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-pill);
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: var(--transition-control);
+  }
+
+  .tab:hover {
+    border-color: var(--border-brand);
+    color: var(--blue-700);
+  }
+
+  .tab[aria-selected='true'] {
+    background: var(--blue-600);
+    border-color: var(--blue-600);
+    color: #fff;
+  }
+
+  .tab-count {
+    font-size: 11px;
+    font-weight: var(--weight-bold);
+    background: rgba(4, 34, 63, 0.08);
+    border-radius: var(--radius-pill);
+    padding: 1px 7px;
+  }
+
+  .tab[aria-selected='true'] .tab-count {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .logo-wall,
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: var(--space-5);
+  }
+
+  /* Filtering: the wall's data-active drives which sectors stay on screen. */
+  .logo-wall[data-active]:not([data-active='all']) .logo-card {
+    display: none;
+  }
+
+  .logo-wall[data-active='energy'] .logo-card[data-sector='energy'],
+  .logo-wall[data-active='manufacturing'] .logo-card[data-sector='manufacturing'],
+  .logo-wall[data-active='mining-infra'] .logo-card[data-sector='mining-infra'],
+  .logo-wall[data-active='services'] .logo-card[data-sector='services'] {
+    display: flex;
+  }
+
+  .logo-card {
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  /* Logos arrive at wildly different aspect ratios, so each gets a fixed box
+     and is contained inside it rather than being allowed to set the row height. */
+  .logo-frame {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-frame img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .logo-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+  }
+
+  .logo-name {
+    font-size: 12px;
+    font-weight: var(--weight-bold);
+    line-height: 1.35;
+    color: var(--text-heading);
+  }
+
+  .logo-sub {
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+
+  .empty-state {
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: var(--space-10);
+  }
+
+  .partners-section {
+    background: var(--surface-subtle);
+  }
+
+  .partner-card {
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+    align-items: center;
+  }
+
+  .partner-name {
+    font-size: 12px;
+    font-weight: var(--weight-bold);
+    line-height: 1.35;
+    color: var(--text-heading);
+  }
+
+  .partner-type {
+    font-size: 11px;
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+</style>
+
+<script>
+  const tabs = document.querySelectorAll<HTMLButtonElement>('[data-sector-tab]');
+  const wall = document.querySelector<HTMLElement>('[data-sector-wall]');
+  const empty = document.querySelector<HTMLElement>('[data-sector-empty]');
+
+  if (tabs.length && wall) {
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const sector = tab.dataset.sectorTab ?? 'all';
+        tabs.forEach((other) => {
+          other.setAttribute('aria-selected', String(other === tab));
+        });
+        wall.dataset.active = sector;
+
+        if (empty) {
+          const visible =
+            sector === 'all'
+              ? wall.children.length
+              : wall.querySelectorAll(`[data-sector="${sector}"]`).length;
+          empty.hidden = visible > 0;
+        }
+      });
+    });
+  }
+</script>

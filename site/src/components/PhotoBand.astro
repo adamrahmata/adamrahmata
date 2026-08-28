@@ -1,0 +1,34 @@
+---
+import Icon from './Icon.astro';
+import type { IconName } from './Icon.astro';
+
+/**
+ * Stand-in for the prototype's <image-slot>, which let the designer drag photos
+ * in and persisted them to a sidecar JSON — a design-tool affordance with no
+ * production equivalent.
+ *
+ * Until a real photo exists this renders a branded gradient band with a topic
+ * glyph. Point `src` at a file under /public/img and the photo takes over at
+ * exactly the same size, so filling these in later causes no layout shift.
+ */
+
+interface Props {
+  src?: string;
+  alt?: string;
+  glyph?: IconName;
+  height?: number;
+  class?: string;
+}
+
+const { src, alt = '', glyph = 'presentation', height = 126, class: className } = Astro.props;
+---
+
+<div class:list={['photo-band', className]} style={`height:${height}px`}>
+  {
+    src ? (
+      <img src={src} alt={alt} loading="lazy" decoding="async" />
+    ) : (
+      <Icon name={glyph} size={34} />
+    )
+  }
+</div>

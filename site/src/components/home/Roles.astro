@@ -1,0 +1,682 @@
+---
+import PhotoBand from '../PhotoBand.astro';
+import { buildDetailItems, roleCategory, roleTitles } from '../../data/career';
+import type { DetailRole } from '../../data/career';
+import { timeline } from '../../data/timeline';
+
+/**
+ * Sections 06–10 — the four role cards and the detail panel they open.
+ *
+ * All four panels are rendered server-side and hidden; picking a card just
+ * unhides one. That keeps every assignment in the HTML for search engines and
+ * means the page needs no data fetching at runtime, unlike the prototype which
+ * pulled career.json in the browser.
+ */
+
+const roles = [
+  {
+    key: 'praktisi',
+    label: 'Karir Korporasi',
+    desc: 'Berdedikasi sejak 2006, bertumbuh dari drafter hingga menjadi profesional QHSE independen.',
+    cta: 'Pelajari Lebih Lanjut',
+  },
+  {
+    key: 'trainer',
+    label: 'Trainer',
+    desc: 'Menuntaskan 216+ sesi pelatihan K3 dan implementasi sistem manajemen bersama puluhan lembaga terpercaya.',
+    cta: 'Lihat Rekam Jejak',
+  },
+  {
+    key: 'konsultan',
+    label: 'Konsultan',
+    desc: 'Menangani 61+ penugasan konsultasi strategis, integrasi ISO, SMK3, hingga proyek berstandar migas.',
+    cta: 'Eksplorasi Proyek',
+  },
+  {
+    key: 'auditor',
+    label: 'Auditor',
+    desc: 'Menyelesaikan 19+ penugasan audit komprehensif, kepatuhan SMK3, IFC Standards, hingga Environmental Site Assessment.',
+    cta: 'Tinjau Portofolio',
+  },
+] as const;
+
+const detailRoles: DetailRole[] = ['trainer', 'konsultan', 'auditor'];
+
+const detail = detailRoles.map((role) => ({
+  role,
+  title: roleTitles[role],
+  items: buildDetailItems(role),
+  /* Audit cards swing in like a door; training and consulting rise. */
+  anim: role === 'auditor' ? 'swing' : 'rise',
+  href: `/rekam-jejak/?cat=${roleCategory[role]}`,
+}));
+---
+
+<section id="karir" class="section roles">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="overline" data-t>Pengalaman karir</div>
+      <h2 class="h1" data-t>
+        Senang bisa berbagi rangkuman kontribusi profesional saya di bidang QHSE:
+      </h2>
+    </div>
+
+    <div class="grid grid-cards deck" data-reveal>
+      {
+        roles.map((role, index) => (
+          <button
+            type="button"
+            class="card card-hover role-card"
+            data-role-pick={role.key}
+            aria-controls="detail"
+            aria-expanded="false"
+            data-anim="deal"
+            style={`animation-delay:${(index * 0.14).toFixed(2)}s`}
+          >
+            <span
+              class="badge"
+              data-anim="stamp"
+              style={`animation-delay:${(index * 0.14 + 0.55).toFixed(2)}s`}
+              aria-hidden="true"
+            >
+              {role.label[0]}
+            </span>
+            <span class="role-label" data-t>
+              {role.label}
+            </span>
+            <span class="role-desc" data-t>
+              {role.desc}
+            </span>
+            <span class="role-cta">
+              <span class="cta-open" data-t>
+                ✓ sedang dibuka
+              </span>
+              <span class="cta-closed" data-t>
+                {role.cta} →
+              </span>
+            </span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<section id="detail" class="section detail">
+  <div class="container">
+    <p class="empty" data-role-panel="none" data-t>
+      Pilih salah satu kartu di atas untuk membuka ceritanya.
+    </p>
+
+    {/* ---------------------------------------------------- Karir Korporasi */}
+    <div data-role-panel="praktisi" hidden>
+      <div class="panel-head">
+        <h3 class="h2" data-t>Perjalanan karir korporasi</h3>
+        <p class="small muted" data-t>
+          Ikuti perjalanannya dengan menggeser ke samping, dari drafter hingga profesional QHSE
+          independen.
+        </p>
+      </div>
+
+      <div class="timeline-wrap" data-reveal>
+        <div class="timeline-bar">
+          <div class="small muted" data-t>2006 di kiri → sekarang di kanan. Geser sesuka hati.</div>
+          <div class="timeline-nav">
+            <button type="button" data-timeline-prev aria-label="Geser ke kiri" data-t-aria>←</button>
+            <button type="button" data-timeline-next aria-label="Geser ke kanan" data-t-aria>→</button>
+          </div>
+        </div>
+
+        <div class="timeline-bleed">
+          <div class="timeline-scroll" data-timeline-scroll tabindex="0" role="region" aria-label="Linimasa karir">
+            {
+              timeline.map((entry, index) => (
+                <div class="tl-item" data-tl-item>
+                  <span class="tl-line" aria-hidden="true" />
+
+                  {entry.phase && <span class="tl-phase">{entry.phase}</span>}
+
+                  <span
+                    class:list={['tl-dot', { 'is-current': entry.current }]}
+                    aria-hidden="true"
+                  />
+
+                  <div class:list={['tl-card-slot', index % 2 === 0 ? 'is-bottom' : 'is-top']}>
+                    <span class="tl-connector" aria-hidden="true" />
+                    <article class="card card-hover tl-card">
+                      {entry.img && (
+                        <PhotoBand
+                          src={entry.img}
+                          alt={`Foto kegiatan ${entry.year}`}
+                          height={84}
+                          glyph="briefcase"
+                        />
+                      )}
+                      <div class="tl-body">
+                        <div class="tl-meta">
+                          <span class="tl-year">{entry.year}</span>
+                          <span class="tl-dur">{entry.dur}</span>
+                        </div>
+                        <div class="tl-role">{entry.role}</div>
+                        <div class="tl-org">{entry.org}</div>
+                        <div class="tl-desc">{entry.desc}</div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* ------------------------------- Trainer / Konsultan / Auditor grids */}
+    {
+      detail.map((group) => (
+        <div data-role-panel={group.role} hidden>
+          <div class="panel-head">
+            <h3 class="h2" data-t>
+              {group.title}
+            </h3>
+            <p class="small muted" data-t>
+              Klik “Mitra &amp; klien” pada kartu untuk melihat siapa saja yang terlibat.
+            </p>
+          </div>
+
+          <div class="grid grid-cards-sm items">
+            {group.items.map((item, index) => (
+              <article
+                class="card card-hover item"
+                data-anim={group.anim}
+                style={`animation-delay:${(index * 0.07).toFixed(2)}s`}
+              >
+                <PhotoBand
+                  src={undefined}
+                  alt=""
+                  glyph={group.role === 'auditor' ? 'clipboard' : group.role === 'konsultan' ? 'layers' : 'graduation'}
+                />
+                <div class="item-body">
+                  <h4 class="item-title">{item.title}</h4>
+                  <p class="item-meta">{item.meta}</p>
+
+                  <details class="item-details">
+                    <summary>
+                      <span class="when-closed">
+                        <span data-t>Mitra &amp; klien</span> ({item.counts}) +
+                      </span>
+                      <span class="when-open" data-t>
+                        Tutup −
+                      </span>
+                    </summary>
+
+                    <div class="item-lists">
+                      <div>
+                        <div class="list-label" data-t>
+                          Mitra
+                        </div>
+                        <div class="chip-row">
+                          {item.partners.map((partner) => (
+                            <span class="chip chip-brand">{partner}</span>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <div class="list-label" data-t>
+                          Klien
+                        </div>
+                        <div class="chip-row">
+                          {item.companies.map((company) => (
+                            <span class="chip chip-neutral">{company}</span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div class="explore">
+            <a class="btn btn-primary" href={group.href} data-t>
+              Jelajahi →
+            </a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .roles {
+    background: var(--surface-page);
+    padding-bottom: var(--space-16);
+  }
+
+  .deck {
+    /* Shared perspective so the four cards read as one dealt hand. */
+    perspective: 1100px;
+  }
+
+  .role-card {
+    appearance: none;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 28px var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--surface-brand-soft);
+    color: var(--blue-600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: 20px;
+  }
+
+  .role-label {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: var(--text-h3);
+    letter-spacing: -0.01em;
+    color: var(--text-heading);
+  }
+
+  .role-desc {
+    font-size: var(--text-small);
+    line-height: var(--leading-normal);
+    color: var(--text-muted);
+  }
+
+  .role-cta {
+    font-size: 13px;
+    font-weight: var(--weight-bold);
+    margin-top: auto;
+  }
+
+  .cta-open {
+    color: var(--green-700);
+    display: none;
+  }
+
+  .cta-closed {
+    color: var(--blue-500);
+  }
+
+  .role-card[aria-expanded='true'] .cta-open {
+    display: inline;
+  }
+
+  .role-card[aria-expanded='true'] .cta-closed {
+    display: none;
+  }
+
+  /* ------------------------------------------------------------- detail */
+
+  .detail {
+    background: var(--surface-subtle);
+    padding-top: var(--space-16);
+    min-height: 320px;
+  }
+
+  .empty {
+    margin: 0;
+    text-align: center;
+    font-size: var(--text-body);
+    color: var(--text-muted);
+  }
+
+  .panel-head {
+    text-align: center;
+    margin-bottom: var(--space-10);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* -------------------------------------------------- horizontal timeline */
+
+  /* Bleed past the 1200px column on wide screens so the strip has room, while
+     keeping at least 72px of breathing space before the first card. */
+  .timeline-bleed {
+    margin: 0 min(0px, calc(600px - 50vw));
+  }
+
+  .timeline-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+  }
+
+  .timeline-nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .timeline-nav button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-default);
+    background: #fff;
+    color: var(--blue-600);
+    font-size: 18px;
+    font-weight: var(--weight-black);
+    cursor: pointer;
+    transition: var(--transition-control);
+  }
+
+  .timeline-nav button:hover {
+    background: var(--surface-brand-soft);
+  }
+
+  .timeline-scroll {
+    display: flex;
+    gap: var(--space-5);
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding: var(--space-4) max(72px, calc(50vw - 570px)) var(--space-2);
+    height: 680px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .tl-item {
+    scroll-snap-align: start;
+    flex: 0 0 250px;
+    position: relative;
+    height: 100%;
+  }
+
+  .tl-line {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: -20px;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--blue-300), var(--green-600));
+  }
+
+  /* The dot sits exactly where the horizontal rail meets the card connector;
+     the border width is included so it lands centred, not 3px off. */
+  .tl-dot {
+    position: absolute;
+    top: calc(50% - 11px);
+    left: 21px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--green-600);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px var(--green-600);
+    box-sizing: border-box;
+    z-index: 1;
+    transform: scale(0);
+  }
+
+  .tl-dot.is-current {
+    top: calc(50% - 12px);
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: var(--sun-500);
+    box-shadow: 0 0 0 2px var(--sun-500);
+  }
+
+  .tl-item.is-in .tl-dot {
+    animation: ara-pop 0.7s var(--ease-out) both;
+  }
+
+  .tl-item.is-in .tl-dot.is-current {
+    animation:
+      ara-pop 0.7s var(--ease-out) both,
+      ara-bob 2.4s ease-in-out 0.7s infinite;
+  }
+
+  .tl-phase {
+    position: absolute;
+    top: calc(50% - 46px);
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    background: var(--blue-900);
+    color: #fff;
+    font-size: 10px;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: var(--radius-pill);
+    padding: 5px 12px;
+    white-space: nowrap;
+    z-index: 2;
+  }
+
+  /* Cards alternate below and above the rail — the zig-zag from chat 2. */
+  .tl-card-slot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition:
+      opacity 0.55s var(--ease-out) 0.35s,
+      transform 0.55s var(--ease-out) 0.35s;
+  }
+
+  .tl-card-slot.is-bottom {
+    top: calc(50% + 24px);
+    bottom: 0;
+    transform: translateY(18px);
+  }
+
+  .tl-card-slot.is-top {
+    bottom: calc(50% + 24px);
+    top: 0;
+    transform: translateY(-18px);
+  }
+
+  .tl-item.is-in .tl-card-slot {
+    opacity: 1;
+    transform: none;
+  }
+
+  .tl-connector {
+    position: absolute;
+    left: 31px;
+    width: 2px;
+    height: 24px;
+    background: var(--blue-200);
+  }
+
+  .is-bottom .tl-connector {
+    top: -24px;
+  }
+
+  .is-top .tl-connector {
+    bottom: -24px;
+  }
+
+  .tl-card {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .tl-body {
+    padding: 14px var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .tl-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .tl-year {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: 15px;
+    color: var(--blue-600);
+  }
+
+  .tl-dur {
+    font-size: 10px;
+    font-weight: var(--weight-bold);
+    color: var(--green-700);
+    background: var(--surface-brand-soft);
+    border-radius: var(--radius-pill);
+    padding: 3px 9px;
+  }
+
+  .tl-role {
+    font-weight: var(--weight-bold);
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--text-heading);
+  }
+
+  .tl-org {
+    font-size: 11px;
+    line-height: 1.45;
+    color: var(--text-muted);
+  }
+
+  .tl-desc {
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--neutral-700);
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 7px;
+    margin-top: auto;
+  }
+
+  /* ---------------------------------------------------------- item grids */
+
+  .items {
+    align-items: start;
+  }
+
+  .item {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-body {
+    padding: 14px var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    flex: 1;
+  }
+
+  .item-title {
+    font-family: var(--font-text);
+    font-weight: var(--weight-bold);
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--text-heading);
+    margin: 0;
+    letter-spacing: 0;
+  }
+
+  .item-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  .item-details {
+    margin-top: auto;
+  }
+
+  .item-details summary {
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: var(--weight-bold);
+    color: var(--blue-500);
+    list-style: none;
+    padding-top: var(--space-2);
+  }
+
+  .item-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .item-details .when-open {
+    display: none;
+  }
+
+  .item-details[open] .when-open {
+    display: inline;
+  }
+
+  .item-details[open] .when-closed {
+    display: none;
+  }
+
+  .item-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .list-label {
+    font-size: 10px;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--green-600);
+    margin-bottom: 6px;
+  }
+
+  .item-lists .chip {
+    font-size: 10px;
+    padding: 3px 9px;
+  }
+
+  .explore {
+    text-align: center;
+    margin-top: var(--space-12);
+  }
+
+  @media (max-width: 700px) {
+    .timeline-scroll {
+      height: 620px;
+      padding-inline: var(--space-6);
+    }
+
+    .tl-item {
+      flex-basis: 220px;
+    }
+  }
+</style>
+
+<script>
+  import { initRoles } from '../../scripts/roles';
+  initRoles();
+</script>

@@ -1,0 +1,59 @@
+---
+import { waHref } from '../../data/site';
+
+/** Section 11 — the invitation to get in touch. */
+---
+
+<section class="section connect">
+  <div class="inner" data-reveal>
+    <h2 class="display-2" data-t>Mari terhubung</h2>
+    <p class="lead" data-t>
+      Jika teman-teman ingin mendalami tentang saya, bisa klik atau chat WA pada link berikut. Atau
+      jika ingin tetap menjelajahi profil saya, dapat klik ke sini. Website ini pun tidak hanya
+      tentang profil, namun tentang bagaimana teman-teman bisa berinteraksi dengan saya.
+    </p>
+    <div class="actions">
+      <a class="btn btn-green" href={waHref()} target="_blank" rel="noopener" data-t>
+        Chat via WhatsApp
+      </a>
+      <a class="btn btn-white" href="#karir" data-t>Jelajahi profil saya</a>
+      <a class="btn btn-outline" href="#jelajah" data-t>Jelajahi website ini</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .connect {
+    background: var(--blue-900);
+    color: #fff;
+  }
+
+  .inner {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .display-2 {
+    color: #fff;
+    line-height: var(--leading-snug);
+  }
+
+  .lead {
+    color: var(--blue-200);
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .actions .btn {
+    font-size: 16px;
+  }
+</style>

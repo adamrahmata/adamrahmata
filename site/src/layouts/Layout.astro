@@ -1,0 +1,96 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Set on pages that render their own footer variant or none at all. */
+  footer?: boolean;
+}
+
+const { title, description, footer = true } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? site.url);
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#04223F" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.domain} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    />
+
+    <noscript>
+      <style>
+        /* Without JS nothing can add .is-in, so show every animated element in
+           its final pose rather than leaving the page blank. */
+        [data-reveal],
+        [data-stagger],
+        [data-anim] {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+          animation: none !important;
+        }
+        [data-wipe] {
+          clip-path: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Lewati ke konten utama</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    {footer && <Footer />}
+
+    <style is:global>
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        z-index: 100;
+        background: #fff;
+        color: var(--blue-900);
+        font-weight: 700;
+        padding: 12px 20px;
+      }
+
+      .skip-link:focus {
+        left: 0;
+      }
+    </style>
+
+    <script>
+      import { initReveal, initCounters } from '../scripts/reveal';
+      import { initI18n } from '../scripts/i18n';
+
+      initI18n();
+      initReveal();
+      initCounters();
+    </script>
+  </body>
+</html>

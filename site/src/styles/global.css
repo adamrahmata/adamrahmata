@@ -1,0 +1,502 @@
+/* Alam Energy design system tokens (ported from the Claude Design handoff bundle) */
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/radius.css";
+@import "./tokens/elevation.css";
+@import "./tokens/motion.css";
+@import "./tokens/base.css";
+
+/* ---------------------------------------------------------------- page base */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  font-family: var(--font-text);
+  color: var(--neutral-700);
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-link-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ------------------------------------------------------------------- layout */
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section {
+  padding: var(--space-24) var(--gutter);
+}
+
+.section-compact {
+  padding: var(--space-16) var(--gutter);
+}
+
+/* Full-screen narrative panels on the homepage are 16:9, per the design
+   iteration in chat 2 ("buatkan menjadi 16:9"). They stretch taller when the
+   content needs it on narrow viewports. */
+.panel {
+  aspect-ratio: 16 / 9;
+  padding: var(--space-24) var(--gutter);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    aspect-ratio: auto;
+    min-height: 100svh;
+  }
+}
+
+/* --------------------------------------------------------------- typography */
+
+.overline {
+  font-size: var(--text-overline);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-overline);
+  text-transform: uppercase;
+  color: var(--green-600);
+}
+
+.overline-invert {
+  color: var(--green-500);
+}
+
+.display-1 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-display-1);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+  margin: 0;
+}
+
+.display-2 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  font-size: var(--text-display-2);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-display);
+  margin: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-snug);
+  color: var(--text-heading);
+  margin: 0;
+}
+
+.h1 { font-size: var(--text-h1); }
+.h2 { font-size: var(--text-h2); }
+.h3 { font-size: var(--text-h3); }
+.h4 { font-size: var(--text-h4); letter-spacing: var(--tracking-heading); }
+
+.lead {
+  font-size: var(--text-lead);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+.muted { color: var(--text-muted); }
+.small { font-size: var(--text-small); line-height: var(--leading-normal); }
+
+.section-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* -------------------------------------------------------------------- cards */
+
+.card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-xs);
+  transition:
+    transform var(--dur-base) var(--ease-standard),
+    box-shadow var(--dur-base) var(--ease-standard);
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(4, 34, 63, 0.14);
+}
+
+.card-pad {
+  padding: var(--space-6);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+/* Auto-fitting card grids. The min track width is the knob the user tuned
+   repeatedly in chat 3 to control how many cards land per row. */
+.grid-cards { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.grid-cards-sm { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.grid-cards-lg { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.grid-cards-xs { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+
+/* ------------------------------------------------------------------ buttons */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-text);
+  font-weight: var(--weight-bold);
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 14px 28px;
+  border: 0;
+  border-radius: var(--radius-control);
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--transition-control);
+}
+
+.btn:hover { text-decoration: none; }
+
+.btn-primary { background: var(--blue-600); color: #fff; }
+.btn-primary:hover { background: var(--blue-700); color: #fff; }
+
+.btn-green { background: var(--green-600); color: #fff; }
+.btn-green:hover { background: var(--green-700); color: #fff; }
+
+.btn-white { background: #fff; color: var(--blue-800); }
+.btn-white:hover { background: var(--blue-100); color: var(--blue-800); }
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  padding: 12px 26px;
+}
+.btn-outline:hover { background: rgba(255, 255, 255, 0.16); color: #fff; }
+
+.btn-sm { font-size: 13px; padding: 9px 18px; }
+
+/* -------------------------------------------------------------------- chips */
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 1.3;
+  border-radius: var(--radius-pill);
+  padding: 4px 10px;
+  white-space: normal;
+}
+
+.chip-brand {
+  background: var(--surface-brand-soft);
+  color: var(--blue-700);
+}
+
+.chip-neutral {
+  background: var(--surface-subtle);
+  color: var(--neutral-700);
+  border: 1px solid var(--border-subtle);
+}
+
+.chip-green {
+  background: var(--green-100);
+  color: var(--green-800);
+}
+
+.chip-sun {
+  background: var(--sun-200);
+  color: var(--sun-600);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* -------------------------------------------------------- media placeholder */
+
+/* Stand-in for the prototype's <image-slot>. Renders a branded band with a
+   topic glyph; drop a real photo at the matching path in /img and it takes
+   over with no layout shift. */
+.photo-band {
+  position: relative;
+  width: 100%;
+  height: 126px;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, var(--blue-100) 0%, var(--green-100) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.photo-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(4, 34, 63, 0) 55%, rgba(4, 34, 63, 0.10) 100%);
+}
+
+.photo-band img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-band svg {
+  opacity: 0.42;
+  color: var(--blue-500);
+}
+
+/* ------------------------------------------------------------------- footer */
+
+.site-footer {
+  background: var(--blue-900);
+  color: rgba(255, 255, 255, 0.7);
+  padding: var(--space-8) var(--gutter);
+  text-align: center;
+  font-size: 14px;
+}
+
+.site-footer a { text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ================================================================ animation */
+
+@keyframes ara-wheel {
+  0% { opacity: 1; transform: translateY(0); }
+  70%, 100% { opacity: 0; transform: translateY(12px); }
+}
+
+@keyframes ara-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+@keyframes ara-pop {
+  0% { transform: scale(0.4); opacity: 0; }
+  60% { transform: scale(1.25); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* The "balloon" swell on Adam / Rahmat / Agung, staggered 1.5s apart. */
+@keyframes ara-balloon {
+  0%, 55%, 100% { transform: scale(1); }
+  70% { transform: scale(1.28); }
+  85% { transform: scale(0.96); }
+}
+
+/* Floating question marks around the thinking photo. */
+@keyframes ara-q {
+  0%, 100% { transform: translateY(0) rotate(-6deg); opacity: 0.85; }
+  50% { transform: translateY(-16px) rotate(8deg); opacity: 1; }
+}
+
+/* Role cards "dealt onto the table" — rise from lying flat, snap upright. */
+@keyframes ara-deal {
+  0% {
+    opacity: 0;
+    transform: rotateX(64deg) rotateZ(-5deg) translateY(90px) scale(0.86);
+    filter: blur(4px);
+  }
+  55% { opacity: 1; filter: blur(0); }
+  78% { transform: rotateX(-7deg) rotateZ(1.5deg) translateY(-8px) scale(1.015); }
+  100% { opacity: 1; filter: blur(0); }
+}
+
+/* Initial badge stamped onto a dealt card. */
+@keyframes ara-stamp {
+  0% { opacity: 0; transform: scale(2.1) rotate(14deg); }
+  65% { opacity: 1; transform: scale(0.92) rotate(-3deg); }
+  100% { opacity: 1; }
+}
+
+@keyframes ara-rise {
+  0% { opacity: 0; transform: translateY(28px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes ara-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.14); }
+}
+
+@keyframes ara-tilt {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg); }
+}
+
+/* Audit cards swing in like a door, per chat 3. */
+@keyframes ara-swing {
+  0% {
+    opacity: 0;
+    transform: perspective(900px) rotateY(-58deg) translateX(-36px);
+    filter: blur(3px);
+  }
+  60% { opacity: 1; filter: blur(0); }
+  80% { transform: perspective(900px) rotateY(6deg) translateX(0); }
+  100% { opacity: 1; transform: perspective(900px) rotateY(0) translateX(0); filter: blur(0); }
+}
+
+/* Per-service-page signature entrances (chat 4: "animasi scroll unik"). */
+@keyframes ara-flip {
+  0% { opacity: 0; transform: perspective(1000px) rotateX(52deg) translateY(46px); }
+  100% { opacity: 1; transform: perspective(1000px) rotateX(0) translateY(0); }
+}
+
+@keyframes ara-slide-left {
+  0% { opacity: 0; transform: translateX(-56px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes ara-slide-right {
+  0% { opacity: 0; transform: translateX(56px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes ara-zoom-blur {
+  0% { opacity: 0; transform: scale(0.9); filter: blur(6px); }
+  100% { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+
+/* ---------------------------------------------------------- reveal on scroll */
+
+/* Elements start hidden and are released by the IntersectionObserver in
+   reveal.ts, which adds .is-in. Everything is authored so that .is-in is the
+   only state that matters — no JS is needed to compute the final look. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(36px);
+  transition:
+    opacity 0.7s var(--ease-out) var(--reveal-delay, 0s),
+    transform 0.7s var(--ease-out) var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Variants keep the same contract, only the start pose differs. */
+[data-reveal="left"] { transform: translateX(-48px); }
+[data-reveal="right"] { transform: translateX(48px); }
+[data-reveal="scale"] { transform: scale(0.88); }
+[data-reveal="grow-x"] { transform: scaleX(0); transform-origin: 0 50%; }
+
+/* Text that wipes in from the right (section 02). */
+[data-wipe] {
+  display: inline-block;
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path 0.8s var(--ease-out) var(--reveal-delay, 0s);
+}
+
+.is-in [data-wipe],
+[data-wipe].is-in {
+  clip-path: inset(-10% -10% -10% -10%);
+}
+
+/* Children released one after another once the group scrolls in. */
+[data-stagger] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.6s var(--ease-out) var(--stagger-delay, 0s),
+    transform 0.6s var(--ease-out) var(--stagger-delay, 0s);
+}
+
+.is-in [data-stagger],
+[data-stagger].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Animation-driven entrances hold their first frame until the group is in
+   view, so nothing plays offscreen. */
+[data-anim] {
+  opacity: 0;
+  animation-duration: 0.6s;
+  animation-timing-function: var(--ease-out);
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+
+.is-in [data-anim],
+[data-anim].is-in {
+  animation-play-state: running;
+}
+
+[data-anim="deal"] { animation-name: ara-deal; animation-duration: 0.9s; transform-origin: 50% 100%; }
+[data-anim="stamp"] { animation-name: ara-stamp; animation-duration: 0.55s; }
+[data-anim="rise"] { animation-name: ara-rise; }
+[data-anim="swing"] { animation-name: ara-swing; animation-duration: 0.75s; transform-origin: 0 50%; }
+[data-anim="flip"] { animation-name: ara-flip; animation-duration: 0.75s; transform-origin: 50% 100%; }
+[data-anim="slide-left"] { animation-name: ara-slide-left; animation-duration: 0.7s; }
+[data-anim="slide-right"] { animation-name: ara-slide-right; animation-duration: 0.7s; }
+[data-anim="zoom-blur"] { animation-name: ara-zoom-blur; animation-duration: 0.8s; }
+[data-anim="pop"] { animation-name: ara-pop; animation-duration: 1s; }
+
+/* --------------------------------------------------------- reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  [data-reveal],
+  [data-stagger],
+  [data-anim] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  [data-wipe] { clip-path: none !important; }
+}

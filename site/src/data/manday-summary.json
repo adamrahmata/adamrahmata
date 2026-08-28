@@ -1,0 +1,23 @@
+{
+  "totalAssignments": 286,
+  "totalMandays": 369.8,
+  "totalHours": 2958,
+  "totalClients": 101,
+  "categories": {
+    "training": {
+      "count": 214,
+      "mandays": 297.8,
+      "hours": 2382
+    },
+    "consultancy": {
+      "count": 54,
+      "mandays": 54,
+      "hours": 432
+    },
+    "auditor": {
+      "count": 18,
+      "mandays": 18,
+      "hours": 144
+    }
+  }
+}

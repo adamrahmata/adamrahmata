@@ -1,0 +1,258 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import type { IconName } from '../components/Icon.astro';
+
+/**
+ * Training K3 & sistem manajemen.
+ *
+ * Signature scroll motion: cards slide in alternately from left and right.
+ * The five advantage cards are sized to sit on one row on desktop, which is
+ * what the 160px minimum track width in .grid-cards-xs buys.
+ */
+
+const advantages: { icon: IconName; color: string; title: string; body: string }[] = [
+  {
+    icon: 'check-square',
+    color: 'var(--blue-600)',
+    title: 'Pre-test & post-test',
+    body: 'Kemajuan peserta dilakukan secara terukur. Pre-test dilaksanakan sebagai kondisi awal pemahaman, melalui post-test sebagai kelanjutan dan bukti peningkatannya. Hasilnya kemudian dapat dilaporkan ke manajemen sebagai bukti efektivitas pelatihan yang telah diikuti.',
+  },
+  {
+    icon: 'smile',
+    color: 'var(--green-600)',
+    title: 'Ice breaking dengan Guessbreak',
+    body: 'Setiap sesi diselingi ice breaking menggunakan aplikasi Guessbreak yang telah dikembangkan oleh adamrahmata.com. Melalui permainan tebak-tebakan interaktif yang membuat suasana pembelajaran lebih atraktif, mengembalikan fokus, dan membuat materi teknis lebih mudah dipahami.',
+  },
+  {
+    icon: 'device',
+    color: 'var(--blue-600)',
+    title: 'Aplikasi partisipatif',
+    body: 'Kuis, polling, dan studi kasus dijalankan lewat aplikasi interaktif seperti Guessbreak, Slido, dan Briskscore langsung dari device peserta: laptop, iPad, maupun smartphone. Semua peserta akan terlibat melalui aplikasi partisipatif.',
+  },
+  {
+    icon: 'zap',
+    color: 'var(--green-600)',
+    title: 'Dijamin tidak membosankan',
+    body: 'Ritme kelas dijaga dengan materi yang didesain lengkap dengan gambar-gambar visual yang menarik dan disesuaikan dengan core process client, diselingi diskusi, permainan, dan praktik yang relevan dengan materi.',
+  },
+  {
+    icon: 'trophy',
+    color: 'var(--sun-600)',
+    title: 'Apresiasi dari instruktur kepada peserta terbaik',
+    body: 'Di akhir acara, instruktur akan memberikan apresiasi kepada peserta-peserta terbaik dari sesi awal sampai dengan akhir pembelajaran. Hal ini tentunya akan memicu semangat peserta dalam mengikuti kelas pembelajaran.',
+  },
+];
+
+/**
+ * Topic badges. Each links into Rekam Jejak with the training category and a
+ * keyword prefilled, so a visitor lands on the assignments for that topic.
+ */
+const topics = [
+  { label: 'Ahli K3 Umum Kemnaker RI', q: 'Ahli K3 Umum' },
+  { label: 'Ahli K3 Muda & Umum BNSP', q: 'Ahli K3 Muda' },
+  { label: 'Manajemen Risiko K3 & HIRADC', q: 'Manajemen Risiko' },
+  { label: 'SMK3 PP No. 50/2012', q: 'SMK3' },
+  { label: 'ISO 45001 & K3', q: 'ISO 45001' },
+  { label: 'ISO 9001 Sistem Manajemen Mutu', q: 'ISO 9001' },
+  { label: 'Internal Auditor ISO 19011', q: 'Internal Auditor' },
+  { label: 'Investigasi Insiden & RCA', q: 'Investigasi' },
+  { label: 'Pengelolaan Limbah B3', q: 'Limbah' },
+  { label: 'Webinar K3 & Sistem Manajemen', q: 'Webinar' },
+];
+
+const topicHref = (q: string): string =>
+  `/rekam-jejak/?cat=training&q=${encodeURIComponent(q)}`;
+---
+
+<Layout
+  title="Training K3 & Sistem Manajemen — Adam Rahmat Agung"
+  description="216+ sesi training K3 terlaksana: Ahli K3 Umum Kemnaker & BNSP, manajemen risiko, SMK3, ISO 45001/9001, internal auditor. Kelas partisipatif dengan pre-test, post-test, dan ice breaking Guessbreak."
+>
+  <PageHero
+    overline="Jasa → Training K3 & sistem manajemen"
+    title="Training yang terukur, partisipatif, dan dijamin tidak membosankan"
+    lead="216+ sesi terlaksana dari Ahli K3 Umum Kemnaker & BNSP hingga internal auditor ISO. Setiap kelas dirancang agar peserta aktif dari awal training sampai selesai."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="overline" data-t>Kenapa berbeda</div>
+        <h2 class="h1" data-t>
+          Lima keunggulan yang senantiasa dilakukan pada setiap sesi pelatihan dan pembelajaran
+        </h2>
+      </div>
+
+      <div class="grid grid-cards-xs advantages" data-reveal>
+        {
+          advantages.map((item, index) => (
+            <article
+              class="card card-hover advantage"
+              data-anim={index % 2 === 0 ? 'slide-left' : 'slide-right'}
+              style={`animation-delay:${(index * 0.09).toFixed(2)}s`}
+            >
+              <span class="advantage-icon">
+                <Icon name={item.icon} size={22} stroke={item.color} />
+              </span>
+              <h3 class="advantage-title" data-t>
+                {item.title}
+              </h3>
+              <p class="advantage-body" data-t>
+                {item.body}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section topics-section">
+    <div class="container topics-layout">
+      <div class="topics-copy" data-reveal="left">
+        <div class="overline" data-t>Materi unggulan</div>
+        <h2 class="h1" data-t>Instruktur yang siap diundang lembaga dan perusahaan Anda</h2>
+        <p data-t>
+          Peran saya adalah sebagai instruktur, bukan pemilik lembaga pelatihan. Lembaga training,
+          PJK3, maupun perusahaan dapat mengundang saya untuk membawakan materi-materi yang sudah
+          teruji saya bawakan berikut. Klik badge untuk melihat riwayat penugasannya.
+        </p>
+        <a class="topics-link" href="/rekam-jejak/?cat=training" data-t>
+          Lihat 216+ sesi yang sudah terlaksana →
+        </a>
+      </div>
+
+      <div class="topic-badges" data-reveal="right">
+        {
+          topics.map((topic, index) => (
+            <a
+              class="topic"
+              href={topicHref(topic.q)}
+              data-stagger
+              style={`--stagger-delay:${(index * 0.05).toFixed(2)}s`}
+            >
+              {topic.label}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Rencanakan training untuk tim Anda"
+    message="Halo Pak Adam, saya ingin berdiskusi tentang training K3"
+    secondaryLabel="Kalkulator estimasi manday"
+    secondaryHref="/rekam-jejak/#kalkulator"
+  />
+</Layout>
+
+<style>
+  .advantages {
+    align-items: stretch;
+  }
+
+  .advantage {
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .advantage-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--surface-brand-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+
+  .advantage-title {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: 16px;
+    line-height: 1.3;
+    color: var(--text-heading);
+    margin: 0;
+    letter-spacing: var(--tracking-heading);
+  }
+
+  /* 12.5px body text is what let all five cards share one row on desktop. */
+  .advantage-body {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  .topics-section {
+    background: var(--surface-subtle);
+  }
+
+  .topics-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+    gap: var(--space-16);
+    align-items: start;
+  }
+
+  @media (max-width: 860px) {
+    .topics-layout {
+      grid-template-columns: 1fr;
+      gap: var(--space-10);
+    }
+  }
+
+  .topics-copy {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .topics-copy p {
+    margin: 0;
+    color: var(--text-body);
+  }
+
+  .topics-link {
+    font-weight: var(--weight-bold);
+    font-size: var(--text-small);
+  }
+
+  .topic-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-content: flex-start;
+  }
+
+  .topic {
+    display: inline-flex;
+    align-items: center;
+    background: var(--surface-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-pill);
+    padding: 10px 18px;
+    font-size: var(--text-small);
+    font-weight: var(--weight-semibold);
+    color: var(--blue-700);
+    text-decoration: none;
+    box-shadow: var(--shadow-xs);
+    transition:
+      transform var(--dur-fast) var(--ease-standard),
+      var(--transition-control);
+  }
+
+  .topic:hover {
+    background: var(--surface-brand-soft);
+    color: var(--blue-800);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+</style>

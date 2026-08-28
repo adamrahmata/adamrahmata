@@ -1,0 +1,464 @@
+[
+  {
+    "file": "/img/clients/chevron_pacific_indonesia.svg",
+    "name": "PT. Chevron Pacific Indonesia",
+    "sector": "energy",
+    "sub": "Oil & Gas (Minas - Riau)"
+  },
+  {
+    "file": "/img/clients/pertamina.png",
+    "name": "PT. Pertamina (Persero)",
+    "sector": "energy",
+    "sub": "Oil & Gas Exploration & Refineries"
+  },
+  {
+    "file": "/img/clients/pertamina_gas.png",
+    "name": "PT. Pertamina Gas (Pertagas)",
+    "sector": "energy",
+    "sub": "Gas Transmission & Distribution"
+  },
+  {
+    "file": "/img/clients/indonesia_power.png",
+    "name": "PT. PLN / Indonesia Power",
+    "sector": "energy",
+    "sub": "Power Generation (Pekanbaru & Nusra)"
+  },
+  {
+    "file": "/img/clients/PLN_Enjiniring.png",
+    "name": "PT. PLN Enjiniring",
+    "sector": "energy",
+    "sub": "Power Infrastructure Engineering"
+  },
+  {
+    "file": "/img/clients/PLN_IPS.png",
+    "name": "PT. PLN Indonesia Power Services",
+    "sector": "energy",
+    "sub": "Power Plant Maintenance Services"
+  },
+  {
+    "file": "/img/clients/pln_uip_nusra.png",
+    "name": "PT. PLN (Persero) UIP Nusa Tenggara",
+    "sector": "energy",
+    "sub": "Regional Grid Infrastructure"
+  },
+  {
+    "file": "/img/clients/sks_listrik_kalimantan.png",
+    "name": "PT. SKS Listrik Kalimantan",
+    "sector": "energy",
+    "sub": "Power Plant IPP (Kalimantan Tengah)"
+  },
+  {
+    "file": "/img/clients/nshe.png",
+    "name": "PT. North Sumatera Hydro Energy",
+    "sector": "energy",
+    "sub": "Hydroelectric Power Generation"
+  },
+  {
+    "file": "/img/clients/bayu_buana_gemilang.png",
+    "name": "PT. Bayu Buana Gemilang",
+    "sector": "energy",
+    "sub": "Natural Gas Commerce & Trading"
+  },
+  {
+    "file": "/img/clients/alam-energy.png",
+    "name": "PT. Alam Energy Renewables",
+    "sector": "energy",
+    "sub": "Renewable Solar & Clean Energy"
+  },
+  {
+    "file": "/img/clients/thermochem_indonesia.png",
+    "name": "PT. Thermochem Indonesia",
+    "sector": "energy",
+    "sub": "Geothermal & Energy Testing Services"
+  },
+  {
+    "file": "/img/clients/idemitsu.png",
+    "name": "PT. Idemitsu Lube Techno Indonesia",
+    "sector": "energy",
+    "sub": "Petroleum Lubricants & Processing"
+  },
+  {
+    "file": "/img/clients/Unilever.png",
+    "name": "PT. Unilever Indonesia, Tbk",
+    "sector": "manufacturing",
+    "sub": "Consumer Goods (Cikarang & Rungkut)"
+  },
+  {
+    "file": "/img/clients/Ajinomoto.svg",
+    "name": "PT. Ajinomoto Indonesia",
+    "sector": "manufacturing",
+    "sub": "Food & Seasoning Manufacturing"
+  },
+  {
+    "file": "/img/clients/Procter_n_gambel.png",
+    "name": "PT. Procter & Gamble (P&G)",
+    "sector": "manufacturing",
+    "sub": "Consumer Products & Chemical Plant"
+  },
+  {
+    "file": "/img/clients/Unicharm.svg",
+    "name": "PT. Uni-Charm Indonesia, Tbk",
+    "sector": "manufacturing",
+    "sub": "Personal Care (Factory I & II Karawang)"
+  },
+  {
+    "file": "/img/clients/Honeywell.png",
+    "name": "PT. Honeywell Indonesia",
+    "sector": "manufacturing",
+    "sub": "Safety Instrumentation & Control Systems"
+  },
+  {
+    "file": "/img/clients/rolls_royce_solutions_i.png",
+    "name": "PT. Rolls Royce Solutions Indonesia",
+    "sector": "manufacturing",
+    "sub": "Heavy Power Systems & Engine Assembly"
+  },
+  {
+    "file": "/img/clients/lotte_chemical_indonesia.png",
+    "name": "PT. Lotte Chemical Indonesia",
+    "sector": "manufacturing",
+    "sub": "Petrochemical Cracker Complex"
+  },
+  {
+    "file": "/img/clients/mitsubishi-chemical.png",
+    "name": "PT. Mitsubishi Chemical Indonesia",
+    "sector": "manufacturing",
+    "sub": "Purified Terephthalic Acid & Polymers"
+  },
+  {
+    "file": "/img/clients/sumi_indo_kabel.png",
+    "name": "PT. Sumi Indo Kabel, Tbk",
+    "sector": "manufacturing",
+    "sub": "Cable & Wire Manufacturing"
+  },
+  {
+    "file": "/img/clients/papertech.png",
+    "name": "PT. Papertech Indonesia",
+    "sector": "manufacturing",
+    "sub": "Paper & Packaging Mill Process (Subang)"
+  },
+  {
+    "file": "/img/clients/ppg.png",
+    "name": "PT. PPG Coatings Indonesia",
+    "sector": "manufacturing",
+    "sub": "Industrial Coatings & Resins"
+  },
+  {
+    "file": "/img/clients/henkel_indonesia.png",
+    "name": "PT. Henkel Indonesian",
+    "sector": "manufacturing",
+    "sub": "Adhesive Technologies & Chemical Solutions"
+  },
+  {
+    "file": "/img/clients/croda_indonesia.png",
+    "name": "PT. Croda Indonesia",
+    "sector": "manufacturing",
+    "sub": "Specialty Chemicals Manufacturing"
+  },
+  {
+    "file": "/img/clients/kino.png",
+    "name": "PT. Kino Indonesia, Tbk",
+    "sector": "manufacturing",
+    "sub": "Personal Care & Food Beverage"
+  },
+  {
+    "file": "/img/clients/foodex_inti_ingredients.png",
+    "name": "PT. Foodex Inti Ingredients",
+    "sector": "manufacturing",
+    "sub": "Food Seasonings & Flavors Processing"
+  },
+  {
+    "file": "/img/clients/angels_products.png",
+    "name": "PT. Angels Products",
+    "sector": "manufacturing",
+    "sub": "Sugar Refining & Food Processing"
+  },
+  {
+    "file": "/img/clients/autocomp_system_indonesia.png",
+    "name": "PT. Autocomp Systems Indonesia (PASI)",
+    "sector": "manufacturing",
+    "sub": "Automotive Wiring Harness (Yazaki Group)"
+  },
+  {
+    "file": "/img/clients/suai.png",
+    "name": "PT. Surabaya Autocomp Indonesia",
+    "sector": "manufacturing",
+    "sub": "Automotive Electrical Components"
+  },
+  {
+    "file": "/img/clients/adr.png",
+    "name": "PT. ADR Group of Companies",
+    "sector": "manufacturing",
+    "sub": "Automotive Radiator & Filter Components"
+  },
+  {
+    "file": "/img/clients/oppo.svg",
+    "name": "PT. Bright Mobile Telecommunication (OPPO)",
+    "sector": "manufacturing",
+    "sub": "Smartphone Electronics Assembly"
+  },
+  {
+    "file": "/img/clients/Utac_Indonesia.png",
+    "name": "PT. UTAC Indonesia",
+    "sector": "manufacturing",
+    "sub": "Semiconductor Assembly & Test Services"
+  },
+  {
+    "file": "/img/clients/nishikwa_karya_indonesia.png",
+    "name": "PT. Nishikawa Karya Indonesia",
+    "sector": "manufacturing",
+    "sub": "Automotive Rubber Sealing & Weatherstrips"
+  },
+  {
+    "file": "/img/clients/kumis.png",
+    "name": "PT. Kurabe Motor Indonesia (KUMIS)",
+    "sector": "manufacturing",
+    "sub": "Automotive Wiring Harness Components"
+  },
+  {
+    "file": "/img/clients/technoglass_duromer_indonesia.png",
+    "name": "PT. Technoglass Duromer Internusa",
+    "sector": "manufacturing",
+    "sub": "Specialty Glass & Polymer Manufacturing"
+  },
+  {
+    "file": "/img/clients/tokki_engineering_fabrication.png",
+    "name": "PT. Tokki Engineering Fabrication",
+    "sector": "manufacturing",
+    "sub": "Precision Engineering & Heavy Steel Fabrication"
+  },
+  {
+    "file": "/img/clients/TJForge.png",
+    "name": "PT. TJForge Indonesia",
+    "sector": "manufacturing",
+    "sub": "Automotive Precision Metal Forging"
+  },
+  {
+    "file": "/img/clients/royal_advanced_fiber.png",
+    "name": "PT. Royal Advanced Fiber",
+    "sector": "manufacturing",
+    "sub": "Synthetic Fiber & Composite Materials"
+  },
+  {
+    "file": "/img/clients/indoporlen_refractories.png",
+    "name": "PT. Indoporlen Refractories",
+    "sector": "manufacturing",
+    "sub": "High Temperature Refractory Materials"
+  },
+  {
+    "file": "/img/clients/inter-world.png",
+    "name": "PT. Inter-World Steel Mills Indonesia",
+    "sector": "manufacturing",
+    "sub": "Steel Billet & Rolling Mills"
+  },
+  {
+    "file": "/img/clients/dwi-cahaya-jaya.png",
+    "name": "PT. Dwi Cahaya Jaya",
+    "sector": "manufacturing",
+    "sub": "Industrial Packaging & Corrugated Cartons"
+  },
+  {
+    "file": "/img/clients/prima_berkat_gemilang.png",
+    "name": "PT. Prima Berkat Gemilang",
+    "sector": "manufacturing",
+    "sub": "Precision Moulding & Manufacturing"
+  },
+  {
+    "file": "/img/clients/mulia_aldana_indonesia.png",
+    "name": "PT. Mulia Aldana Indonesia",
+    "sector": "manufacturing",
+    "sub": "Industrial Chemical Blending"
+  },
+  {
+    "file": "/img/clients/Laboratix.png",
+    "name": "PT. Laboratix Indonesia",
+    "sector": "manufacturing",
+    "sub": "Pharmaceutical & Diagnostic Reagents"
+  },
+  {
+    "file": "/img/clients/antam.png",
+    "name": "PT. Aneka Tambang (Antam), Tbk",
+    "sector": "mining-infra",
+    "sub": "Mining & Mineral Refining Resources"
+  },
+  {
+    "file": "/img/clients/Jasamarga.png",
+    "name": "PT. Jasa Marga (Persero), Tbk",
+    "sector": "mining-infra",
+    "sub": "Toll Road Network Management"
+  },
+  {
+    "file": "/img/clients/wika_pracetak_gedung.png",
+    "name": "PT. Wika Pracetak Gedung",
+    "sector": "mining-infra",
+    "sub": "Precast Concrete & Building Infrastructure"
+  },
+  {
+    "file": "/img/clients/pp_infrastruktur.png",
+    "name": "PT. PP Infrastruktur",
+    "sector": "mining-infra",
+    "sub": "Civil Infrastructure & Utilities Development"
+  },
+  {
+    "file": "/img/clients/sumber_mitra_jaya.png",
+    "name": "PT. Sumber Mitra Jaya",
+    "sector": "mining-infra",
+    "sub": "Open Pit Coal Mining Contractor"
+  },
+  {
+    "file": "/img/clients/jurong_engineering_l.png",
+    "name": "PT. Jurong Engineering Lestari",
+    "sector": "mining-infra",
+    "sub": "Power Plant & Industrial EPC Construction"
+  },
+  {
+    "file": "/img/clients/teknik_umum_sanko_eng.png",
+    "name": "PT. Teknik Umum Sanko Engineering",
+    "sector": "mining-infra",
+    "sub": "Industrial Mechanical & Electrical EPC"
+  },
+  {
+    "file": "/img/clients/chikal_railway.png",
+    "name": "PT. Chikal Railway Indonesia",
+    "sector": "mining-infra",
+    "sub": "Railway Track Construction & Maintenance"
+  },
+  {
+    "file": "/img/clients/fastindo_jaya_abadi.png",
+    "name": "PT. Fastindo Jaya Abadi",
+    "sector": "mining-infra",
+    "sub": "Heavy Equipment & Civil Construction"
+  },
+  {
+    "file": "/img/clients/tunas_tasik.png",
+    "name": "PT. Tunas Tasik",
+    "sector": "mining-infra",
+    "sub": "Quarry Mining & Aggregate Processing"
+  },
+  {
+    "file": "/img/clients/wahana_abadi.png",
+    "name": "PT. Wahana Abadi",
+    "sector": "mining-infra",
+    "sub": "Earthmoving & Civil Works Contractor"
+  },
+  {
+    "file": "/img/clients/tra.png",
+    "name": "PT. Tiga Rasa Agrotama",
+    "sector": "mining-infra",
+    "sub": "Agro-industrial Plantation Operations"
+  },
+  {
+    "file": "/img/clients/telkom_akses.png",
+    "name": "PT. Telkom Akses",
+    "sector": "services",
+    "sub": "Telecommunication Fiber Optic Infrastructure"
+  },
+  {
+    "file": "/img/clients/green_sm.png",
+    "name": "PT. GSM Indonesia (XANHSM)",
+    "sector": "services",
+    "sub": "Green & Smart Electric Mobility Ecosystem"
+  },
+  {
+    "file": "/img/clients/pelni.png",
+    "name": "PT. Pelayaran Nasional Indonesia (PELNI)",
+    "sector": "services",
+    "sub": "National Maritime Passenger & Cargo Fleet"
+  },
+  {
+    "file": "/img/clients/tirta_kahuripan.png",
+    "name": "Perumda Air Minum Tirta Kahuripan",
+    "sector": "services",
+    "sub": "Municipal Water Utility Services (Bogor)"
+  },
+  {
+    "file": "/img/clients/pdam_tirta_balikpapan.png",
+    "name": "PT. Danum Benuo Balikpapan (PDAM)",
+    "sector": "services",
+    "sub": "Water Treatment & Distribution Network"
+  },
+  {
+    "file": "/img/clients/sarana_multigriya_finansial.png",
+    "name": "PT. Sarana Multigriya Finansial (Persero)",
+    "sector": "services",
+    "sub": "Secondary Mortgage & Housing Finance BUMN"
+  },
+  {
+    "file": "/img/clients/asri_living.png",
+    "name": "PT. Asri Living (Agung Sedayu Group)",
+    "sector": "services",
+    "sub": "Commercial Property & Lifestyle Malls"
+  },
+  {
+    "file": "/img/clients/ias_support.png",
+    "name": "PT. Angkasa Pura Indonesia (IAS Support)",
+    "sector": "services",
+    "sub": "Airport Ground Services & Aviation Facility"
+  },
+  {
+    "file": "/img/clients/naka_avia_sakti.png",
+    "name": "PT. Naka Avia Sakti",
+    "sector": "services",
+    "sub": "Aviation Support & Aircraft Ground Handling"
+  },
+  {
+    "file": "/img/clients/mitra_sistematika_global.png",
+    "name": "PT. Mitra Sistematika Global",
+    "sector": "services",
+    "sub": "Enterprise IT System Integrator"
+  },
+  {
+    "file": "/img/clients/chas-group.png",
+    "name": "PT. Cipta Hasil Sugiarto (CHAS Group)",
+    "sector": "services",
+    "sub": "Logistics, Warehousing & Fleet Transportation"
+  },
+  {
+    "file": "/img/clients/persada.png",
+    "name": "PT. Persada Solusindo",
+    "sector": "services",
+    "sub": "Integrated Facility Management & Manpower"
+  },
+  {
+    "file": "/img/clients/arkademi.svg",
+    "name": "PT. Arkademi Daya Mandiri",
+    "sector": "services",
+    "sub": "Digital Education & Professional EdTech"
+  },
+  {
+    "file": "/img/clients/learning_centre_indonesia.png",
+    "name": "PT. Learning Centre Indonesia",
+    "sector": "services",
+    "sub": "Corporate Training & Human Capital Development"
+  },
+  {
+    "file": "/img/clients/Univet_Bantara.png",
+    "name": "Univet Bantara Sukoharjo",
+    "sector": "services",
+    "sub": "Higher Education Institution & Campus Facilities"
+  },
+  {
+    "file": "/img/clients/palang_merah_indonesia.png",
+    "name": "Palang Merah Indonesia (PMI)",
+    "sector": "services",
+    "sub": "Humanitarian Blood Transfusion & Healthcare"
+  },
+  {
+    "file": "/img/clients/aai.png",
+    "name": "PT. Asosiasi Ahli Keselamatan Kerja",
+    "sector": "services",
+    "sub": "HSE Professional Association & Certification"
+  },
+  {
+    "file": "/img/clients/eds_manufacturing_indonesia.png",
+    "name": "PT. EDS Manufacturing Indonesia",
+    "sector": "manufacturing",
+    "sub": "Automotive Wiring Harness & Electrical Distribution"
+  },
+  {
+    "file": "/img/clients/Tehnik_Bayu_Murni.png",
+    "name": "PT. Tehnik Bayu Murni",
+    "sector": "manufacturing",
+    "sub": "Specialist Industrial Machinery & Precision Fabrication"
+  }
+]

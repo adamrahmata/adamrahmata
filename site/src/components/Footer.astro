@@ -1,0 +1,58 @@
+---
+import { site, waHref } from '../data/site';
+---
+
+<footer class="site-footer">
+  <div class="footer-brand">adamrahmata<span>.com</span></div>
+  <div class="footer-role" data-t>QHSE Trainer, Consultant and Auditor</div>
+
+  <div class="footer-links">
+    <a href={`mailto:${site.email}`}>{site.email}</a>
+    <a href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+    <a href={site.instagram} target="_blank" rel="noopener">Instagram</a>
+    <a class="wa" href={waHref()} target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <div class="footer-legal">
+    &copy; {new Date().getFullYear()} {site.name}, <span data-t>Praktisi, Trainer, Konsultan &amp; Auditor QHSE</span>
+  </div>
+</footer>
+
+<style>
+  .footer-brand {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: var(--space-2);
+  }
+
+  .footer-brand span {
+    color: var(--green-500);
+  }
+
+  .footer-role {
+    margin-bottom: var(--space-3);
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-3);
+  }
+
+  .footer-links a {
+    color: var(--blue-300);
+  }
+
+  .footer-links a.wa {
+    color: var(--green-500);
+  }
+
+  .footer-legal {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+</style>

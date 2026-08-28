@@ -1,0 +1,265 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import Icon from '../components/Icon.astro';
+import type { IconName } from '../components/Icon.astro';
+import { site, waHref } from '../data/site';
+
+/**
+ * Kontak & Kolaborasi.
+ *
+ * The form has no server behind it: it composes a WhatsApp message from the
+ * fields and opens wa.me, exactly as the prototype did. That keeps the page
+ * fully static while still giving visitors a real send action.
+ */
+
+const channels: {
+  icon: IconName;
+  label: string;
+  value: string;
+  cta: string;
+  href: string;
+  external?: boolean;
+}[] = [
+  {
+    icon: 'chat',
+    label: 'WhatsApp',
+    value: site.waNumberDisplay,
+    cta: 'Jalur tercepat →',
+    href: waHref(),
+    external: true,
+  },
+  {
+    icon: 'mail',
+    label: 'Email',
+    value: site.email,
+    cta: 'Untuk penawaran formal →',
+    href: `mailto:${site.email}`,
+  },
+  {
+    icon: 'briefcase',
+    label: 'LinkedIn',
+    value: 'adam-rahmat-agung',
+    cta: 'Jejaring profesional →',
+    href: site.linkedin,
+    external: true,
+  },
+  {
+    icon: 'sparkles',
+    label: 'Instagram',
+    value: '@advmrahmat46gung',
+    cta: 'Keseharian & kegiatan →',
+    href: site.instagram,
+    external: true,
+  },
+];
+---
+
+<Layout
+  title="Kontak & Kolaborasi — Adam Rahmat Agung"
+  description="Hubungi Adam Rahmat Agung untuk kebutuhan training K3, konsultasi QHSE, audit sistem manajemen, atau ajakan kemitraan. WhatsApp 0812-6536-0816."
+>
+  <PageHero
+    overline="Kontak & Kolaborasi"
+    title="Mari berdiskusi"
+    lead="Kebutuhan training, konsultasi, audit, atau ajakan kemitraan, semua pintu terbuka."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="grid channels" data-reveal>
+        {
+          channels.map((channel, index) => (
+            <a
+              class="card card-hover card-pad channel"
+              href={channel.href}
+              target={channel.external ? '_blank' : undefined}
+              rel={channel.external ? 'noopener' : undefined}
+              data-stagger
+              style={`--stagger-delay:${(index * 0.08).toFixed(2)}s`}
+            >
+              <span class="channel-icon">
+                <Icon name={channel.icon} size={22} stroke="var(--blue-600)" />
+              </span>
+              <span class="channel-label">{channel.label}</span>
+              <span class="channel-value">{channel.value}</span>
+              <span class="channel-cta" data-t>
+                {channel.cta}
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section form-section">
+    <div class="container-narrow" data-reveal>
+      <h2 class="h1" data-t>Kirim pesan</h2>
+      <p class="muted" data-t>Isi ringkas kebutuhan Anda, pesan akan dikirim melalui WhatsApp.</p>
+
+      <form class="card card-pad contact-form" data-wa-form novalidate>
+        <label class="field">
+          <span class="field-label" data-t>Nama</span>
+          <input type="text" name="nama" placeholder="Nama Anda" data-t-placeholder autocomplete="name" />
+        </label>
+
+        <label class="field">
+          <span class="field-label" data-t>Perusahaan / Lembaga</span>
+          <input type="text" name="lembaga" placeholder="Opsional" data-t-placeholder autocomplete="organization" />
+        </label>
+
+        <label class="field">
+          <span class="field-label" data-t>Pesan</span>
+          <textarea
+            name="pesan"
+            rows="4"
+            placeholder="Ceritakan kebutuhan training / konsultasi / audit Anda"
+            data-t-placeholder></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-green" data-t>Kirim via WhatsApp</button>
+
+        <p class="form-note small muted" data-t>
+          Menekan tombol akan membuka WhatsApp dengan pesan yang sudah tersusun, Anda tetap bisa
+          menyuntingnya sebelum mengirim.
+        </p>
+      </form>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .channels {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .channel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    text-decoration: none;
+  }
+
+  .channel:hover {
+    text-decoration: none;
+  }
+
+  .channel-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--surface-brand-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-2);
+  }
+
+  .channel-label {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: var(--text-h4);
+    color: var(--text-heading);
+  }
+
+  .channel-value {
+    font-size: var(--text-small);
+    color: var(--text-body);
+    word-break: break-word;
+  }
+
+  .channel-cta {
+    font-size: 12px;
+    font-weight: var(--weight-bold);
+    color: var(--blue-500);
+    margin-top: auto;
+    padding-top: var(--space-2);
+  }
+
+  .form-section {
+    background: var(--surface-subtle);
+    text-align: center;
+  }
+
+  .form-section .muted {
+    margin: var(--space-3) 0 var(--space-8);
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    text-align: left;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .field-label {
+    font-size: var(--text-caption);
+    font-weight: var(--weight-bold);
+    color: var(--text-heading);
+  }
+
+  .field input,
+  .field textarea {
+    font: inherit;
+    font-size: var(--text-small);
+    color: var(--text-body);
+    background: var(--surface-page);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-control);
+    padding: 12px 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: var(--transition-control);
+  }
+
+  .field textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .field input:focus,
+  .field textarea:focus {
+    border-color: var(--border-brand);
+  }
+
+  .contact-form .btn {
+    align-self: flex-start;
+  }
+
+  .form-note {
+    margin: 0;
+  }
+</style>
+
+<script>
+  import { site } from '../data/site';
+
+  const form = document.querySelector<HTMLFormElement>('[data-wa-form]');
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const nama = String(data.get('nama') ?? '').trim();
+    const lembaga = String(data.get('lembaga') ?? '').trim();
+    const pesan = String(data.get('pesan') ?? '').trim();
+
+    // Mirrors the prototype's phrasing, with graceful gaps when fields are blank.
+    const text =
+      `Halo Pak Adam, saya ${nama || '…'}` +
+      (lembaga ? ` dari ${lembaga}` : '') +
+      `. ${pesan || 'Saya ingin berdiskusi.'}`;
+
+    window.open(
+      `https://wa.me/${site.waNumber}?text=${encodeURIComponent(text)}`,
+      '_blank',
+      'noopener',
+    );
+  });
+</script>

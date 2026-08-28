@@ -1,0 +1,480 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import Icon from '../components/Icon.astro';
+import type { IconName } from '../components/Icon.astro';
+import { waHref } from '../data/site';
+
+/**
+ * Audit & compliance assessment.
+ *
+ * Signature scroll motion: stage cards swing in like a door, matching the audit
+ * treatment chosen for the homepage grid.
+ *
+ * Note on the standard: the copy says ISO 19011:2026 throughout because that is
+ * what the client asked for. The currently published edition is ISO 19011:2018,
+ * flagged by the design assistant in chat 3 and left as written.
+ */
+
+const principles = [
+  '1 · Integritas',
+  '2 · Penyajian yang objektif',
+  '3 · Kecermatan profesional',
+  '4 · Kerahasiaan',
+  '5 · Independensi',
+  '6 · Pendekatan berbasis bukti',
+  '7 · Pendekatan berbasis risiko',
+];
+
+type ClauseTone = 'green' | 'blue' | 'sun';
+
+const stages: { num: string; clause: string; tone: ClauseTone; title: string; body: string }[] = [
+  {
+    num: '01',
+    clause: 'Klausul 5.2',
+    tone: 'green',
+    title: 'Penetapan tujuan program audit',
+    body: 'Tujuan program audit ditetapkan selaras dengan arah strategis, kebijakan, dan sasaran sistem manajemen organisasi, menjadi acuan seluruh perencanaan dan pelaksanaan audit.',
+  },
+  {
+    num: '02',
+    clause: 'Klausul 5.3',
+    tone: 'green',
+    title: 'Penentuan & evaluasi risiko dan peluang program audit',
+    body: 'Risiko dan peluang yang dapat memengaruhi program audit diidentifikasi dan dievaluasi, misalnya perencanaan, sumber daya, kompetensi tim, komunikasi, hingga keamanan informasi, sesuai pendekatan berbasis risiko revisi terbaru.',
+  },
+  {
+    num: '03',
+    clause: 'Klausul 5.4',
+    tone: 'green',
+    title: 'Penetapan program audit',
+    body: 'Peran dan tanggung jawab pengelola program ditetapkan; kompetensi auditor, luas/lingkup program, jadwal, dan sumber daya ditentukan, termasuk metode audit onsite, remote, maupun kombinasi.',
+  },
+  {
+    num: '04',
+    clause: 'Klausul 5.5',
+    tone: 'green',
+    title: 'Implementasi program audit',
+    body: 'Tujuan, lingkup, dan kriteria tiap audit ditentukan; metode audit dipilih; anggota tim audit ditugaskan sesuai kompetensi; dan hasil program didokumentasikan serta dikelola dengan baik.',
+  },
+  {
+    num: '05',
+    clause: 'Klausul 5.6',
+    tone: 'green',
+    title: 'Pemantauan program audit',
+    body: 'Pelaksanaan program dipantau: kesesuaian jadwal, pencapaian tujuan, kinerja tim audit, dan umpan balik auditee dievaluasi, sebagai dasar penyesuaian program bila diperlukan.',
+  },
+  {
+    num: '06',
+    clause: 'Klausul 5.7',
+    tone: 'green',
+    title: 'Tinjauan & peningkatan program audit',
+    body: 'Program audit ditinjau secara berkala untuk menilai pencapaian tujuannya; pembelajaran (lesson learned) dijadikan masukan perbaikan berkelanjutan program audit periode berikutnya.',
+  },
+  {
+    num: '07',
+    clause: 'Klausul 6.2',
+    tone: 'blue',
+    title: 'Inisiasi audit',
+    body: 'Kontak awal dengan auditee dibangun; ruang lingkup, kriteria, dan kelayakan audit dikonfirmasi, termasuk kesepakatan akses terhadap dokumen, area kerja, dan personel yang akan diaudit.',
+  },
+  {
+    num: '08',
+    clause: 'Klausul 6.3',
+    tone: 'blue',
+    title: 'Persiapan aktivitas audit',
+    body: 'Tinjauan informasi terdokumentasi, penyusunan audit plan berbasis risiko, pembagian tugas tim, serta penyiapan dokumen kerja seperti checklist dan formulir temuan, disesuaikan dengan proses bisnis auditee.',
+  },
+  {
+    num: '09',
+    clause: 'Klausul 6.4',
+    tone: 'blue',
+    title: 'Pelaksanaan aktivitas audit',
+    body: 'Opening meeting; pengumpulan dan verifikasi bukti melalui interview, observasi lapangan, dan review dokumen; perumusan temuan (Major, Minor, OFI) dan kesimpulan audit; ditutup dengan closing meeting.',
+  },
+  {
+    num: '10',
+    clause: 'Klausul 6.5',
+    tone: 'blue',
+    title: 'Penyusunan & distribusi laporan audit',
+    body: 'Laporan audit yang komprehensif, akurat, ringkas, dan jelas, memuat temuan, bukti pendukung, dan opportunity for improvement, didistribusikan kepada pihak yang relevan sesuai kesepakatan program audit.',
+  },
+  {
+    num: '11',
+    clause: 'Klausul 6.6',
+    tone: 'blue',
+    title: 'Penyelesaian audit',
+    body: 'Audit dinyatakan selesai setelah seluruh aktivitas dalam rencana audit terlaksana dan laporan terdistribusi; informasi terdokumentasi disimpan atau dimusnahkan sesuai kesepakatan dan kerahasiaan.',
+  },
+  {
+    num: '12',
+    clause: 'Klausul 6.7',
+    tone: 'sun',
+    title: 'Tindak lanjut audit',
+    body: 'Efektivitas tindakan koreksi dan perbaikan atas temuan diverifikasi pada tahap tindak lanjut, memastikan perbaikan benar-benar berjalan di lapangan, bukan sekadar tercatat di atas kertas.',
+  },
+];
+
+const hlsPoints: { icon: IconName; title: string; body: string }[] = [
+  {
+    icon: 'compass',
+    title: 'Telusuran proses audit',
+    body: 'Setiap tahapan audit, dari program, temuan, hingga tindak lanjut, dapat ditelusuri statusnya secara transparan.',
+  },
+  {
+    icon: 'trending',
+    title: 'Progres real-time untuk client & peserta',
+    body: 'Client dan peserta dapat memantau sejauh mana audit berjalan tanpa menunggu laporan akhir.',
+  },
+  {
+    icon: 'layers',
+    title: 'Selaras ISO 19011:2026',
+    body: 'Struktur platform mengikuti klausul 5 dan 6, sampai program audit dinyatakan selesai.',
+  },
+];
+---
+
+<Layout
+  title="Audit & Compliance Assessment — Adam Rahmat Agung"
+  description="Audit independen dengan pendekatan ISO 19011:2026: 7 prinsip audit, 12 tahapan berbasis klausul 5 dan 6, serta platform High Level Structure (HLS) untuk telusuran proses audit."
+>
+  <PageHero
+    overline="Jasa → Audit & compliance assessment"
+    title="Audit independen dengan pendekatan ISO 19011:2026"
+    lead="Tahapan audit dilakukan sesuai standar ISO 19011:2026 yang telah mempertimbangkan 7 prinsip audit, dengan mekanisme pelaksanaan berbasis klausul 5 (pengelolaan program audit) dan klausul 6 (pelaksanaan audit)."
+  />
+
+  <section class="section-compact principles-section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="overline" data-t>Fondasi</div>
+        <h2 class="h2" data-t>7 prinsip audit yang dipegang di setiap penugasan</h2>
+      </div>
+
+      <div class="principles" data-reveal>
+        {
+          principles.map((principle, index) => (
+            <span
+              class="principle"
+              data-stagger
+              style={`--stagger-delay:${(index * 0.06).toFixed(2)}s`}
+              data-t
+            >
+              {principle}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section stages-section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="overline" data-t>Mekanisme audit</div>
+        <h2 class="h1" data-t>
+          Tahapan audit berdasarkan pendekatan klausul 5 dan 6 ISO 19011:2026
+        </h2>
+      </div>
+
+      <div class="grid stages" data-reveal>
+        {
+          stages.map((stage, index) => (
+            <article
+              class="card card-hover card-pad stage"
+              data-anim="swing"
+              style={`animation-delay:${(index * 0.06).toFixed(2)}s`}
+            >
+              <div class="stage-head">
+                <span class="stage-num">{stage.num}</span>
+                <span class:list={['clause', `tone-${stage.tone}`]}>{stage.clause}</span>
+              </div>
+              <h3 class="stage-title" data-t>
+                {stage.title}
+              </h3>
+              <p class="stage-body" data-t>
+                {stage.body}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section hls">
+    <div class="container hls-layout">
+      <div class="hls-copy" data-reveal="left">
+        <div class="overline overline-invert" data-t>Keunggulan platform</div>
+        <h2 class="h1" data-t>Audit menggunakan platform High Level Structure (HLS)</h2>
+        <p data-t>
+          HLS adalah platform yang telah menyesuaikan standar ISO 19011:2026, dikembangkan oleh
+          adamrahmata.com. Platform ini mempermudah client dan peserta untuk melihat sejauh mana
+          kemampuan telusuran proses audit yang berjalan, dari inisiasi sampai selesai program
+          auditnya.
+        </p>
+        <a
+          class="btn btn-green"
+          href={waHref('Halo Pak Adam, saya ingin tahu lebih jauh tentang platform HLS untuk audit')}
+          target="_blank"
+          rel="noopener"
+          data-t
+        >
+          Tanya tentang platform HLS
+        </a>
+      </div>
+
+      <div class="hls-points" data-reveal="right">
+        {
+          hlsPoints.map((point, index) => (
+            <div class="hls-point" data-stagger style={`--stagger-delay:${(index * 0.1).toFixed(2)}s`}>
+              <span class="hls-icon">
+                <Icon name={point.icon} size={20} stroke="var(--green-500)" />
+              </span>
+              <div>
+                <div class="hls-title" data-t>
+                  {point.title}
+                </div>
+                <div class="hls-body" data-t>
+                  {point.body}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section proof">
+    <div class="container-narrow" data-reveal>
+      <div class="overline" data-t>Bukti nyata</div>
+      <h2 class="h1" data-t>19+ penugasan audit sudah dijalankan</h2>
+      <p data-t>
+        Audit SMK3 PP 50/2012, EHS audit berbasis standar IFC, environmental site assessment, hingga
+        audit internal sistem manajemen di berbagai sektor industri.
+      </p>
+      <div class="proof-actions">
+        <a class="btn btn-primary" href="/rekam-jejak/?cat=auditor" data-t>Lihat riwayat audit →</a>
+        <a class="btn btn-outline-dark" href="/klien/" data-t>Klien & rekanan</a>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Uji kesiapan sistem manajemen Anda"
+    message="Halo Pak Adam, saya ingin berdiskusi tentang audit QHSE"
+    secondaryLabel="Kalkulator estimasi manday"
+    secondaryHref="/rekam-jejak/#kalkulator"
+  />
+</Layout>
+
+<style>
+  .principles-section {
+    background: var(--surface-page);
+    padding-block: var(--space-20);
+  }
+
+  .principles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-3);
+  }
+
+  .principle {
+    display: inline-flex;
+    align-items: center;
+    background: var(--surface-brand-soft);
+    color: var(--blue-700);
+    font-size: var(--text-small);
+    font-weight: var(--weight-semibold);
+    border-radius: var(--radius-pill);
+    padding: 9px 18px;
+  }
+
+  .stages-section {
+    background: var(--surface-subtle);
+  }
+
+  .stages {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .stage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .stage-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+
+  .stage-num {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: 28px;
+    line-height: 1;
+    color: var(--blue-200);
+  }
+
+  /* Clause badges are colour-coded by chapter: green for the programme
+     management clause 5, blue for execution in clause 6, amber for follow-up. */
+  .clause {
+    font-size: 11px;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.06em;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+  }
+
+  .tone-green {
+    color: var(--green-700);
+    background: rgba(76, 154, 60, 0.12);
+  }
+
+  .tone-blue {
+    color: var(--blue-600);
+    background: rgba(0, 103, 177, 0.1);
+  }
+
+  .tone-sun {
+    color: var(--sun-600);
+    background: rgba(245, 166, 35, 0.15);
+  }
+
+  .stage-title {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: var(--text-h4);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-heading);
+    color: var(--text-heading);
+    margin: 0;
+  }
+
+  .stage-body {
+    margin: 0;
+    font-size: var(--text-small);
+    line-height: var(--leading-normal);
+    color: var(--text-muted);
+  }
+
+  /* ------------------------------------------------------- HLS dark band */
+
+  .hls {
+    background: var(--blue-900);
+    color: #fff;
+  }
+
+  .hls-layout {
+    display: grid;
+    grid-template-columns: minmax(300px, 1.1fr) minmax(280px, 1fr);
+    gap: var(--space-16);
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    .hls-layout {
+      grid-template-columns: 1fr;
+      gap: var(--space-10);
+    }
+  }
+
+  .hls-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .hls-copy .h1 {
+    color: #fff;
+  }
+
+  .hls-copy p {
+    margin: 0;
+    color: var(--blue-200);
+    line-height: var(--leading-relaxed);
+  }
+
+  .hls-points {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+  }
+
+  .hls-point {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-card);
+    padding: var(--space-5);
+  }
+
+  .hls-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+
+  .hls-title {
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin-bottom: 4px;
+  }
+
+  .hls-body {
+    font-size: var(--text-small);
+    line-height: var(--leading-normal);
+    color: var(--blue-200);
+  }
+
+  /* -------------------------------------------------------------- proof */
+
+  .proof {
+    text-align: center;
+  }
+
+  .proof .overline {
+    margin-bottom: var(--space-3);
+  }
+
+  .proof p {
+    margin: var(--space-4) auto var(--space-8);
+    max-width: 60ch;
+    color: var(--text-body);
+  }
+
+  .proof-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .btn-outline-dark {
+    border: 2px solid var(--border-default);
+    background: transparent;
+    color: var(--blue-700);
+    padding: 12px 26px;
+  }
+
+  .btn-outline-dark:hover {
+    background: var(--surface-brand-soft);
+    color: var(--blue-800);
+  }
+</style>

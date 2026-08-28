@@ -1,0 +1,305 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+
+/**
+ * Jasa & Layanan — the service overview, enriched in chat 3 with the standards
+ * and methodology content carried over from the legacy site.
+ *
+ * Signature scroll motion for this page: cards flip up from lying flat.
+ */
+
+const services = [
+  {
+    title: 'Training K3 & Sistem Manajemen',
+    body: '216 sesi terlaksana. Materi unggulan: Ahli K3 Umum & Muda (Kemnaker/BNSP), manajemen risiko K3, analisa kecelakaan, ISO 9001/14001/45001, SMK3.',
+    note: 'In-house · publik · online · onsite',
+    href: '/training/',
+    linkLabel: 'Buka halaman training →',
+  },
+  {
+    title: 'Konsultasi QHSE',
+    body: '61 penugasan konsultasi: pendampingan sertifikasi ISO & SMK3, safety culture improvement, penyusunan dokumen sistem manajemen, hingga proyek migas.',
+    note: 'Dari gap assessment sampai sertifikasi',
+    href: '/konsultasi/',
+    linkLabel: 'Buka halaman konsultasi →',
+  },
+  {
+    title: 'Audit',
+    body: '19 penugasan audit: audit SMK3 PP 50/2012, EHS audit berbasis standar IFC, environmental site assessment, dan audit internal sistem manajemen.',
+    note: 'Independen & berbasis bukti',
+    href: '/audit/',
+    linkLabel: 'Buka halaman audit →',
+  },
+  {
+    title: 'Mitra Karya',
+    body: 'Saya bukan lembaga, namun klien dapat melibatkan saya dalam proyek jangka panjang: assessment Contractor Safety Management System (CSMS) internal, advisory project consultant dalam perspektif QHSE, Safety Culture Improvement Team (SCIT), serta pengembangan QHSE management system berkelanjutan yang menyesuaikan kebutuhan client. Untuk gap assessment, tersedia melalui layanan Konsultasi QHSE.',
+    note: 'Skema fleksibel per proyek atau retainer',
+  },
+];
+
+const standards = [
+  {
+    badge: 'ISO 9001:2015',
+    title: 'Sistem Manajemen Mutu (QMS)',
+    body: 'Fokus pada kepuasan pelanggan, konsistensi mutu produk/layanan, risk-based thinking pada proses bisnis, dan continuous improvement (PDCA).',
+  },
+  {
+    badge: 'ISO 14001:2015',
+    title: 'Sistem Manajemen Lingkungan (EMS)',
+    body: 'Pengendalian aspek & dampak lingkungan, efisiensi sumber daya energi, pengelolaan limbah B3/non-B3, dan kepatuhan baku mutu lingkungan.',
+  },
+  {
+    badge: 'ISO 45001:2018',
+    title: 'Sistem Manajemen K3 (OH&SMS)',
+    body: 'Pencegahan kecelakaan kerja dan penyakit akibat kerja (PAK), partisipasi pekerja, hierarki pengendalian risiko, serta kepemimpinan K3.',
+  },
+  {
+    badge: 'PP No. 50 / 2012',
+    title: 'SMK3 Republik Indonesia',
+    body: 'Kepatuhan wajib hukum ketenagakerjaan di Indonesia. Pemenuhan 64 kriteria (tingkat awal), 122 kriteria (transisi), dan 166 kriteria (lanjutan).',
+  },
+  {
+    badge: 'ISO 19011:2018',
+    title: 'Panduan Audit Sistem Manajemen',
+    body: 'Prinsip audit, pengelolaan program audit terintegrasi, kompetensi lead auditor, serta teknik wawancara, sampling bukti, dan pelaporan temuan.',
+  },
+  {
+    badge: 'IFC & ESA Standards',
+    title: 'IFC Performance & Phase I ESA',
+    body: 'Pemeriksaan kepatuhan standar lingkungan & sosial International Finance Corporation untuk proyek berskala global dan penilaian tapak lingkungan.',
+  },
+];
+
+const method = [
+  {
+    num: '01',
+    title: 'Diagnosis & GAP Analysis',
+    body: 'Menilai kondisi eksisting terhadap regulasi dan standar target guna mengidentifikasi gap kepatuhan dan risiko kritis.',
+  },
+  {
+    num: '02',
+    title: 'Desain Sistem & Dokumentasi',
+    body: 'Merancang manual, SOP, HIRADC, dan instruksi kerja yang praktis, aplikatif, dan terintegrasi tanpa redundansi dokumen.',
+  },
+  {
+    num: '03',
+    title: 'Pelatihan & Implementasi',
+    body: 'Melatih tim internal, membangun kesadaran operasional, serta mendampingi uji coba penerapan prosedur di lapangan.',
+  },
+  {
+    num: '04',
+    title: 'Pra-Audit & Peningkatan',
+    body: 'Melaksanakan audit internal simulasi dan tinjauan manajemen untuk menjamin kelulusan sertifikasi dan perbaikan berkelanjutan.',
+  },
+];
+---
+
+<Layout
+  title="Jasa & Layanan QHSE — Adam Rahmat Agung"
+  description="Training K3, konsultasi QHSE, audit sistem manajemen, dan kemitraan jangka panjang. Berbekal 16+ tahun pengalaman, 279+ penugasan, dan 26 lembaga mitra."
+>
+  <PageHero
+    overline="Jasa & Layanan"
+    title="Satu mitra untuk kebutuhan QHSE Anda"
+    lead="Training, konsultasi, audit, dan kemitraan, berbekal 16+ tahun pengalaman, 279+ penugasan, dan 26 lembaga mitra."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="grid services" data-reveal>
+        {
+          services.map((service, index) => (
+            <article
+              class="card card-hover card-pad service"
+              data-anim="flip"
+              style={`animation-delay:${(index * 0.1).toFixed(2)}s`}
+            >
+              <h2 class="h3" data-t>
+                {service.title}
+              </h2>
+              <p data-t>{service.body}</p>
+              <p class="note" data-t>
+                {service.note}
+              </p>
+              {service.href && (
+                <a class="service-link" href={service.href} data-t>
+                  {service.linkLabel}
+                </a>
+              )}
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section standards-section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="overline" data-t>Framework & standar</div>
+        <h2 class="h1" data-t>Keahlian lintas standar nasional & internasional</h2>
+        <p class="muted" data-t>
+          Menguasai struktur High-Level Structure (HLS) ISO, regulasi ketenagakerjaan Indonesia,
+          serta guideline lembaga pembiayaan global.
+        </p>
+      </div>
+
+      <div class="grid standards" data-reveal>
+        {
+          standards.map((standard, index) => (
+            <article
+              class="card card-hover card-pad standard"
+              data-anim="flip"
+              style={`animation-delay:${(index * 0.08).toFixed(2)}s`}
+            >
+              <span class="badge">{standard.badge}</span>
+              <div class="standard-title" data-t>
+                {standard.title}
+              </div>
+              <p class="small muted" data-t>
+                {standard.body}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="overline" data-t>Metodologi kerja</div>
+        <h2 class="h1" data-t>Alur sistematis menuju keunggulan QHSE</h2>
+      </div>
+
+      <div class="grid method" data-reveal>
+        {
+          method.map((step, index) => (
+            <article
+              class="card card-hover card-pad step"
+              data-anim="flip"
+              style={`animation-delay:${(index * 0.1).toFixed(2)}s`}
+            >
+              <div class="step-num">{step.num}</div>
+              <div class="step-title" data-t>
+                {step.title}
+              </div>
+              <p class="small muted" data-t>
+                {step.body}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+
+      <div class="method-link" data-reveal>
+        <a href="/rekam-jejak/" data-t>Lihat rekam jejak & kalkulator manday →</a>
+      </div>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Diskusikan kebutuhan Anda"
+    message="Halo Pak Adam, saya ingin berdiskusi tentang jasa QHSE"
+  />
+</Layout>
+
+<style>
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .service p {
+    margin: 0;
+    color: var(--text-body);
+  }
+
+  .note {
+    font-size: var(--text-caption);
+    font-weight: var(--weight-bold);
+    color: var(--green-700);
+    text-transform: none;
+  }
+
+  .service-link {
+    margin-top: auto;
+    padding-top: var(--space-2);
+    font-size: var(--text-small);
+    font-weight: var(--weight-bold);
+  }
+
+  .standards-section {
+    background: var(--surface-subtle);
+  }
+
+  .standards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .standard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .badge {
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: var(--weight-bold);
+    letter-spacing: 0.06em;
+    color: var(--blue-600);
+    background: rgba(0, 103, 177, 0.1);
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+  }
+
+  .standard-title {
+    font-weight: var(--weight-bold);
+    font-size: var(--text-body);
+    color: var(--text-heading);
+  }
+
+  .standard p,
+  .step p {
+    margin: 0;
+  }
+
+  .method {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .step-num {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: 32px;
+    color: var(--blue-200);
+    line-height: 1;
+  }
+
+  .step-title {
+    font-weight: var(--weight-bold);
+    font-size: var(--text-body);
+    color: var(--text-heading);
+  }
+
+  .method-link {
+    text-align: center;
+    margin-top: var(--space-10);
+    font-weight: var(--weight-bold);
+  }
+</style>

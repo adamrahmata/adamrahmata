@@ -1,0 +1,139 @@
+---
+/**
+ * Section 03 — "Perkenalkan saya".
+ *
+ * White panel, standing photo anchored bottom-right, copy on the left with an
+ * entrance that deliberately differs from section 02: text slides in from the
+ * left in steps, the green rule grows outward, and the photo enters from the
+ * right. The three names swell like balloons on a 1.5s stagger.
+ */
+
+const names = [
+  { prefix: 'Lebih senang dipanggil', name: 'Adam', color: 'var(--sun-600)', delay: '0s', tail: ',' },
+  { prefix: 'Lebih mulia dipanggil', name: 'Rahmat', color: 'var(--blue-500)', delay: '1.5s', tail: ',' },
+  { prefix: 'Lebih dekat dipanggil', name: 'Agung', color: 'var(--green-600)', delay: '3s', tail: '.' },
+];
+---
+
+<section class="panel intro">
+  <div class="photo" data-reveal="right" style="--reveal-delay:.35s">
+    <img src="/img/adam-standing.png" alt="Adam Rahmat Agung" width="560" height="900" loading="lazy" />
+  </div>
+
+  <div class="copy">
+    <div data-reveal="left">
+      <div class="overline eyebrow" data-t>Perkenalkan saya</div>
+      <h2 class="display-2 name" data-t>Adam Rahmat Agung</h2>
+    </div>
+
+    <div class="rule" data-reveal="grow-x" style="--reveal-delay:.3s"></div>
+
+    <div class="lines" data-reveal="left" style="--reveal-delay:.45s">
+      {
+        names.map((n) => (
+          <p class="lead">
+            <span data-t>{n.prefix}</span>{' '}
+            <strong class="balloon" style={`color:${n.color};animation-delay:${n.delay}`}>
+              {n.name}
+            </strong>
+            {n.tail}
+          </p>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .intro {
+    background: #fff;
+    color: var(--neutral-700);
+    align-items: center;
+    padding: var(--space-24) var(--gutter) 0;
+  }
+
+  .photo {
+    position: absolute;
+    right: max(0px, calc(50% - 640px));
+    top: 40px;
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  .photo img {
+    height: 100%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    object-position: bottom;
+    filter: drop-shadow(0 12px 32px rgba(4, 34, 63, 0.18));
+  }
+
+  .copy {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-bottom: min(10vw, 140px);
+    padding-right: min(34vw, 520px);
+  }
+
+  /* "Perkenalkan saya" is set black-weight, per the chat 2 revision. */
+  .eyebrow {
+    font-weight: var(--weight-black);
+    margin-bottom: var(--space-4);
+  }
+
+  .name {
+    color: var(--text-heading);
+  }
+
+  .rule {
+    width: 96px;
+    height: 5px;
+    background: var(--green-600);
+    border-radius: var(--radius-pill);
+  }
+
+  .lines {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .lines p {
+    margin: 0;
+    color: var(--neutral-700);
+  }
+
+  .balloon {
+    display: inline-block;
+    transform-origin: 50% 100%;
+    animation: ara-balloon 4.5s ease-in-out infinite;
+  }
+
+  @media (max-width: 900px) {
+    .intro {
+      padding-top: var(--space-16);
+      align-items: flex-start;
+    }
+
+    .photo {
+      right: -10%;
+      top: auto;
+      height: 52vw;
+      opacity: 0.2;
+    }
+
+    .copy {
+      padding-right: 0;
+      padding-bottom: var(--space-24);
+    }
+  }
+</style>

@@ -1,0 +1,53 @@
+---
+/** Shared hero band used by every inner page. */
+
+interface Props {
+  overline: string;
+  title: string;
+  lead?: string;
+  /** blue-900 by default; the audit page uses the lighter blue-700. */
+  tone?: 'dark' | 'mid';
+}
+
+const { overline, title, lead, tone = 'dark' } = Astro.props;
+---
+
+<section class:list={['page-hero', `tone-${tone}`]}>
+  <div class="container-narrow" data-reveal>
+    <div class="overline overline-invert" data-t>{overline}</div>
+    <h1 class="display-2" data-t>{title}</h1>
+    {lead && <p class="lead" data-t>{lead}</p>}
+    <slot />
+  </div>
+</section>
+
+<style>
+  .page-hero {
+    padding: var(--space-24) var(--gutter);
+    color: #fff;
+    text-align: center;
+  }
+
+  .tone-dark {
+    background: var(--blue-900);
+  }
+
+  .tone-mid {
+    background: var(--blue-700);
+  }
+
+  .overline {
+    margin-bottom: var(--space-4);
+  }
+
+  .display-2 {
+    color: #fff;
+    margin-bottom: var(--space-5);
+  }
+
+  .lead {
+    color: var(--blue-200);
+    margin: 0 auto;
+    max-width: 62ch;
+  }
+</style>

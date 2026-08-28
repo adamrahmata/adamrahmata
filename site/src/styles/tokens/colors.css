@@ -1,0 +1,49 @@
+:root{
+  /* Blue — "planet biru". The primary brand axis: sky, water, Shizen lineage. */
+  --blue-900:#04223F; --blue-800:#062F58; --blue-700:#003E7E; --blue-600:#00539A;
+  --blue-500:#0067B1; --blue-400:#2E8CCB; --blue-300:#7BB8E0; --blue-200:#BFDCF0; --blue-100:#E8F2FA;
+  /* Green — "alam" / nature, growth, renewables. Secondary axis. */
+  --green-800:#1F5C2A; --green-700:#2E7D32; --green-600:#4C9A3C; --green-500:#6FBE44;
+  --green-300:#A9DA84; --green-100:#ECF7E2;
+  /* Sun — sparing accent for solar/energy call-outs. */
+  --sun-600:#D9862A; --sun-500:#F5A623; --sun-200:#FBE1B4;
+  /* Neutrals — cool-leaning greys, never pure black. */
+  --neutral-900:#0E1A24; --neutral-800:#1F2E3A; --neutral-700:#3A4B58; --neutral-600:#4A5A66;
+  --neutral-500:#6B7C88; --neutral-400:#8FA0AC; --neutral-300:#C3CED6; --neutral-200:#E4EAEE;
+  --neutral-100:#F1F5F8; --neutral-050:#F7FAFC; --white:#FFFFFF;
+  /* Semantic */
+  --success:#2E7D32; --warning:#D9862A; --danger:#B3261E; --info:#0067B1;
+
+  /* Semantic aliases — prefer these in components */
+  --brand-primary:var(--blue-500);
+  --brand-primary-hover:var(--blue-600);
+  --brand-primary-press:var(--blue-700);
+  --brand-secondary:var(--green-600);
+  --brand-secondary-hover:var(--green-700);
+  --brand-accent:var(--sun-500);
+
+  --text-heading:var(--blue-900);
+  --text-body:var(--neutral-700);
+  --text-muted:var(--neutral-500);
+  --text-inverse:var(--white);
+  --text-link:var(--blue-500);
+  --text-link-hover:var(--blue-700);
+
+  --surface-page:var(--white);
+  --surface-subtle:var(--neutral-050);
+  --surface-card:var(--white);
+  --surface-inverse:var(--blue-900);
+  --surface-brand:var(--blue-500);
+  --surface-brand-soft:var(--blue-100);
+  --surface-nature-soft:var(--green-100);
+
+  --border-subtle:var(--neutral-200);
+  --border-default:var(--neutral-300);
+  --border-strong:var(--neutral-400);
+  --border-brand:var(--blue-500);
+  --focus-ring:var(--blue-400);
+
+  /* Photography protection gradient — dark blue veil over hero imagery */
+  --scrim-hero:linear-gradient(180deg,rgba(4,34,63,.55) 0%,rgba(4,34,63,.15) 45%,rgba(4,34,63,.70) 100%); /* @kind color */
+  --scrim-bottom:linear-gradient(180deg,rgba(4,34,63,0) 0%,rgba(4,34,63,.75) 100%); /* @kind color */
+}

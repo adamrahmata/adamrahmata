@@ -1,0 +1,191 @@
+---
+import Icon from '../Icon.astro';
+import type { IconName } from '../Icon.astro';
+import { stats } from '../../data/site';
+
+/**
+ * Section 04 — the 16-years statement with the five counting statistics
+ * folded in beneath it (chat 2 merged the standalone "Dalam angka" panel
+ * into this one).
+ */
+
+interface Tile {
+  value: number;
+  decimals?: number;
+  icon: IconName;
+  color: string;
+  /** Staggered float so the icons never bob in unison. */
+  bob: string;
+  title: string;
+  desc: string;
+}
+
+const tiles: Tile[] = [
+  {
+    value: stats.mandays,
+    decimals: 1,
+    icon: 'calendar',
+    color: 'var(--sun-500)',
+    bob: '0s',
+    title: 'Mandays portofolio',
+    desc: 'Total hari penugasan resmi seperti training, konsultasi dan audit.',
+  },
+  {
+    value: stats.hours,
+    icon: 'clock',
+    color: 'var(--green-500)',
+    bob: '.9s',
+    title: 'Jam kerja QHSE',
+    desc: 'Akumulasi jam mengajar di kelas dan mendampingi client melalui sesi konsultasi dan kegiatan audit.',
+  },
+  {
+    value: stats.clients,
+    icon: 'users',
+    color: 'var(--sun-500)',
+    bob: '1.8s',
+    title: 'Klien korporasi',
+    desc: 'Perusahaan dari beragam sektor seperti manufaktur, minyak dan gas, pertambangan, konstruksi pernah menugaskan melalui lembaga mitra.',
+  },
+  {
+    value: stats.partners,
+    icon: 'building',
+    color: 'var(--green-500)',
+    bob: '3.6s',
+    title: 'Lembaga mitra',
+    desc: 'Lembaga training dan konsultan seperti PJK3, TUK, Lembaga independen lainnya pernah menggandeng sebagai mitra.',
+  },
+  {
+    value: stats.projects,
+    icon: 'presentation',
+    color: 'var(--green-500)',
+    bob: '2.7s',
+    title: 'Proyek & sesi training',
+    desc: 'Sesi pelatihan, proyek konsultasi, dan penugasan audit yang tuntas.',
+  },
+];
+---
+
+<section class="panel stats">
+  <div class="container inner">
+    <p class="statement" data-reveal>
+      <span data-t>Alhamdulillah, telah berkontribusi lebih dari</span>
+      <span class="years" data-anim="pop" style="--reveal-delay:.5s">{stats.years}</span>
+      <span data-t>tahun</span><br />
+      <span data-t>perjalanan karier di bidang Quality, Health, Safety, and Environment (QHSE).</span>
+    </p>
+
+    <div class="tiles" data-reveal style="--reveal-delay:.2s">
+      {
+        tiles.map((tile) => (
+          <div class="tile">
+            <span class="tile-icon" style={`animation-delay:${tile.bob}`}>
+              <Icon name={tile.icon} size={26} stroke={tile.color} />
+            </span>
+            <span class="tile-value">
+              <span
+                data-count-to={tile.value}
+                data-count-decimals={tile.decimals ?? 0}
+              >
+                0
+              </span>
+              <span class="plus">+</span>
+            </span>
+            <span class="tile-title" data-t>
+              {tile.title}
+            </span>
+            <span class="tile-desc" data-t>
+              {tile.desc}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats {
+    background: var(--blue-700);
+    color: #fff;
+    align-items: center;
+    padding: var(--space-24) var(--gutter);
+  }
+
+  .inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+
+  .statement {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: var(--text-h2);
+    line-height: var(--leading-snug);
+    letter-spacing: var(--tracking-display);
+    color: #fff;
+    text-wrap: balance;
+  }
+
+  /* One pop as the sentence arrives, then it holds. */
+  .years {
+    color: var(--sun-500);
+    font-size: 1.6em;
+    line-height: 1;
+    display: inline-block;
+    transform-origin: 50% 80%;
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-10);
+  }
+
+  .tile {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+  }
+
+  .tile-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    animation: ara-bob 3.6s ease-in-out infinite;
+  }
+
+  .tile-value {
+    font-family: var(--font-display);
+    font-weight: var(--weight-black);
+    font-size: clamp(44px, 4.5vw, 68px);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    /* Tabular figures keep the row from jittering while the count runs. */
+    font-variant-numeric: tabular-nums;
+  }
+
+  .plus {
+    color: var(--green-500);
+  }
+
+  .tile-title {
+    font-size: var(--text-body);
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .tile-desc {
+    font-size: var(--text-small);
+    line-height: 1.5;
+    color: var(--blue-200);
+    max-width: 34ch;
+  }
+</style>

@@ -1,0 +1,86 @@
+---
+/** Section 01 — the blue welcome panel with the animated scroll cue. */
+---
+
+<section id="atas" class="panel welcome">
+  <div class="welcome-inner">
+    <div data-reveal>
+      <div class="overline overline-invert" data-t>www.adamrahmata.com</div>
+      <h1 class="display-1">
+        <span data-t>Selamat datang,</span><br /><span data-t>para praktisi!!!</span>
+      </h1>
+    </div>
+
+    <p class="lead tagline" data-reveal style="--reveal-delay:.25s" data-t>Apa crita?</p>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="mouse"><span class="wheel"></span></span>
+      <span class="scroll-label">scroll</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .welcome {
+    background: var(--blue-900);
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--space-16) var(--gutter);
+  }
+
+  .welcome-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .overline {
+    margin-bottom: var(--space-5);
+  }
+
+  .display-1 {
+    color: #fff;
+  }
+
+  .tagline {
+    color: var(--blue-200);
+  }
+
+  .scroll-hint {
+    margin-top: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: ara-bob 2.4s ease-in-out infinite;
+  }
+
+  .mouse {
+    width: 26px;
+    height: 42px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+    box-sizing: border-box;
+  }
+
+  .wheel {
+    width: 4px;
+    height: 9px;
+    border-radius: 2px;
+    background: #fff;
+    animation: ara-wheel 1.6s ease-in-out infinite;
+  }
+
+  .scroll-label {
+    font: 700 11px/1 var(--font-text);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+  }
+</style>

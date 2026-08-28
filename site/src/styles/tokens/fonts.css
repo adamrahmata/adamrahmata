@@ -1,0 +1,13 @@
+/* SUBSTITUTION NOTICE
+   Brand fonts are Gotham Black (display) and Galvji (text). Neither is redistributable
+   here and no binaries were provided, so the closest freely-hostable matches are loaded:
+     Gotham Black  -> Montserrat 900 (geometric sans, tall x-height, closed apertures)
+     Galvji        -> Mulish (humanist geometric, open apertures, similar rhythm)
+   Drop real .woff2 files into assets/fonts/ and replace the @font-face block below. */
+@font-face{font-family:"Gotham";src:local("Gotham Black"),local("Gotham-Black"),local("Montserrat Black");font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:"Galvji";src:local("Galvji"),local("Galvji-Bold"),local("Mulish");font-weight:400 700;font-style:normal;font-display:swap}
+:root{
+  --font-display:"Gotham","Montserrat",system-ui,sans-serif;
+  --font-text:"Galvji","Mulish",system-ui,sans-serif;
+  --font-mono:ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
