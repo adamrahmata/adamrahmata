@@ -348,10 +348,10 @@ const detail = detailRoles.map((role) => ({
 
   /* -------------------------------------------------- horizontal timeline */
 
-  /* Bleed past the 1200px column on wide screens so the strip has room, while
+  /* Bleed past the content column on wide screens so the strip has room, while
      keeping at least 72px of breathing space before the first card. */
   .timeline-bleed {
-    margin: 0 min(0px, calc(600px - 50vw));
+    margin: 0 min(0px, calc(var(--container-half) - 50vw));
   }
 
   .timeline-bar {
@@ -385,11 +385,19 @@ const detail = detailRoles.map((role) => ({
   }
 
   .timeline-scroll {
+    /* Breathing space before the first card and after the last one. */
+    --tl-inset: max(72px, calc(50vw - var(--container-half) + 30px));
+
     display: flex;
     gap: var(--space-5);
     overflow-x: auto;
     scroll-snap-type: x proximity;
-    padding: var(--space-4) max(72px, calc(50vw - 570px)) var(--space-2);
+    padding: var(--space-4) var(--tl-inset) var(--space-2);
+    /* Without this the snapport starts at the scroller's edge, so snapping the
+       first card to `start` aligns it flush left and eats the padding entirely
+       — the card ends up touching the screen edge no matter how large the
+       padding is. scroll-padding insets the snapport to match. */
+    scroll-padding-inline: var(--tl-inset);
     height: 680px;
     box-sizing: border-box;
     align-items: center;
@@ -667,7 +675,7 @@ const detail = detailRoles.map((role) => ({
   @media (max-width: 700px) {
     .timeline-scroll {
       height: 620px;
-      padding-inline: var(--space-6);
+      --tl-inset: var(--space-6);
     }
 
     .tl-item {

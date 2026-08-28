@@ -8,6 +8,16 @@
 @import "./tokens/motion.css";
 @import "./tokens/base.css";
 
+/* Wider content column than the design system's 1200px default: on desktop the
+   1200px grid left noticeable empty margins either side. The tokens/ copy stays
+   faithful to the design system; this is the one project-level override.
+   Everything that has to line up with the column edge derives from this value,
+   so changing it here moves the photos and the timeline strip with it. */
+:root {
+  --container-max: 1360px;
+  --container-half: calc(var(--container-max) / 2);
+}
+
 /* ---------------------------------------------------------------- page base */
 
 html {

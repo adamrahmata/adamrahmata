@@ -1,17 +1,44 @@
 ---
+import BrandIcon from './BrandIcon.astro';
+import type { BrandName } from './BrandIcon.astro';
 import { site, waHref } from '../data/site';
+
+/**
+ * Site footer, shared by every page. Contact channels are brand icon buttons;
+ * each carries an aria-label and a title so the destination is still announced
+ * to screen readers and shown on hover.
+ */
+
+const channels: { icon: BrandName; label: string; href: string; external?: boolean }[] = [
+  { icon: 'whatsapp', label: `WhatsApp ${site.waNumberDisplay}`, href: waHref(), external: true },
+  { icon: 'email', label: site.email, href: `mailto:${site.email}` },
+  { icon: 'linkedin', label: 'LinkedIn', href: site.linkedin, external: true },
+  { icon: 'instagram', label: 'Instagram', href: site.instagram, external: true },
+];
 ---
 
 <footer class="site-footer">
   <div class="footer-brand">adamrahmata<span>.com</span></div>
   <div class="footer-role" data-t>QHSE Trainer, Consultant and Auditor</div>
 
-  <div class="footer-links">
-    <a href={`mailto:${site.email}`}>{site.email}</a>
-    <a href={site.linkedin} target="_blank" rel="noopener">LinkedIn</a>
-    <a href={site.instagram} target="_blank" rel="noopener">Instagram</a>
-    <a class="wa" href={waHref()} target="_blank" rel="noopener">WhatsApp</a>
-  </div>
+  <ul class="footer-social">
+    {
+      channels.map((channel) => (
+        <li>
+          <a
+            href={channel.href}
+            class={`social social-${channel.icon}`}
+            aria-label={channel.label}
+            title={channel.label}
+            target={channel.external ? '_blank' : undefined}
+            rel={channel.external ? 'noopener' : undefined}
+          >
+            <BrandIcon name={channel.icon} size={20} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 
   <div class="footer-legal">
     &copy; {new Date().getFullYear()} {site.name}, <span data-t>Praktisi, Trainer, Konsultan &amp; Auditor QHSE</span>
@@ -32,23 +59,65 @@ import { site, waHref } from '../data/site';
   }
 
   .footer-role {
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-5);
   }
 
-  .footer-links {
+  .footer-social {
+    list-style: none;
+    margin: 0 0 var(--space-5);
+    padding: 0;
     display: flex;
     justify-content: center;
-    gap: var(--space-5);
-    flex-wrap: wrap;
-    margin-bottom: var(--space-3);
+    gap: var(--space-3);
   }
 
-  .footer-links a {
-    color: var(--blue-300);
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition:
+      transform var(--dur-fast) var(--ease-standard),
+      var(--transition-control);
   }
 
-  .footer-links a.wa {
-    color: var(--green-500);
+  /* On the dark footer the marks sit muted white and take on their brand
+     colour on hover, so the row reads as one set at rest. */
+  .social:hover {
+    transform: translateY(-2px);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .social-whatsapp:hover {
+    background: #25d366;
+    border-color: #25d366;
+  }
+
+  .social-instagram:hover {
+    background: #e4405f;
+    border-color: #e4405f;
+  }
+
+  .social-linkedin:hover {
+    background: #0a66c2;
+    border-color: #0a66c2;
+  }
+
+  .social-email:hover {
+    background: var(--blue-500);
+    border-color: var(--blue-500);
+  }
+
+  .social:focus-visible {
+    outline: 2px solid var(--green-500);
+    outline-offset: 2px;
   }
 
   .footer-legal {

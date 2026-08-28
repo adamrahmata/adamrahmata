@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
-import Icon from '../components/Icon.astro';
-import type { IconName } from '../components/Icon.astro';
+import BrandIcon from '../components/BrandIcon.astro';
+import type { BrandName } from '../components/BrandIcon.astro';
 import { site, waHref } from '../data/site';
 
 /**
@@ -14,7 +14,7 @@ import { site, waHref } from '../data/site';
  */
 
 const channels: {
-  icon: IconName;
+  icon: BrandName;
   label: string;
   value: string;
   cta: string;
@@ -22,7 +22,7 @@ const channels: {
   external?: boolean;
 }[] = [
   {
-    icon: 'chat',
+    icon: 'whatsapp',
     label: 'WhatsApp',
     value: site.waNumberDisplay,
     cta: 'Jalur tercepat →',
@@ -30,14 +30,14 @@ const channels: {
     external: true,
   },
   {
-    icon: 'mail',
+    icon: 'email',
     label: 'Email',
     value: site.email,
     cta: 'Untuk penawaran formal →',
     href: `mailto:${site.email}`,
   },
   {
-    icon: 'briefcase',
+    icon: 'linkedin',
     label: 'LinkedIn',
     value: 'adam-rahmat-agung',
     cta: 'Jejaring profesional →',
@@ -45,7 +45,7 @@ const channels: {
     external: true,
   },
   {
-    icon: 'sparkles',
+    icon: 'instagram',
     label: 'Instagram',
     value: '@advmrahmat46gung',
     cta: 'Keseharian & kegiatan →',
@@ -79,7 +79,7 @@ const channels: {
               style={`--stagger-delay:${(index * 0.08).toFixed(2)}s`}
             >
               <span class="channel-icon">
-                <Icon name={channel.icon} size={22} stroke="var(--blue-600)" />
+                <BrandIcon name={channel.icon} size={22} brand />
               </span>
               <span class="channel-label">{channel.label}</span>
               <span class="channel-value">{channel.value}</span>
@@ -146,14 +146,23 @@ const channels: {
   }
 
   .channel-icon {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background: var(--surface-brand-soft);
+    /* Neutral disc so each brand mark keeps its own colour without the
+       background tinting it. */
+    background: var(--surface-subtle);
+    border: 1px solid var(--border-subtle);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: var(--space-2);
+    transition: var(--transition-control);
+  }
+
+  .channel:hover .channel-icon {
+    background: var(--surface-brand-soft);
+    border-color: var(--border-brand);
   }
 
   .channel-label {
