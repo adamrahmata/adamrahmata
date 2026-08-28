@@ -1,0 +1,47 @@
+/* Alam Energy Design System theme override — loaded last, wins over all [data-theme] palettes */
+html[data-theme], :root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F7FAFC;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F7FAFC;
+  --bg-glass: rgba(255, 255, 255, 0.92);
+  --bg-badge: rgba(76, 154, 60, 0.12);
+  --bg-input: #FFFFFF;
+
+  --text-primary: #04223F;
+  --text-secondary: #3D5568;
+  --text-muted: #5B7186;
+  --text-accent: #4C9A3C;
+
+  --accent-emerald: #4C9A3C;
+  --accent-emerald-glow: rgba(76, 154, 60, 0.18);
+  --accent-teal: #0067B1;
+  --accent-cyan: #0067B1;
+  --accent-amber: #F5A623;
+  --accent-indigo: #0067B1;
+  --accent-blue: #0067B1;
+
+  --border-subtle: rgba(4, 34, 63, 0.10);
+  --border-focus: rgba(0, 103, 177, 0.5);
+  --gradient-hero: radial-gradient(circle at 50% -20%, rgba(0, 103, 177, 0.10) 0%, rgba(76, 154, 60, 0.05) 35%, transparent 70%);
+  --gradient-card: linear-gradient(135deg, #FFFFFF 0%, #F7FAFC 100%);
+  --gradient-accent: linear-gradient(135deg, #0067B1 0%, #0067B1 100%);
+  --gradient-gold: linear-gradient(135deg, #F5A623 0%, #D98E12 100%);
+
+  --shadow-sm: 0 2px 8px rgba(4, 34, 63, 0.06);
+  --shadow-md: 0 8px 24px rgba(4, 34, 63, 0.10);
+  --shadow-lg: 0 16px 40px rgba(4, 34, 63, 0.12);
+  --shadow-glow: 0 0 25px rgba(0, 103, 177, 0.12);
+
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+body { background: #FFFFFF; }
+h1, h2, h3, .section-title { font-weight: 900; letter-spacing: -0.02em; }
+/* Alam Energy has no ambient glows or theme switching */
+.ambient-glow-1, .ambient-glow-2, .theme-dropdown-container { display: none !important; }

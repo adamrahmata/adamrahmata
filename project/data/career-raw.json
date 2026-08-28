@@ -1,0 +1,3901 @@
+{
+ "training": [
+  {
+   "r": 1,
+   "cells": {
+    "A": "No",
+    "B": "Training Name",
+    "C": "Lembaga Pelatihan",
+    "D": "Client",
+    "E": "Duration",
+    "F": "Metode",
+    "G": "Time",
+    "H": "Location",
+    "I": "Day",
+    "J": "Hour"
+   }
+  },
+  {
+   "r": 2,
+   "cells": {
+    "A": "1",
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "42948",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 3,
+   "cells": {
+    "A": "2",
+    "B": "Safety Culture Improvement Team",
+    "C": "PT. ERM Indonesia",
+    "D": "PT. INDOPORLEN REFRACTORIES",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43009",
+    "H": "Jl. Setia Mekar No.47, Setiamekar, Kec. Tambun Sel., Kabupaten Bekasi, Jawa Barat 17510",
+    "I": "1"
+   }
+  },
+  {
+   "r": 4,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43405",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 5,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43405",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 6,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43435",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 7,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43435",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 8,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43466",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 9,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43466",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 10,
+   "cells": {
+    "B": "Pengelolaan Limbah Bahan Berbahaya Dan Beracun (Hazardous Waste Management)",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "2 days",
+    "F": "Onsite",
+    "G": "43497",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "2",
+    "J": "16"
+   }
+  },
+  {
+   "r": 11,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43525",
+    "H": "Jl. Diponegoro No.11, Langkai, Kec. Pahandut, Kota Palangka Raya, Kalimantan Tengah 74874",
+    "I": "1"
+   }
+  },
+  {
+   "r": 12,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43525",
+    "H": "Jl. Mulawarman No.123, Karang Anyar Pantai, Kec. Tarakan Bar., Kota Tarakan, Kalimantan Utara",
+    "I": "1"
+   }
+  },
+  {
+   "r": 13,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43525",
+    "H": "Tim., Tamalate, Kec. Kota Tim., Kota Gorontalo, Gorontalo 96135",
+    "I": "1"
+   }
+  },
+  {
+   "r": 14,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43525",
+    "H": "Jl. Sam Ratulangi No.23, Besusu Bar., Kec. Palu Tim., Kota Palu, Sulawesi Tengah 94118",
+    "I": "1"
+   }
+  },
+  {
+   "r": 15,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43525",
+    "H": "Jl. Letda Tantular No.4, Dangin Puri Klod, Kec. Denpasar Tim., Kota Denpasar, Bali 80234",
+    "I": "1"
+   }
+  },
+  {
+   "r": 16,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43525",
+    "H": "Jl. Pejanggik No.2, Mataram Bar., Kec. Selaparang, Kota Mataram, Nusa Tenggara Bar. 83122",
+    "I": "1"
+   }
+  },
+  {
+   "r": 17,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43556",
+    "H": "Jl. Yos Sudarso No.1, Maliaro, Kec. Ternate Tengah, Kota Ternate, Maluku Utara",
+    "I": "1"
+   }
+  },
+  {
+   "r": 18,
+   "cells": {
+    "B": "Service Excellence",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Personel Alih Daya, tbk (Persada)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43556",
+    "H": "Jl. Yogyakarta No.1, Manokwari Tim., Kec. Manokwari Bar., Kabupaten Manokwari, Papua Bar. 98312",
+    "I": "1"
+   }
+  },
+  {
+   "r": 19,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43586",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 20,
+   "cells": {
+    "B": "Sistem Manajemen Lingkungan ISO 14001:2015",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Idemitsu Lube Techno Indonesia KIIC",
+    "E": "2 days",
+    "F": "Onsite",
+    "G": "43556",
+    "H": "Grha Simatupang, TB Simatupang Kav. 38, Pasar Minggu, Jakarta Selatan",
+    "I": "2"
+   }
+  },
+  {
+   "r": 21,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Croda Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43586",
+    "H": "Jl. Inspeksi Kalimalang No.KM.22, Cibuntu, Kec. Cibitung, Kabupaten Bekasi, Jawa Barat 17520",
+    "I": "1"
+   }
+  },
+  {
+   "r": 22,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43617",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 23,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43617",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 24,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43647",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 25,
+   "cells": {
+    "A": "24",
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43647",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 26,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43678",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 27,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43678",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 28,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43709",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 29,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43709",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 30,
+   "cells": {
+    "B": "Investigasi Insiden Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Antam, tbk",
+    "E": "2 days",
+    "F": "Onsite",
+    "G": "43709",
+    "H": "Grha Simatupang, TB Simatupang Kav. 38, Pasar Minggu, Jakarta Selatan",
+    "I": "2"
+   }
+  },
+  {
+   "r": 31,
+   "cells": {
+    "B": "Sistem Manajemen Mutu, Sistem Manajemen Lingkungan dan Sistem Manajemen K3 (QHSE)",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "2 days",
+    "F": "Onsite",
+    "G": "43709",
+    "H": "Palembang",
+    "I": "2"
+   }
+  },
+  {
+   "r": 32,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43739",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 33,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43739",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 34,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 ",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. Hoffmen Cleanindo, tbk",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43739",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 35,
+   "cells": {
+    "B": "Investigasi Insiden Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43739",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 36,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43770",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 37,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43770",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 38,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43800",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "1"
+   }
+  },
+  {
+   "r": 39,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43800",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "3"
+   }
+  },
+  {
+   "r": 40,
+   "cells": {
+    "B": "Investigasi Insiden Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "43831",
+    "H": "Grha Simatupang, TB Simatupang Kav. 38, Pasar Minggu, Jakarta Selatan",
+    "I": "1"
+   }
+  },
+  {
+   "r": 41,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Onsite",
+    "G": "43831",
+    "H": "Balikpapan",
+    "I": "3"
+   }
+  },
+  {
+   "r": 42,
+   "cells": {
+    "B": "Webinar: Sistem Manajemen K3 berbadasarkan ISO 45001:2018",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "43891",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 43,
+   "cells": {
+    "B": "Webinar: OHS Risk & Opportunity based on ISO 45001:2018",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "43952",
+    "H": "Wisma Presisi, Jl. Taman Aries, RT.5/RW.2, Meruya Utara, Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11620",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 44,
+   "cells": {
+    "B": "Webinar: Occupational Safety and Health Management system based on Government regulation No. 50/2012",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Sumber Mitra Jaya",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "43952",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 45,
+   "cells": {
+    "B": "Webinar: Sistem Manajemen K3 berbadasarkan ISO 45001:2018",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "43983",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 46,
+   "cells": {
+    "B": "Webinar: Occupational Safety and Health Management system based on Government regulation No. 50/2012",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "43983",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 47,
+   "cells": {
+    "B": "Investigasi Insiden Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Online",
+    "G": "43983",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 48,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "2 days",
+    "F": "Online",
+    "G": "43983",
+    "H": "Jakarta",
+    "I": "2",
+    "J": "16"
+   }
+  },
+  {
+   "r": 49,
+   "cells": {
+    "B": "Webinar: Incident Investigation Awareness",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "44013",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 50,
+   "cells": {
+    "B": "Webinar: Basic Risk Management",
+    "C": "Learning Centre Indonesia",
+    "D": "FKM Univet Bantara Sukoharjo",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "44013",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 51,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44013",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 52,
+   "cells": {
+    "B": "Webinar: Risk Management based on OHS Persepective",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "44013",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 53,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44013",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 54,
+   "cells": {
+    "B": "Webinar: Internal Audit HSE Management System",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Sumber Mitra Jaya",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "44013",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 55,
+   "cells": {
+    "B": "Webinar: Risk Management based on OHS Persepective",
+    "C": "PT. Geo Mandiri Kreasi",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "44013",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 56,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 57,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Geo Mandiri Kreasi",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 58,
+   "cells": {
+    "B": "Webinar: ISO 9001:2015 Awareness",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "Public",
+    "E": "2 hours",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 59,
+   "cells": {
+    "B": "Webinar: Risk Management based on OHS Persepective",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 hours",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "0.375",
+    "J": "3"
+   }
+  },
+  {
+   "r": 60,
+   "cells": {
+    "B": "Sistem Manajemen Mutu, Sistem Manajemen Lingkungan dan Sistem Manajemen K3 (QHSE)",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 61,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Sistem International",
+    "D": "PT. Pertamina Gas",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 62,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Sistem International",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 63,
+   "cells": {
+    "B": "Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Jagat Raya Technindo",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44049",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 64,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44044",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 65,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 ",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Honeywell Indonesia",
+    "E": "1/2 day",
+    "F": "Onsite",
+    "G": "44075",
+    "H": "MT Haryono St, RT.2/RW.2, Pancoran, South Jakarta City, Jakarta 12780",
+    "I": "0.5"
+   }
+  },
+  {
+   "r": 66,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Honeywell Indonesia",
+    "E": "1/2 day",
+    "F": "Onsite",
+    "G": "44075",
+    "H": "MT Haryono St, RT.2/RW.2, Pancoran, South Jakarta City, Jakarta 12780",
+    "I": "0.5"
+   }
+  },
+  {
+   "r": 67,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "44075",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 68,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44075",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 69,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Geo Mandiri Kreasi",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "45220",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 70,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44105",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 71,
+   "cells": {
+    "B": "Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Cipta Lentera Edukasi",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44105",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 72,
+   "cells": {
+    "B": "Manajemen Risiko K3 melalui Proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendaliannya (HIRADC)",
+    "C": "PT. Salzhu Sertifikasi Indonesia ",
+    "D": "PT. Wika Pracetak Gedung",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44146",
+    "H": "Menara MTH, MT Haryono St No.Kav 23 lantai 15, RT.10/RW.9, West Tebet, Tebet, South Jakarta City, Jakarta 12810",
+    "I": "1"
+   }
+  },
+  {
+   "r": 73,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44154",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 74,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Sistem International",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44156",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 75,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Sistem International",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44158",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 76,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44160",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 77,
+   "cells": {
+    "B": "Dasar-Dasar K3 (Basic Safety Training)",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44161",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 78,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44169",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 79,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44172",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 80,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44209",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 81,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 days",
+    "F": "Online",
+    "G": "18, 19, 20 january 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 82,
+   "cells": {
+    "B": "Sistem Manajemen K3 ISO 45001:2018 ",
+    "C": "PT. CDI Training & Consulting",
+    "D": "PT. Telkom Akses",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44224",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "1"
+   }
+  },
+  {
+   "r": 83,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "1 Februari 2021",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 84,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Pertamina ",
+    "E": "3 days",
+    "F": "Online",
+    "G": "8, 9, 10 Februari 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 85,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "22 Februari 2021",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 86,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "26 Februari 2021",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 87,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44269",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 88,
+   "cells": {
+    "B": "Investigasi Insiden Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "2 days",
+    "F": "Online",
+    "G": "15-16 March 2021",
+    "H": "Jakarta",
+    "I": "2",
+    "J": "16"
+   }
+  },
+  {
+   "r": 89,
+   "cells": {
+    "B": "Webinar: Occupational Safety and Health management System Based on PP No. 50/2012",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Pertamina ",
+    "E": "3 hours",
+    "F": "Online",
+    "G": "44280",
+    "H": "Jakarta",
+    "I": "0.375",
+    "J": "3"
+   }
+  },
+  {
+   "r": 90,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44291",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 91,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 ",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. Bright Mobile Telecommunication ",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44298",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 92,
+   "cells": {
+    "B": "Penanganan Bahan Kimia Berbahaya (Chemical Handling) & Pengelolaan Limbah Bahan Berbahaya Dan Beracun (Hazardous Waste Management)",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. Bright Mobile Telecommunication ",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44299",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 93,
+   "cells": {
+    "B": "Sistem Manajemen K3 ISO 45001:2018 ",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. PP Infrastructure ",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44298",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 94,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "2 days",
+    "F": "Online",
+    "G": "25 - 26 May 2021",
+    "H": "Jakarta",
+    "I": "2",
+    "J": "16"
+   }
+  },
+  {
+   "r": 95,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44347",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 96,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44351",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 97,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "PT. Thermochem Indonesia",
+    "E": "1 day",
+    "F": "Online",
+    "G": "8 June 2021",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 98,
+   "cells": {
+    "B": "Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "PT. Thermochem Indonesia",
+    "E": "1 day",
+    "F": "Online",
+    "G": "9 June 2021",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 99,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "14 - 17 June 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 100,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44366",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 101,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44373",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 102,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "28, 29, 30 June 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 103,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Geo Mandiri Kreasi",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44390",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 104,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44366",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 105,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44373",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 106,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44390",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 107,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "12, 14 Juli 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 108,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44405",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 109,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "02,03,04 Agustus 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 110,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44413",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 111,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44422",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 112,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "23,24,25 Agustus 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 113,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44439",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 114,
+   "cells": {
+    "B": "Ahli K3 Umum dan Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "13, 14, 15 September 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 115,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44455",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 116,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44471",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 117,
+   "cells": {
+    "B": "Ahli K3 Umum dan Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "11, 12, 13 Oktober 2021",
+    "H": "Jakarta",
+    "I": "3",
+    "J": "24"
+   }
+  },
+  {
+   "r": 118,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44499",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 119,
+   "cells": {
+    "B": "Ahli K3 Umum dan Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "8, 9, 10 Nopember 2021",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 120,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "BSPJI - Kementrian Perindustrian",
+    "D": "Public",
+    "E": "1 Day",
+    "F": "Onsite",
+    "G": "12 Nopember 2021",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 121,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Geo Mandiri Kreasi",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44523",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 122,
+   "cells": {
+    "B": "Sistem Manajemen Mutu, Sistem Manajemen Lingkungan dan Sistem Manajemen K3 (QHSE)",
+    "C": "PT. Surya Safety Nusantara ",
+    "D": "PT. Astra Agro Lestari",
+    "E": "2 days",
+    "F": "Online",
+    "G": "29 & 30 Nopember 2021",
+    "H": "Jakarta",
+    "I": "2"
+   }
+  },
+  {
+   "r": 123,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 64 Kriteria",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Gunung Putri Perkasa",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44533",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 124,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44540",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 125,
+   "cells": {
+    "B": "Ahli K3 Umum dan Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "27, 28, 29 Nopember 2021",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 126,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 ",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Kurnia Mitra Selaras",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44553",
+    "H": "Jl. I Gusti Ngurah Rai No.9 10, RT.10/RW.11, Pd. Kopi, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13460",
+    "I": "1"
+   }
+  },
+  {
+   "r": 127,
+   "cells": {
+    "B": "Ahli K3 Muda & Operator K3 Sertifikasi BNSP",
+    "C": "PT. Surya Safety Nusantara ",
+    "D": "Public",
+    "E": "2 day",
+    "F": "Online",
+    "G": "15, 16 January 2022",
+    "H": "Jakarta",
+    "I": "2"
+   }
+  },
+  {
+   "r": 128,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "19 January 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 129,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tunas Tasik",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44582",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 130,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "27 January 2022",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 131,
+   "cells": {
+    "B": "Sistem Manajemen K3 ISO 45001:2018 ",
+    "C": "PT. CDI Training & Consulting",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44599",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 132,
+   "cells": {
+    "B": "Sistem Manejemen Mutu ISO 9001:2015 ",
+    "C": "PT. CDI Training & Consulting",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44600",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 133,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "17 february 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 134,
+   "cells": {
+    "B": "Ahli K3 Umum dan Ahli K3 Muda Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "3 day",
+    "F": "Online",
+    "G": "09 - 11 Ferbuary 2022",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 135,
+   "cells": {
+    "B": "Ahli K3 Umum dan Operator K3 Sertifikasi BNSP",
+    "C": "PT. Surya Safety Nusantara ",
+    "D": "Public",
+    "E": "2 day",
+    "F": "Online",
+    "G": "07, 08 Maret 2022",
+    "H": "Jakarta",
+    "I": "2"
+   }
+  },
+  {
+   "r": 136,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44630",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 137,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44630",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 138,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44645",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 139,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44650",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 140,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "Mei 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 141,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "Mei 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 142,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "Mei 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 143,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "Mei 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 144,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "Mei 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 145,
+   "cells": {
+    "B": "Manajemen Risiko K3 melalui Proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendaliannya (HIRADC)",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Kalimantan",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "Mei 2022",
+    "H": "Tumbang Kajuei, Rungan, Gunung MAS Regency, Central Kalimantan 74562",
+    "I": "1"
+   }
+  },
+  {
+   "r": 146,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "Mei 2022",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 147,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 ",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Sarana Multigriya Finansial",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44713",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 148,
+   "cells": {
+    "B": "Manajemen Risiko K3 melalui Proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendaliannya (HIRADC)",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Sarana Multigriya Finansial",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44713",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 149,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "2 day",
+    "F": "Online",
+    "G": "44713",
+    "H": "Grha Simatupang, TB Simatupang Kav. 38, Pasar Minggu, Jakarta Selatan",
+    "I": "2"
+   }
+  },
+  {
+   "r": 150,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 166 Kriteria",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Kalimantan",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44682",
+    "H": "Tumbang Kajuei, Rungan, Gunung MAS Regency, Central Kalimantan 74562",
+    "I": "1"
+   }
+  },
+  {
+   "r": 151,
+   "cells": {
+    "B": "Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Kalimantan",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44682",
+    "H": "Tumbang Kajuei, Rungan, Gunung MAS Regency, Central Kalimantan 74562",
+    "I": "1"
+   }
+  },
+  {
+   "r": 152,
+   "cells": {
+    "B": "Dasar-Dasar K3 (Basic Safety Training)",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Arkademi",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44746",
+    "H": "Jakarta",
+    "I": "0.5"
+   }
+  },
+  {
+   "r": 153,
+   "cells": {
+    "B": "Internal Audit SMK3 berdasarakan PP No. 50 Tahun 2012 dan Permenaker No. 26 Tahun 2014",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Subang Autocomp Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44749",
+    "H": "Jalan Raya Subang KM. 22, RT 09 / RW 03 Wantilan Cipeundeuy, Wantilan, Subang, Kabupaten Subang, Jawa Barat 41272",
+    "I": "1"
+   }
+  },
+  {
+   "r": 154,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44774",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 155,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44774",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 156,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "44774",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 157,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 166 Kriteria",
+    "C": "Safety Plus Consultant",
+    "D": "PT. EDS Manufacturing Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44970",
+    "I": "1"
+   }
+  },
+  {
+   "r": 158,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "Badan Usaha Pelabuhan Batam",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "44860",
+    "H": "Jl. Raya Pasar Minggu No.190, RT.1/RW.1, Pejaten Bar., Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510",
+    "I": "0.5"
+   }
+  },
+  {
+   "r": 159,
+   "cells": {
+    "B": "Pemahaman Dasar-dasar Keselamatan dan Kesehatan Kerja dan Lingkungan (K3L)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Cogindo Daya Bersama",
+    "E": "1 day",
+    "F": "Onsite",
+    "H": "Jl. Raya Pasar Minggu No.190, RT.1/RW.1, Pejaten Bar., Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510",
+    "I": "0.5"
+   }
+  },
+  {
+   "r": 160,
+   "cells": {
+    "B": "Internal Audit SMK3 berdasarakan PP No. 50 Tahun 2012 dan Permenaker No. 26 Tahun 2014",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Kalimamtan",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "45901",
+    "H": "Tumbang Kajuei, Rungan, Gunung MAS Regency, Central Kalimantan 74562",
+    "I": "1"
+   }
+  },
+  {
+   "r": 161,
+   "cells": {
+    "B": "Webinar: Strategy and Awareness with best practice",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. PLN Indonesia Power Services",
+    "E": "2 Hours",
+    "F": "Online",
+    "G": "45839",
+    "H": "Jakarta",
+    "I": "0.25",
+    "J": "2"
+   }
+  },
+  {
+   "r": 162,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Teknik Umum Sanko Engineering",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "45839",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 163,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Teknik Umum Sanko Engineering",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "45855",
+    "H": "Jakarta ",
+    "I": "1"
+   }
+  },
+  {
+   "r": 164,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Chikal Railway Indonesia",
+    "E": "1 day",
+    "F": "Online",
+    "G": "45856",
+    "H": "Jakarta ",
+    "I": "1"
+   }
+  },
+  {
+   "r": 165,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Teknik Umum Sanko Engineering",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "45857",
+    "H": "Jakarta ",
+    "I": "1"
+   }
+  },
+  {
+   "r": 166,
+   "cells": {
+    "B": "Sistem Manajemen K3 ISO 45001:2018 ",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. PLN Indonesia Power Services",
+    "E": "2 Day",
+    "F": "Onsite",
+    "G": "6 October 202 - 7 October 2025",
+    "I": "2"
+   }
+  },
+  {
+   "r": 167,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. PLN Indonesia Power Services",
+    "E": "1 Day",
+    "F": "Onsite",
+    "G": "45938",
+    "H": "Jakarta ",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 168,
+   "cells": {
+    "B": "Investigasi Insiden Sertifikasi BNSP",
+    "C": "PT. Trimitra Katiga Indoutama",
+    "D": "PT. Lotte Chemical Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "45859",
+    "H": "Jakarta ",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 169,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Fokus Manajemen Indonesia Tim",
+    "D": "Public",
+    "E": "2 Days",
+    "F": "Online",
+    "G": "45944"
+   }
+  },
+  {
+   "r": 170,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Fokus Manajemen Indonesia Tim",
+    "D": "Public",
+    "E": "2 Days",
+    "F": "Online",
+    "G": "45945",
+    "H": "Jakarta ",
+    "I": "2",
+    "J": "16"
+   }
+  },
+  {
+   "r": 171,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 64 Kriteria dan Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Laboratix Indonesia",
+    "E": "0,5 day",
+    "F": "Online",
+    "G": "45861",
+    "H": "Jakarta ",
+    "I": "0.5",
+    "J": "4"
+   }
+  },
+  {
+   "r": 172,
+   "cells": {
+    "B": "Kebijakan K3 dan UU No. 1 Tahun 1970 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Cipta Lentera Edukasi",
+    "D": "PT Jasa Marga (Persero)",
+    "E": "1 day",
+    "F": "Online",
+    "G": "45839",
+    "H": "Jakarta",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 173,
+   "cells": {
+    "B": "Internal Audit SMK3 berdasarakan PP No. 50 Tahun 2012 dan Permenaker No. 26 Tahun 2014 serta Pembahasan 166 Kriteria",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT.TJForge Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "45839",
+    "H": "Krawang",
+    "I": "1"
+   }
+  },
+  {
+   "r": 174,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 166 Kriteria",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT.TJForge Indonesia",
+    "E": "0,5 day",
+    "F": "Onsite",
+    "G": "45839",
+    "H": "Jakarta",
+    "I": "0.5"
+   }
+  },
+  {
+   "r": 175,
+   "cells": {
+    "B": "Sistem Manajemen K3 ISO 45001:2018",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. PLN Indonesia Power Services",
+    "E": "3 days",
+    "F": "Onsite",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 176,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 64 Kriteria dan Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Nishikawa Karya Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "45839",
+    "H": "Jl. Raya Cipacing, Kp Bojong No.Km. 20, Cipacing, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363",
+    "I": "1"
+   }
+  },
+  {
+   "r": 177,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 166 Kriteria",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Foodex Inti Ingredients",
+    "E": "1 days",
+    "F": "Onsite",
+    "G": "45931",
+    "I": "1",
+    "J": "8"
+   }
+  },
+  {
+   "r": 178,
+   "cells": {
+    "B": "Audit SMK3 PP No. 50 Tahun 2012 untuk Auditor Internal",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Foodex Inti Ingredients",
+    "E": "1 days",
+    "F": "Onsite",
+    "G": "45932",
+    "H": "Cikarang - Bekasi – West Java",
+    "I": "1"
+   }
+  },
+  {
+   "r": 179,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Chikal Railway Indonesia",
+    "E": "1 day",
+    "F": "Online",
+    "G": "45933"
+   }
+  },
+  {
+   "r": 180,
+   "cells": {
+    "B": "Dasar-Dasar K3 (Basic Safety Training)",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Mulia Aldana Indonesia",
+    "E": "2 Days",
+    "F": "Onsite",
+    "H": "Parung",
+    "I": "2"
+   }
+  },
+  {
+   "r": 181,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Naka Avia Sakti",
+    "E": "1 day",
+    "F": "Onsite",
+    "H": "Bandung",
+    "I": "1"
+   }
+  },
+  {
+   "r": 182,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Naka Avia Sakti",
+    "E": "1 day",
+    "F": "Onsite",
+    "H": "Bandung",
+    "I": "1"
+   }
+  },
+  {
+   "r": 183,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "Asli Living",
+    "E": "2 days",
+    "F": "Online",
+    "G": "24, 25,26 Februari 2026",
+    "I": "3"
+   }
+  },
+  {
+   "r": 184,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Cipta Hasil Sugiarto",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 185,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tri Rejeki Abadi",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 186,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Dwi Cahaya Jaya & PT. Armada Angkutan Indonesia",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 187,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Cipta Hasil Sugiarto",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 188,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tri Rejeki Abadi",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 189,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Dwi Cahaya Jaya & PT. Armada Angkutan Indonesia",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 190,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. IAS Support Indonesia",
+    "E": "3 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 191,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. IAS Support Indonesia",
+    "E": "3 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 192,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. IAS Support Indonesia",
+    "E": "3 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "3"
+   }
+  },
+  {
+   "r": 193,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 194,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "Public",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 195,
+   "cells": {
+    "B": "Kelembagaan K3 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Cipta Lentera Edukasi",
+    "D": "PT Jasa Marga (Persero)",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 196,
+   "cells": {
+    "B": "Manajemen Risiko K3 dan Analisa Kecelakaan - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Cipta Lentera Edukasi",
+    "D": "PT Jasa Marga (Persero)",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 197,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Audit SMK3 Permenaker No. 26 Tahun 2014 - Ahli K3 Umum Sertifikasi Kemnaker",
+    "C": "PT. Cipta Lentera Edukasi",
+    "D": "PT Jasa Marga (Persero)",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 198,
+   "cells": {
+    "B": "Dasar-Dasar K3 (Basic Safety Training)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. PLN Engineering",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46023",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 199,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 166 Kriteria",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Mitra Sistematika Global (MSG)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 200,
+   "cells": {
+    "B": "Internal Audit SMK3 berdasarakan PP No. 50 Tahun 2012 dan Permenaker No. 26 Tahun 2014",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Mitra Sistematika Global (MSG)",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46082",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 201,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 122 Kriteria",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Tehnik Bayu Murni",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46136",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 202,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. IAS Support Indonesia",
+    "E": "2 day",
+    "F": "Onsite",
+    "G": "46174",
+    "H": "Jakarta",
+    "I": "2"
+   }
+  },
+  {
+   "r": 203,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 64 Kriteria",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Autocomp Systems Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46197",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 204,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 122 Kriteria",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46168",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 205,
+   "cells": {
+    "B": "Pemahaman Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46169",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 206,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 64 Kriteria dan Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Subang Autocomp Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46146",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 207,
+   "cells": {
+    "B": "Internal Audit SMK3 berdasarakan PP No. 50 Tahun 2012 dan Permenaker No. 26 Tahun 2014",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Subang Autocomp Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46153",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 208,
+   "cells": {
+    "B": "Manajemen Risiko K3 melalui Proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendaliannya (HIRADC)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46143",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 209,
+   "cells": {
+    "B": "Sistem Manajemen K3 PP No. 50 Tahun 2012 dan Pembahasan 64 Kriteria dan Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Risiko dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Swarna Baja Pacific",
+    "E": "1 day",
+    "F": "Online",
+    "G": "46154",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 210,
+   "cells": {
+    "B": "Ahli K3 Umum Sertifikasi BNSP",
+    "C": "PT. Arkatama Safetindo",
+    "D": "PT XANHSM Green and Smart Mobility Indonesia (GSM Indonesia)",
+    "E": "2 days",
+    "F": "Online",
+    "G": "18, 19 June 2026",
+    "I": "2"
+   }
+  },
+  {
+   "r": 211,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT MCPP Compound Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46217",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 212,
+   "cells": {
+    "B": "Pemahaman Proses Audit berbasis ISO 19011:2018 untuk Internal Auditor",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT MCPP Compound Indonesia",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46218",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 213,
+   "cells": {
+    "B": "Sistem Manajemen Mutu ISO 9001:2015, Sistem Manajemen Lingkungan ISO 14001:2015 dan Sistem Manajemen K3 ISO 45001:2018 dan Integrasinya",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT Alam Energy Renewables",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46246",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 214,
+   "cells": {
+    "B": "Pemahaman Manajemen Risiko K3 melalui proses Identifikasi Bahaya, Penilaian Dan Penentuan Pengendalian (HIRADC)",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT Alam Energy Renewables",
+    "E": "1 day",
+    "F": "Onsite",
+    "G": "46247",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 215,
+   "cells": {
+    "B": "Dasar-Dasar K3 (Basic Safety Training)",
+    "C": "PT. Alva Mitra Sertama",
+    "D": "Palang Merah Indonesia Kota Bekasi",
+    "E": "0,5 day",
+    "F": "Onsite",
+    "G": "46253",
+    "H": "Jakarta",
+    "I": "1"
+   }
+  },
+  {
+   "r": 216,
+   "cells": {
+    "I": "277.25",
+    "J": "2211"
+   }
+  },
+  {
+   "r": 217,
+   "cells": {}
+  },
+  {
+   "r": 218,
+   "cells": {}
+  },
+  {
+   "r": 219,
+   "cells": {}
+  },
+  {
+   "r": 220,
+   "cells": {}
+  },
+  {
+   "r": 221,
+   "cells": {}
+  },
+  {
+   "r": 222,
+   "cells": {}
+  },
+  {
+   "r": 223,
+   "cells": {}
+  },
+  {
+   "r": 224,
+   "cells": {}
+  }
+ ],
+ "consultancy": [
+  {
+   "r": 1,
+   "cells": {
+    "A": "No",
+    "B": "Project Name",
+    "C": "Lembaga Konsultan",
+    "D": "Client",
+    "E": "Duration",
+    "F": "Time",
+    "G": "Location"
+   }
+  },
+  {
+   "r": 2,
+   "cells": {
+    "A": "1",
+    "B": "Safety Culture Improvement Team (SCIT) Consultation",
+    "C": "PT. ERM Indonesia",
+    "D": "PT. INDOPORLEN REFRACTORIES",
+    "E": "3 mandays",
+    "F": "43009",
+    "G": "Bekasi – West Java",
+    "H": "3",
+    "I": "24"
+   }
+  },
+  {
+   "r": 3,
+   "cells": {
+    "A": "2",
+    "B": "Quality Management System Document",
+    "C": "PT. ERM Indonesia",
+    "D": "PT. NSHE",
+    "E": "3 mandays",
+    "F": "43040",
+    "G": "South Tapanuli Regency",
+    "H": "3"
+   }
+  },
+  {
+   "r": 4,
+   "cells": {
+    "A": "3",
+    "B": "Delineation Project",
+    "C": "PT. ERM Indonesia",
+    "D": "PT. Chevron Pacific Indonesia",
+    "E": "28 mandays",
+    "F": "March – September 2018",
+    "G": "Minas - Riau",
+    "H": "28"
+   }
+  },
+  {
+   "r": 5,
+   "cells": {
+    "A": "4",
+    "B": "Konsultasi dan Sertifikasi Sistem Manajemen Mutu berbasis ISO 9001:2015",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. Technoglass Duromer Internusa",
+    "E": "5 mandays",
+    "F": "October – December 2018",
+    "G": "Tiga Raksa - Tangerang",
+    "H": "5"
+   }
+  },
+  {
+   "r": 6,
+   "cells": {
+    "A": "5",
+    "B": "Upgrading of Occupational Health and safety management system based on OHSAS 18001:2007 to ISO 45001:2015",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Sumi Indo Kabel",
+    "E": "1 manday",
+    "F": "43678",
+    "G": "Telesonic Industrial Area - Tangerang",
+    "H": "1"
+   }
+  },
+  {
+   "r": 7,
+   "cells": {
+    "A": "6",
+    "B": "Occupational Safety and Health sign observation at Stadium of Gelora Bung Karno ",
+    "C": "PT. Buana Solusi Utama ",
+    "D": "Gelora Bung Karno ",
+    "E": "1 manday",
+    "F": "43739",
+    "G": "Stadium of Gelora Bung Karno - Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 8,
+   "cells": {
+    "A": "7",
+    "B": "Certification Program for Integration between Occupational Safety and Health management System based on government regulation with Quality management system based on ISO 9001:2015",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. PLN UIP Nusra – Mataram - Lombok",
+    "E": "5 mandays",
+    "F": "43739",
+    "G": "Lombok – West Nusa Tenggara",
+    "H": "5"
+   }
+  },
+  {
+   "r": 9,
+   "cells": {
+    "A": "8",
+    "B": "Developing of Hazard Identification, Risk Assessment and Risk Control (HIRADC) for Paper Mill Process",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Papertech Indonesia",
+    "E": "4 mandays",
+    "F": "November 2019 – Until Now",
+    "G": "Subang – West Java",
+    "H": "4"
+   }
+  },
+  {
+   "r": 10,
+   "cells": {
+    "A": "9",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Sugar company",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. Angles Product",
+    "E": "16 mandays",
+    "F": "December 2019 – February 2020",
+    "G": "Cilegon – Banten",
+    "H": "16"
+   }
+  },
+  {
+   "r": 11,
+   "cells": {
+    "A": "10",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Safety Instrumentation device product",
+    "C": "PT. Bina Selamat Veritas",
+    "D": "PT. Honeywell Indonesia",
+    "E": "4 mandays",
+    "F": "February 2020 – Desember 2020",
+    "G": "Jakarta",
+    "H": "4"
+   }
+  },
+  {
+   "r": 12,
+   "cells": {
+    "A": "11",
+    "B": "Internal Auditor of Occupational Safety and Health management system based on ISO 45001:2018",
+    "C": "PT. CDI Training & Consulting",
+    "D": "PT. Telkom Akses",
+    "E": "2 mandays",
+    "F": "43800",
+    "G": "Bandung",
+    "H": "2",
+    "I": "16",
+    "J": "GAP Assessment"
+   }
+  },
+  {
+   "r": 13,
+   "cells": {
+    "A": "12",
+    "B": "Internal Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. PPG Coatings Indonesia",
+    "E": "1 mandays",
+    "F": "44044",
+    "G": "Jakarta",
+    "H": "1",
+    "I": "8",
+    "J": "GAP Assessment"
+   }
+  },
+  {
+   "r": 14,
+   "cells": {
+    "A": "13",
+    "B": "Gap analysis for Occupational Safety and Health Management System based on PP No. 50/2012",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. PP Infrastruktur",
+    "E": "2 mandays",
+    "F": "44287",
+    "G": "Jakarta",
+    "H": "2"
+   }
+  },
+  {
+   "r": 15,
+   "cells": {
+    "A": "14",
+    "B": "Gap analysis for Occupational Safety and Health Management System based on PP No. 50/2012 ",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. P&G Indonesia ",
+    "E": "1 manday",
+    "F": "44292",
+    "G": "Krawang – West Java",
+    "H": "1"
+   }
+  },
+  {
+   "r": 16,
+   "cells": {
+    "A": "15",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Safety Instrumentation device product",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "PT. Royal Advanced Fiber",
+    "E": "1 manday",
+    "F": "44287",
+    "G": "Jakarta",
+    "H": "1",
+    "I": "8"
+   }
+  },
+  {
+   "r": 17,
+   "cells": {
+    "A": "16",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Plantation division",
+    "C": "PT. Mitra Dinamis Yang Utama",
+    "D": "ADR Group (3 companies)",
+    "E": "4 mandays",
+    "F": "May - July 2021",
+    "G": "Jakarta",
+    "H": "4",
+    "I": "32"
+   }
+  },
+  {
+   "r": 18,
+   "cells": {
+    "A": "17",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Plantation division",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "PT. Thermochem Indonesia",
+    "E": "5 mandays",
+    "F": "June - August 2021",
+    "G": "Jakarta",
+    "H": "3",
+    "I": "24"
+   }
+  },
+  {
+   "r": 19,
+   "cells": {
+    "A": "18",
+    "B": "CSMS - Risk Assessment",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Indonesia Power ",
+    "E": "0,5 mandays",
+    "F": "Nopember 2021",
+    "G": "Jakarta",
+    "H": "0.5",
+    "I": "4"
+   }
+  },
+  {
+   "r": 20,
+   "cells": {
+    "A": "19",
+    "B": "Kick off meeting of Occupation safety and health management  system Development based on PP No. 50/2012 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tunas Tasik",
+    "E": "5 manday",
+    "F": "44440",
+    "G": "Jakarta",
+    "H": "5"
+   }
+  },
+  {
+   "r": 21,
+   "cells": {
+    "A": "20",
+    "B": "Gap analysis for Occupational Safety and Health Management System based on PP No. 50/2012 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Gunung Putri Perkasa",
+    "E": "1 Manday",
+    "F": "44533",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 22,
+   "cells": {
+    "A": "21",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Plantation division",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Indonesia Power ",
+    "E": "2 Mandays",
+    "F": "44531",
+    "G": "Jakarta",
+    "H": "2"
+   }
+  },
+  {
+   "r": 23,
+   "cells": {
+    "A": "22",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012",
+    "C": "PT. Lima Prima Solusindo",
+    "D": "PT. Thermochem Indonesia",
+    "E": "5 Mandays",
+    "F": "44531",
+    "G": "Jakarta",
+    "H": "5"
+   }
+  },
+  {
+   "r": 24,
+   "cells": {
+    "A": "23",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Plantation division",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Indonesia Power ",
+    "E": "2 Mandays",
+    "F": "44531",
+    "G": "Jakarta",
+    "H": "2"
+   }
+  },
+  {
+   "r": 25,
+   "cells": {
+    "A": "24",
+    "B": "(Kickoff Meeting) Developing and Consultation of QHSE Integrated Management System based on ISO 9001, ISO 14001 dan ISO 45001",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Rolls Royce Solution Indonesia",
+    "E": "5 Mandays",
+    "F": "44562",
+    "G": "Jakarta",
+    "H": "5"
+   }
+  },
+  {
+   "r": 26,
+   "cells": {
+    "A": "25",
+    "B": "(GAP Analysis) Developing and Consultation of OHSMS based on Gevernment Regulation No. 50/2012 for Chemical Company",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Henkel Footwear and Speciality Adhesives",
+    "E": "1 Manday",
+    "F": "44579",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 27,
+   "cells": {
+    "A": "26",
+    "B": "(Document Review) Developing and Consultation of QHSE Integrated Management System based on ISO 9001, ISO 14001 dan ISO 45001",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT Rolls Royce Solutions Indonesia",
+    "E": "1 Manday",
+    "F": "44596",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 28,
+   "cells": {
+    "A": "27",
+    "B": "Contractor Safety Management System as Assessor",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Indonesia Power ",
+    "E": "1 Manday",
+    "F": "2 & 4 Maret 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 29,
+   "cells": {
+    "A": "28",
+    "B": "Developing and Consultation of Occupation safety and health management system based on PP No. 50/2012 for Plantation division",
+    "C": "PT. Surya Safety Nusantara",
+    "D": "PT. Krakatau Posco Dongsuh Chemical (KPDC)",
+    "E": "5 mandays",
+    "F": "44637",
+    "G": "Cilegon – Banten",
+    "H": "5"
+   }
+  },
+  {
+   "r": 30,
+   "cells": {
+    "A": "29",
+    "B": "SMK3, GAP",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 Manday",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 31,
+   "cells": {
+    "A": "30",
+    "B": "SMK3 awareness and HIRADC",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 Manday",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 32,
+   "cells": {
+    "A": "31",
+    "B": "Phase I",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Indonesia",
+    "E": "3 Manday",
+    "G": "Jakarta",
+    "H": "3"
+   }
+  },
+  {
+   "r": 33,
+   "cells": {
+    "A": "32",
+    "B": "HIRADC Step 1",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Sarana Multigriya Finansial (Persero)",
+    "E": "1 manday",
+    "F": "23 Juni 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 34,
+   "cells": {
+    "A": "33",
+    "B": "HIRADC Step 2",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Sarana Multigriya Finansial (Persero)",
+    "E": "1 manday",
+    "F": "15 Juli 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 35,
+   "cells": {
+    "A": "34",
+    "B": "HIRADC Step 3",
+    "C": "Safety Plus Consultant",
+    "D": "PT. Sarana Multigriya Finansial (Persero)",
+    "E": "1 manday",
+    "F": "24 Juli 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 36,
+   "cells": {
+    "A": "35",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tunas Tasik",
+    "E": "1 manday",
+    "F": "11 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 37,
+   "cells": {
+    "A": "36",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Kalimatan",
+    "E": "1 manday",
+    "F": "12 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 38,
+   "cells": {
+    "A": "37",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 manday",
+    "F": "15 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 39,
+   "cells": {
+    "A": "38",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Kalimatan",
+    "E": "1 manday",
+    "F": "12 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 40,
+   "cells": {
+    "A": "39",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. SKS Listrik Kalimatan",
+    "E": "1 manday",
+    "F": "26 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 41,
+   "cells": {
+    "A": "40",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 manday",
+    "F": "27 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 42,
+   "cells": {
+    "A": "41",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Formasi Bisnis Indonesia",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 manday",
+    "F": "27 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1",
+    "I": "8"
+   }
+  },
+  {
+   "r": 43,
+   "cells": {
+    "A": "42",
+    "B": "Konsultasi SMK3 ",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tokki Engineering and Fabrication",
+    "E": "1 manday",
+    "F": "29 Agustus 2022",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 44,
+   "cells": {
+    "A": "43",
+    "B": "GAP Analysis ISO 9001, ISO 14001 and ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Teknik Umum Sanko Eng",
+    "E": "2 mandays",
+    "G": "Jakarta",
+    "H": "2"
+   }
+  },
+  {
+   "r": 45,
+   "cells": {
+    "A": "44",
+    "B": "Internal Audit ISO 14001, ISO 45001 & SMK3 PP No. 50/2012",
+    "C": "PT. Segoro Interkon",
+    "D": "PT. Ajinomoto Indonesia",
+    "E": "2 mandays",
+    "F": "8-9 July 2025",
+    "G": "Jakarta",
+    "H": "2"
+   }
+  },
+  {
+   "r": 46,
+   "cells": {
+    "A": "45",
+    "B": "GAP Analysis ISO 9001, ISO 14001 and ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Chikal Railway Indonesia",
+    "E": "1 manday",
+    "G": "Jakarta ",
+    "H": "1"
+   }
+  },
+  {
+   "r": 47,
+   "cells": {
+    "A": "46",
+    "B": "GAP Analysis ISO 9001, ISO 14001 and ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Nishikawa Karya Indonesia",
+    "E": "1 manday",
+    "F": "45960",
+    "G": "Jakarta ",
+    "H": "1"
+   }
+  },
+  {
+   "r": 48,
+   "cells": {
+    "A": "47",
+    "B": "GAP analysis ISO 9001 dan ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Naka Avia Sakti",
+    "E": "1 manday",
+    "G": "Bandung",
+    "H": "1"
+   }
+  },
+  {
+   "r": 49,
+   "cells": {
+    "A": "48",
+    "B": "Internal Audit SMK3 PP No. 50/2012",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tokki Engineering & Fabrication",
+    "E": "1 manday",
+    "G": "Cikarang",
+    "H": "1"
+   }
+  },
+  {
+   "r": 50,
+   "cells": {
+    "A": "49",
+    "B": "GAP Assessment ISO 9001, ISO 14001 & ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Armada Angkutan Indonesia",
+    "E": "1 manday",
+    "F": "46054",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 51,
+   "cells": {
+    "A": "50",
+    "B": "GAP Assessment ISO 9001, ISO 14001 & ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Cipta Hasil Sugiarto",
+    "E": "1 manday",
+    "F": "46082",
+    "G": "Cirebon",
+    "H": "1"
+   }
+  },
+  {
+   "r": 52,
+   "cells": {
+    "A": "51",
+    "B": "GAP Assessment ISO 9001, ISO 14001 & ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Dwi Cahaya Jaya",
+    "E": "1 manday",
+    "F": "46082",
+    "G": "Cirebon",
+    "H": "1"
+   }
+  },
+  {
+   "r": 53,
+   "cells": {
+    "A": "52",
+    "B": "GAP Assessment ISO 9001, ISO 14001 & ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Tri Rejiki Abadi",
+    "E": "1 manday",
+    "F": "46082",
+    "G": "Cirebon",
+    "H": "1"
+   }
+  },
+  {
+   "r": 54,
+   "cells": {
+    "A": "53",
+    "B": "GAP Assessment ISO 9001, ISO 14001 & ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Alam Energy Renewables",
+    "E": "1 manday",
+    "F": "46174",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 55,
+   "cells": {
+    "A": "54",
+    "B": "GAP Assessment ISO 9001, ISO 14001 & ISO 45001",
+    "C": "PT. Visi Mahakarya Nusantara",
+    "D": "PT. Alam Energy Renewables",
+    "E": "1 manday",
+    "F": "46174",
+    "G": "Karawang - Noah Tex",
+    "H": "1"
+   }
+  },
+  {
+   "r": 56,
+   "cells": {
+    "H": "142.5",
+    "I": "1140"
+   }
+  },
+  {
+   "r": 57,
+   "cells": {}
+  },
+  {
+   "r": 58,
+   "cells": {}
+  },
+  {
+   "r": 59,
+   "cells": {}
+  },
+  {
+   "r": 60,
+   "cells": {}
+  },
+  {
+   "r": 61,
+   "cells": {}
+  },
+  {
+   "r": 62,
+   "cells": {}
+  }
+ ],
+ "auditor": [
+  {
+   "r": 1,
+   "cells": {
+    "A": "No",
+    "B": "Project Name",
+    "C": "Lembaga Audit",
+    "D": "Company",
+    "E": "Duration",
+    "F": "Time",
+    "G": "Location"
+   }
+  },
+  {
+   "r": 2,
+   "cells": {
+    "A": "1",
+    "B": "Phase I – Environmental Site Assessment",
+    "C": "PT. ERM Indonesia",
+    "D": "Paper Company audited by Environmental Resources Management (ERM)",
+    "E": "3 mandays",
+    "F": "43009",
+    "G": "Karawang - Bekasi – West Java",
+    "H": "3",
+    "I": "24"
+   }
+  },
+  {
+   "r": 3,
+   "cells": {
+    "A": "2",
+    "B": "EHS Audit based on International Finance Corporation (IFC) standard",
+    "C": "PT. ERM Indonesia",
+    "D": "Power Plant Company audited by Environmental Resources Management (ERM)",
+    "E": "3 mandays",
+    "F": "43040",
+    "G": "South Tapanuli Regency",
+    "H": "3"
+   }
+  },
+  {
+   "r": 4,
+   "cells": {
+    "A": "3",
+    "B": "EHS Audit based on International Finance Corporation (IFC) standard",
+    "C": "PT. ERM Indonesia",
+    "D": "Oil and Gas company audited by Environmental Resources Management (ERM)",
+    "E": "3 mandays",
+    "F": "43132",
+    "G": "Bojonegoro – East Java",
+    "H": "3"
+   }
+  },
+  {
+   "r": 5,
+   "cells": {
+    "A": "4",
+    "B": "Auditor in Occupation Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Alkon Indo Sertifikasi",
+    "D": "PT. Unicharm Factory I audited by PJK3 Alkon Indo Sejahtera",
+    "E": "2 mandays",
+    "F": "43374",
+    "G": "Karawang -  Bekasi – West Java",
+    "H": "2"
+   }
+  },
+  {
+   "r": 6,
+   "cells": {
+    "A": "5",
+    "B": "Internal Auditor in Occupation Health and Safety Management System (OSMS) pra-audit based on Government Regulation No. 50/2012",
+    "C": "PT. Alkon Indo Sertifikasi",
+    "D": "PT. Fastindo Jaya Abadi",
+    "E": "1 manday",
+    "F": "43405",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 7,
+   "cells": {
+    "A": "6",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Alkon Indo Sertifikasi",
+    "D": "PT. Unicharm Factory II audited by PJK3 Alkon Indo Sejahtera",
+    "E": "1 manday",
+    "F": "43556",
+    "G": "Karawang -  Bekasi – West Java",
+    "H": "1"
+   }
+  },
+  {
+   "r": 8,
+   "cells": {
+    "A": "7",
+    "B": "Lead Auditor ISO 9001:2015 dan ISO 14001:2015 ",
+    "C": "PT. Paling Utama Sertifikasi",
+    "D": "PT. PLN UIKSBU UPDK Pekanbaru",
+    "E": "2 mandays",
+    "F": "43709",
+    "G": "Pekenbaru – ULPLTA Koto Panjang",
+    "H": "2"
+   }
+  },
+  {
+   "r": 9,
+   "cells": {
+    "A": "8",
+    "B": "Internal Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Alkon Indo Sertifikasi",
+    "D": "PT. Bayu Buana Gemilang (BBG) – Cikarang Site",
+    "E": "1 manday",
+    "F": "43709",
+    "G": "Cikarang – East Java",
+    "H": "1"
+   }
+  },
+  {
+   "r": 10,
+   "cells": {
+    "A": "9",
+    "B": "Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Alkon Indo Sertifikasi",
+    "D": "PT. Wahana Abadi",
+    "E": "1 manday",
+    "F": "43709",
+    "G": "Tegal - Java",
+    "H": "1"
+   }
+  },
+  {
+   "r": 11,
+   "cells": {
+    "A": "10",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Alkon Indo Sertifikasi",
+    "D": "PT. Jurong Enginering Lestari",
+    "E": "2 mandays",
+    "F": "44166",
+    "G": "Jakarta",
+    "H": "2"
+   }
+  },
+  {
+   "r": 12,
+   "cells": {
+    "A": "11",
+    "B": "Lead Auditor of Quality Management System based on ISO 9001:2015",
+    "C": "PT. TSI Sertifikasi Indon",
+    "D": "PT. Prima Berkat Gemilang",
+    "E": "1 manday",
+    "F": "June 2021",
+    "G": "Jakarta",
+    "H": "1"
+   }
+  },
+  {
+   "r": 13,
+   "cells": {
+    "A": "12",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Mitra Satu Rupa (MSR)",
+    "D": "PDAM Balikpapan",
+    "E": "2 mandays",
+    "F": "26 - 27 Oktober 2021",
+    "G": "Balikpapan",
+    "H": "2"
+   }
+  },
+  {
+   "r": 14,
+   "cells": {
+    "A": "13",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Alkon Indo Sertifikasi",
+    "D": "PT. Utac Manufacturing Services Indonesia",
+    "E": "2 mandays",
+    "F": "7 - 8 Desember 2021",
+    "G": "Krawang",
+    "H": "2"
+   }
+  },
+  {
+   "r": 15,
+   "cells": {
+    "A": "14",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Mitra Satu Rupa (MSR)",
+    "D": "PT. Unilever Indonesia - Tea Based Baverages",
+    "E": "1 manday",
+    "F": "44467",
+    "G": "Cikarang – East Java",
+    "H": "2"
+   }
+  },
+  {
+   "r": 16,
+   "cells": {
+    "A": "15",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Mitra Satu Rupa (MSR)",
+    "D": "PT. Unilever Indonesia - Savoury Factory",
+    "E": "1 manday",
+    "F": "44517",
+    "G": "Cikarang – East Java",
+    "H": "2"
+   }
+  },
+  {
+   "r": 17,
+   "cells": {
+    "A": "16",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Mitra Satu Rupa (MSR)",
+    "D": "PT. Unilever Indonesia (Head Office)",
+    "E": "1 manday",
+    "F": "44644",
+    "G": "Tangerang",
+    "H": "2"
+   }
+  },
+  {
+   "r": 18,
+   "cells": {
+    "A": "17",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Mutu Indonesia Gemilang Global",
+    "D": "PT. Kino Indonesia, tbk",
+    "E": "1 manday",
+    "F": "45987",
+    "G": "Sukabumi",
+    "H": "2"
+   }
+  },
+  {
+   "r": 19,
+   "cells": {
+    "A": "18",
+    "B": "Lead Auditor in Occupational Health and Safety Management System (OSMS) based on Government Regulation No. 50/2012",
+    "C": "PT. Mutu Indonesia Gemilang Global",
+    "D": "Perumda Tirta Kahuripan",
+    "E": "1 manday",
+    "F": "46001",
+    "G": "Sukabumi",
+    "H": "1"
+   }
+  },
+  {
+   "r": 20,
+   "cells": {
+    "I": "208"
+   }
+  }
+ ]
+}

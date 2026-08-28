@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/fonts.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/colors.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/typography.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/spacing.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/radius.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/elevation.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/motion.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/tokens/base.css">
+ <link rel="stylesheet" href="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/styles.css">
+ <script src="_ds/alam-energy-design-system-9cfe29f4-4195-44cc-948d-0ec74f5cd473/_ds_bundle.js"></script>
+ <script src="i18n.js"></script>
+ <script src="lama/js/manday-data.js"></script>
+ <style>
+  body{margin:0;background:var(--surface-page);font-family:var(--font-text);color:var(--text-body)}
+  a{color:var(--text-link);text-decoration:none}
+  a:hover{color:var(--text-link-hover);text-decoration:underline;text-underline-offset:3px}
+ </style>
+</helmet>
+
+<header style="position:sticky;top:0;z-index:50;background:var(--blue-900);display:flex;align-items:center;justify-content:space-between;padding:14px 32px">
+ <a href="Adam Rahmat Agung.dc.html" style="font-family:var(--font-display);font-weight:900;font-size:18px;color:#fff;text-decoration:none">adamrahmata<span style="color:var(--green-500)">.com</span></a>
+ <nav style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+  <a href="Adam Rahmat Agung.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none">Beranda</a>
+  <a href="Jasa.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none">Jasa</a>
+  <a href="Rekam Jejak.dc.html" style="font-size:14px;font-weight:700;color:#fff;text-decoration:none;border-bottom:2px solid var(--green-500);padding-bottom:2px">Rekam Jejak</a>
+  <a href="Klien.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none">Klien</a>
+  <a href="Artikel.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none">Artikel</a>
+  <a href="Kontak.dc.html" style="font-size:14px;font-weight:600;color:rgba(255,255,255,.85);text-decoration:none">Kontak</a>
+  <span style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700"><a href="#" data-lang-set="id" style="color:#fff;text-decoration:none;padding-bottom:2px">ID</a><span style="color:rgba(255,255,255,.35)">|</span><a href="#" data-lang-set="en" style="color:rgba(255,255,255,.55);text-decoration:none;padding-bottom:2px">EN</a></span>
+    <a href="https://wa.me/6281265360816" target="_blank" style="font-size:14px;font-weight:700;color:#fff;background:var(--green-600);padding:8px 16px;border-radius:4px;text-decoration:none" style-hover="background:var(--green-700);text-decoration:none">Chat WA</a>
+ </nav>
+</header>
+
+<section data-screen-label="Hero Rekam Jejak" style="background:var(--blue-900);color:#fff;padding:96px 24px 72px;text-align:center">
+ <div style="max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:20px">
+  <div style="font-size:var(--text-overline);font-weight:700;letter-spacing:var(--tracking-overline);text-transform:uppercase;color:var(--green-500)">Track record riil &amp; portofolio mandays</div>
+  <h1 style="margin:0;font-family:var(--font-display);font-weight:900;font-size:var(--text-display-2);line-height:var(--leading-tight);letter-spacing:var(--tracking-display);color:#fff">Eksplorasi rekam jejak penugasan QHSE</h1>
+  <p style="margin:0;font-size:var(--text-lead);line-height:var(--leading-relaxed);color:var(--blue-200)">Seluruh data diverifikasi langsung dari riwayat kerja manday di berbagai sektor industri di seluruh Indonesia.</p>
+ </div>
+ <div style="max-width:900px;margin:48px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px">
+  <div style="border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:20px"><div style="font-family:var(--font-display);font-weight:900;font-size:32px;color:#fff">{{ statAssignments }}</div><div style="font-size:13px;color:var(--blue-200)">Penugasan</div></div>
+  <div style="border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:20px"><div style="font-family:var(--font-display);font-weight:900;font-size:32px;color:#fff">{{ statMandays }}</div><div style="font-size:13px;color:var(--blue-200)">Mandays</div></div>
+  <div style="border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:20px"><div style="font-family:var(--font-display);font-weight:900;font-size:32px;color:#fff">{{ statHours }}</div><div style="font-size:13px;color:var(--blue-200)">Jam kerja</div></div>
+  <div style="border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:20px"><div style="font-family:var(--font-display);font-weight:900;font-size:32px;color:#fff">{{ statClients }}</div><div style="font-size:13px;color:var(--blue-200)">Klien</div></div>
+ </div>
+</section>
+
+<section data-screen-label="Eksplorasi penugasan" style="background:var(--surface-subtle);padding:72px 24px 96px">
+ <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:20px">
+  <div style="display:flex;gap:8px;flex-wrap:wrap">
+   <sc-for list="{{ catTabs }}" as="tab" hint-placeholder-count="4">
+    <button onClick="{{ tab.onClick }}" style="border:1px solid {{ tab.border }};background:{{ tab.bg }};color:{{ tab.color }};font-weight:700;font-size:14px;padding:10px 18px;border-radius:4px;cursor:pointer;font-family:inherit">{{ tab.label }} · {{ tab.count }}</button>
+   </sc-for>
+  </div>
+  <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px">
+   <input value="{{ query }}" onChange="{{ onQuery }}" placeholder="Cari klien (Chevron, PLN, Antam...), topik, atau kota" style="border:1px solid var(--border-subtle);border-radius:4px;padding:12px 16px;font-size:14px;font-family:inherit;background:#fff;color:var(--text-body)">
+   <select value="{{ tagFilter }}" onChange="{{ onTag }}" style="border:1px solid var(--border-subtle);border-radius:4px;padding:12px;font-size:14px;font-family:inherit;background:#fff;color:var(--text-body)">
+    <option value="all">Semua standar / topik</option>
+    <option value="ISO 9001 (Mutu)">ISO 9001 (Mutu)</option>
+    <option value="ISO 14001 (Lingkungan)">ISO 14001 (Lingkungan)</option>
+    <option value="ISO 45001 (K3)">ISO 45001 (K3)</option>
+    <option value="SMK3 PP 50/2012">SMK3 PP 50/2012</option>
+    <option value="HIRADC &amp; Risk">HIRADC &amp; Manajemen Risiko</option>
+    <option value="Kemnaker RI">Sertifikasi Kemnaker RI</option>
+    <option value="BNSP">Sertifikasi BNSP</option>
+    <option value="IFC Standards">IFC Standards &amp; ESA</option>
+    <option value="Audit ISO 19011">Audit ISO 19011</option>
+   </select>
+   <select value="{{ sortBy }}" onChange="{{ onSort }}" style="border:1px solid var(--border-subtle);border-radius:4px;padding:12px;font-size:14px;font-family:inherit;background:#fff;color:var(--text-body)">
+    <option value="date-desc">Urutan: terbaru</option>
+    <option value="mandays-desc">Mandays tertinggi</option>
+    <option value="mandays-asc">Mandays terendah</option>
+    <option value="client-asc">Nama klien (A-Z)</option>
+   </select>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:14px 20px;font-size:14px">
+   <div>Menemukan <strong style="color:var(--text-heading)">{{ filteredCount }}</strong> penugasan yang sesuai</div>
+   <div style="display:flex;gap:20px"><span>Mandays: <strong style="color:var(--text-heading)">{{ filteredMandays }}</strong></span><span>Jam: <strong style="color:var(--text-heading)">{{ filteredHours }}</strong></span></div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px">
+   <sc-for list="{{ pageItems }}" as="it" hint-placeholder-count="6">
+    <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 1px 3px rgba(4,34,63,.06);transition:transform .24s cubic-bezier(.4,0,.2,1),box-shadow .24s cubic-bezier(.4,0,.2,1)" style-hover="transform:translateY(-3px);box-shadow:0 8px 20px rgba(4,34,63,.14)">
+     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <span style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:{{ it.catColor }};background:{{ it.catBg }};padding:4px 10px;border-radius:999px">{{ it.categoryName }}</span>
+      <span style="font-size:12px;color:var(--text-muted)">{{ it.id }}</span>
+     </div>
+     <div style="font-family:var(--font-display);font-weight:900;font-size:16px;line-height:1.35;color:var(--text-heading)">{{ it.title }}</div>
+     <div style="font-size:13px;color:var(--text-muted)">{{ it.client }}</div>
+     <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--text-body);border-top:1px solid var(--border-subtle);padding-top:12px;margin-top:auto">
+      <span>{{ it.date }}</span><span style="font-weight:700;color:var(--blue-600)">{{ it.mandaysLabel }}</span>
+     </div>
+     <div style="font-size:12px;color:var(--text-muted)">Lembaga: {{ it.institution }} · {{ it.method }}</div>
+    </div>
+   </sc-for>
+  </div>
+  <div style="display:flex;justify-content:center;align-items:center;gap:12px;margin-top:12px">
+   <button onClick="{{ prevPage }}" style="border:1px solid var(--border-subtle);background:#fff;color:var(--blue-600);font-weight:700;font-size:14px;padding:10px 18px;border-radius:4px;cursor:pointer;font-family:inherit">&#8592; Sebelumnya</button>
+   <span style="font-size:14px;color:var(--text-muted)">Hal. {{ pageLabel }}</span>
+   <button onClick="{{ nextPage }}" style="border:1px solid var(--border-subtle);background:#fff;color:var(--blue-600);font-weight:700;font-size:14px;padding:10px 18px;border-radius:4px;cursor:pointer;font-family:inherit">Berikutnya &#8594;</button>
+  </div>
+ </div>
+</section>
+
+<section data-screen-label="Kalkulator Manday" style="padding:96px 24px">
+ <div style="max-width:1200px;margin:0 auto">
+  <div style="text-align:center;margin-bottom:48px">
+   <div style="font-size:var(--text-overline);font-weight:700;letter-spacing:var(--tracking-overline);text-transform:uppercase;color:var(--green-600);margin-bottom:14px">Simulasi &amp; estimasi kebutuhan</div>
+   <h2 style="margin:0;font-family:var(--font-display);font-weight:900;font-size:var(--text-h1);letter-spacing:var(--tracking-display);color:var(--text-heading)">Kalkulator estimasi manday</h2>
+   <p style="max-width:640px;margin:16px auto 0;font-size:var(--text-lead);line-height:var(--leading-relaxed);color:var(--text-muted)">Dapatkan estimasi awal kebutuhan durasi penugasan dan kirim permohonan penawaran secara instan.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch">
+   <div style="background:#fff;border:1px solid var(--border-subtle);border-radius:8px;padding:32px;display:flex;flex-direction:column;gap:20px;box-shadow:0 1px 3px rgba(4,34,63,.06)">
+    <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:700;color:var(--text-heading)">Jenis layanan
+     <select value="{{ calcService }}" onChange="{{ onCalcService }}" style="border:1px solid var(--border-subtle);border-radius:4px;padding:12px;font-size:14px;font-family:inherit;font-weight:400;background:#fff;color:var(--text-body)">
+      <option value="training">Pelatihan / in-house training QHSE</option>
+      <option value="consultancy">Konsultasi &amp; pendampingan sistem</option>
+      <option value="audit">Audit kepatuhan &amp; pre-assessment</option>
+     </select>
+    </label>
+    <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:700;color:var(--text-heading)">Standar / topik
+     <select value="{{ calcStandard }}" onChange="{{ onCalcStandard }}" style="border:1px solid var(--border-subtle);border-radius:4px;padding:12px;font-size:14px;font-family:inherit;font-weight:400;background:#fff;color:var(--text-body)">
+      <option value="iso-integrated">Terintegrasi ISO 9001 + 14001 + 45001</option>
+      <option value="smk3">SMK3 PP No. 50 Tahun 2012 (64/166 kriteria)</option>
+      <option value="k3-umum">Ahli K3 Umum sertifikasi Kemnaker RI</option>
+      <option value="hiradc">HIRADC &amp; manajemen risiko K3</option>
+      <option value="iso-single">Single standard (ISO 9001 / 14001 / 45001)</option>
+     </select>
+    </label>
+    <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:700;color:var(--text-heading)">Skala perusahaan / jumlah peserta
+     <select value="{{ calcScope }}" onChange="{{ onCalcScope }}" style="border:1px solid var(--border-subtle);border-radius:4px;padding:12px;font-size:14px;font-family:inherit;font-weight:400;background:#fff;color:var(--text-body)">
+      <option value="small">Kecil / 1-20 peserta / 1 lokasi</option>
+      <option value="medium">Menengah / 20-50 peserta / multi-plant</option>
+      <option value="large">Besar / korporasi / kompleksitas tinggi</option>
+     </select>
+    </label>
+    <label style="display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:700;color:var(--text-heading)">Lokasi pelaksanaan
+     <select value="{{ calcLocation }}" onChange="{{ onCalcLocation }}" style="border:1px solid var(--border-subtle);border-radius:4px;padding:12px;font-size:14px;font-family:inherit;font-weight:400;background:#fff;color:var(--text-body)">
+      <option value="jabodetabek">Jabodetabek / Banten / Jawa Barat</option>
+      <option value="jawa">Jawa Tengah / Jawa Timur / Bali</option>
+      <option value="remote">Luar Jawa / onshore / offshore</option>
+     </select>
+    </label>
+   </div>
+   <div style="background:var(--blue-900);color:#fff;border-radius:8px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:24px">
+    <div>
+     <div style="font-size:var(--text-overline);font-weight:700;letter-spacing:var(--tracking-overline);text-transform:uppercase;color:var(--green-500);margin-bottom:20px">Hasil estimasi awal</div>
+     <div style="font-family:var(--font-display);font-weight:900;font-size:56px;line-height:1;color:#fff">{{ calcDays }} <span style="font-size:22px">mandays</span></div>
+     <div style="font-size:14px;color:var(--blue-200);margin-top:8px">{{ calcHours }} jam kerja</div>
+     <p style="margin:20px 0 0;font-size:14px;line-height:var(--leading-relaxed);color:var(--blue-200)">{{ calcRecommendation }}</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+     <a href="{{ calcWaHref }}" target="_blank" style="text-decoration:none;text-align:center;background:var(--green-600);color:#fff;font-weight:700;font-size:15px;padding:14px;border-radius:4px" style-hover="background:var(--green-700);text-decoration:none">Kirim permohonan via WhatsApp</a>
+     <a href="{{ calcEmailHref }}" style="text-decoration:none;text-align:center;background:rgba(255,255,255,.16);color:#fff;font-weight:700;font-size:15px;padding:14px;border-radius:4px" style-hover="background:rgba(255,255,255,.26);text-decoration:none">Kirim via email</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer style="background:var(--blue-900);color:rgba(255,255,255,.7);padding:32px 24px;text-align:center;font-size:14px">
+ <div style="font-family:var(--font-display);font-weight:900;font-size:16px;color:#fff;margin-bottom:8px">adamrahmata<span style="color:var(--green-500)">.com</span></div>
+ <div>QHSE Trainer, Consultant and Auditor · <a href="lama/index.html" style="color:var(--blue-300)">Arsip situs lama</a></div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+ state = { data: [], summary: null, cat: 'all', query: '', tagFilter: 'all', sortBy: 'date-desc', page: 0,
+  calcService: 'training', calcStandard: 'iso-integrated', calcScope: 'medium', calcLocation: 'jabodetabek' };
+ componentDidMount() {
+  const params = new URLSearchParams(location.search);
+  const cat = params.get('cat');
+  if (['training', 'consultancy', 'auditor'].includes(cat)) this.setState({ cat });
+  const q = params.get('q');
+  if (q) this.setState({ query: q });
+  const poll = () => {
+   if (window.MANDAY_DATA) this.setState({ data: window.MANDAY_DATA, summary: window.MANDAY_SUMMARY });
+   else setTimeout(poll, 150);
+  };
+  poll();
+ }
+ monthNum(d) {
+  const m = ['januari','februari','maret','april','mei','juni','juli','agustus','september','oktober','november','desember'];
+  const parts = (d || '').toLowerCase().split(' ');
+  const idx = m.indexOf(parts[0]);
+  return (parseInt(parts[1]) || 0) * 12 + (idx < 0 ? 0 : idx);
+ }
+ calc() {
+  const { calcService: service, calcStandard: standard, calcScope: scope } = this.state;
+  let baseDays = 2, rec = 'Pelatihan sistem manajemen dan teknik audit internal berfokus pada studi kasus nyata.';
+  if (service === 'training') {
+   if (standard === 'k3-umum') { baseDays = scope === 'large' ? 12 : 10; rec = 'Pembinaan komprehensif Ahli K3 Umum Sertifikasi Kemnaker RI termasuk modul regulasi, identifikasi bahaya, SMK3, dan ujian kompetensi resmi.'; }
+   else if (standard === 'iso-integrated') { baseDays = scope === 'large' ? 4 : 3; rec = 'In-House Training Pemahaman & Internal Auditor Terintegrasi ISO 9001:2015, ISO 14001:2015 & ISO 45001:2018 berbasis ISO 19011.'; }
+   else if (standard === 'hiradc') { baseDays = 2; rec = 'Workshop intensif praktikal pembuatan HIRADC & JSA langsung berbasis proses kerja operasional perusahaan Anda.'; }
+  } else if (service === 'consultancy') {
+   if (standard === 'iso-integrated') { baseDays = scope === 'large' ? 14 : (scope === 'medium' ? 10 : 7); rec = 'Pendampingan penuh dari GAP Analysis, penyusunan SOP & Manual Terpadu, Coaching Tim QHSE, hingga simulasi pra-audit sertifikasi.'; }
+   else if (standard === 'smk3') { baseDays = scope === 'large' ? 16 : (scope === 'medium' ? 10 : 6); rec = 'Konsultasi pemenuhan 64/166 Kriteria SMK3 PP No. 50/2012, evaluasi dokumen kepatuhan hukum, dan pendampingan audit eksternal.'; }
+   else { baseDays = scope === 'large' ? 8 : 5; rec = 'Konsultasi perancangan sistem dan pendampingan implementasi bertahap.'; }
+  } else if (service === 'audit') {
+   if (standard === 'iso-integrated' || standard === 'smk3') { baseDays = scope === 'large' ? 4 : (scope === 'medium' ? 3 : 2); rec = 'Audit independen (2nd Party / Mock Pre-Assessment) dengan pelaporan komprehensif temuan Major, Minor, dan Opportunity for Improvement (OFI).'; }
+   else { baseDays = scope === 'large' ? 3 : 2; rec = 'Audit kepatuhan dan verifikasi implementasi prosedur lapangan.'; }
+  }
+  return { baseDays, rec };
+ }
+ renderVals() {
+  const s = this.state;
+  const catNames = { all: 'Semua', training: 'Pelatihan', consultancy: 'Konsultasi', auditor: 'Audit' };
+  const catColors = { training: ['var(--blue-600)', 'rgba(0,103,177,.10)'], consultancy: ['var(--green-700)', 'rgba(76,154,60,.12)'], auditor: ['#B25E00', 'rgba(245,166,35,.15)'] };
+  const q = s.query.toLowerCase();
+  let filtered = s.data.filter(d =>
+   (s.cat === 'all' || d.category === s.cat) &&
+   (s.tagFilter === 'all' || (d.tags || []).some(t => t.includes(s.tagFilter) || s.tagFilter.includes(t))) &&
+   (!q || [d.title, d.client, d.institution, d.location, (d.tags || []).join(' ')].join(' ').toLowerCase().includes(q)));
+  const sorters = {
+   'date-desc': (a, b) => this.monthNum(b.date) - this.monthNum(a.date),
+   'mandays-desc': (a, b) => b.mandays - a.mandays,
+   'mandays-asc': (a, b) => a.mandays - b.mandays,
+   'client-asc': (a, b) => (a.client || '').localeCompare(b.client || '')
+  };
+  filtered = filtered.slice().sort(sorters[s.sortBy]);
+  const perPage = 12, pages = Math.max(1, Math.ceil(filtered.length / perPage));
+  const page = Math.min(s.page, pages - 1);
+  const fm = filtered.reduce((a, d) => a + (d.mandays || 0), 0);
+  const fh = filtered.reduce((a, d) => a + (d.hours || 0), 0);
+  const counts = { all: s.data.length };
+  ['training', 'consultancy', 'auditor'].forEach(c => counts[c] = s.data.filter(d => d.category === c).length);
+  const { baseDays, rec } = this.calc();
+  const msg = encodeURIComponent('Halo Pak Adam Rahmat Agung, saya ingin berkonsultasi mengenai kebutuhan ' + s.calcService + ' topik ' + s.calcStandard + ' (skala: ' + s.calcScope + ', lokasi: ' + s.calcLocation + '). Estimasi sistem: ' + baseDays + ' mandays.');
+  const sum = s.summary || {};
+  return {
+   statAssignments: sum.totalAssignments ?? '', statMandays: sum.totalMandays ?? '',
+   statHours: sum.totalHours ? sum.totalHours.toLocaleString('id-ID') : '', statClients: sum.totalClients ? sum.totalClients + '+' : '',
+   catTabs: ['all', 'training', 'consultancy', 'auditor'].map(c => ({
+    label: catNames[c], count: counts[c] || 0,
+    bg: s.cat === c ? 'var(--blue-600)' : '#fff', color: s.cat === c ? '#fff' : 'var(--text-body)',
+    border: s.cat === c ? 'var(--blue-600)' : 'var(--border-subtle)',
+    onClick: () => this.setState({ cat: c, page: 0 })
+   })),
+   query: s.query, onQuery: e => this.setState({ query: e.target.value, page: 0 }),
+   tagFilter: s.tagFilter, onTag: e => this.setState({ tagFilter: e.target.value, page: 0 }),
+   sortBy: s.sortBy, onSort: e => this.setState({ sortBy: e.target.value, page: 0 }),
+   filteredCount: filtered.length, filteredMandays: Math.round(fm * 10) / 10, filteredHours: fh.toLocaleString('id-ID'),
+   pageItems: filtered.slice(page * perPage, (page + 1) * perPage).map(d => ({
+    ...d, mandaysLabel: d.mandays + ' manday · ' + d.hours + ' jam',
+    catColor: (catColors[d.category] || catColors.training)[0], catBg: (catColors[d.category] || catColors.training)[1]
+   })),
+   pageLabel: (page + 1) + ' / ' + pages,
+   prevPage: () => this.setState({ page: Math.max(0, page - 1) }),
+   nextPage: () => this.setState({ page: Math.min(pages - 1, page + 1) }),
+   calcService: s.calcService, onCalcService: e => this.setState({ calcService: e.target.value }),
+   calcStandard: s.calcStandard, onCalcStandard: e => this.setState({ calcStandard: e.target.value }),
+   calcScope: s.calcScope, onCalcScope: e => this.setState({ calcScope: e.target.value }),
+   calcLocation: s.calcLocation, onCalcLocation: e => this.setState({ calcLocation: e.target.value }),
+   calcDays: baseDays, calcHours: baseDays * 8, calcRecommendation: rec,
+   calcWaHref: 'https://wa.me/6281265360816?text=' + msg,
+   calcEmailHref: 'mailto:adam.rahmata@gmail.com?subject=' + encodeURIComponent('Permohonan Penawaran QHSE') + '&body=' + msg
+  };
+ }
+}
+</script>
+</body>
+</html>
