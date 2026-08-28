@@ -2,11 +2,10 @@
 /**
  * Section 03 — "Perkenalkan saya".
  *
- * White panel laid out as a single centred column: the copy sits at the top,
- * the standing photo below it and bottom-aligned so it meets the panel edge.
- * The entrance still differs from section 02 — copy rises in steps, the green
- * rule grows outward from the centre, the photo follows last. The three names
- * swell like balloons on a 1.5s stagger.
+ * White panel, standing photo anchored bottom-right, copy on the left with an
+ * entrance that deliberately differs from section 02: text slides in from the
+ * left in steps, the green rule grows outward, and the photo enters from the
+ * right. The three names swell like balloons on a 1.5s stagger.
  */
 
 const names = [
@@ -17,15 +16,19 @@ const names = [
 ---
 
 <section class="panel intro">
+  <div class="photo" data-reveal="right" style="--reveal-delay:.35s">
+    <img src="/img/adam-standing.png" alt="Adam Rahmat Agung" width="560" height="900" loading="lazy" />
+  </div>
+
   <div class="copy">
-    <div data-reveal>
+    <div data-reveal="left">
       <div class="overline eyebrow" data-t>Perkenalkan saya</div>
       <h2 class="display-2 name" data-t>Adam Rahmat Agung</h2>
     </div>
 
     <div class="rule" data-reveal="grow-x" style="--reveal-delay:.3s"></div>
 
-    <div class="lines" data-reveal style="--reveal-delay:.45s">
+    <div class="lines" data-reveal="left" style="--reveal-delay:.45s">
       {
         names.map((n) => (
           <p class="lead">
@@ -39,49 +42,45 @@ const names = [
       }
     </div>
   </div>
-
-  <div class="photo" data-reveal style="--reveal-delay:.6s">
-    <img src="/img/adam-standing.png" alt="Adam Rahmat Agung" width="560" height="900" loading="lazy" />
-  </div>
 </section>
 
 <style>
   .intro {
     background: #fff;
     color: var(--neutral-700);
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    /* No bottom padding: the photo is meant to meet the panel edge. */
     padding: var(--space-24) var(--gutter) 0;
   }
 
-  .copy {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-6);
-    flex: none;
-  }
-
-  /* Takes whatever vertical room the copy leaves, so the figure scales with
-     the panel instead of overflowing it. */
   .photo {
-    flex: 1 1 auto;
-    min-height: 0;
-    margin-top: var(--space-8);
+    position: absolute;
+    right: 0;
+    top: 40px;
+    bottom: 0;
     pointer-events: none;
   }
 
   .photo img {
     height: 100%;
     width: auto;
-    max-width: 100%;
     display: block;
     object-fit: contain;
     object-position: bottom;
     filter: drop-shadow(0 12px 32px rgba(4, 34, 63, 0.18));
+  }
+
+  .copy {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-bottom: min(10vw, 140px);
+    padding-right: min(34vw, 520px);
   }
 
   /* "Perkenalkan saya" is set black-weight, per the chat 2 revision. */
@@ -94,13 +93,11 @@ const names = [
     color: var(--text-heading);
   }
 
-  /* Grows outward from the middle now that the column is centred. */
   .rule {
     width: 96px;
     height: 5px;
     background: var(--green-600);
     border-radius: var(--radius-pill);
-    transform-origin: 50% 50%;
   }
 
   .lines {
@@ -123,12 +120,19 @@ const names = [
   @media (max-width: 900px) {
     .intro {
       padding-top: var(--space-16);
+      align-items: flex-start;
     }
 
     .photo {
-      flex: 0 0 auto;
-      height: 60vw;
-      max-height: 420px;
+      right: -10%;
+      top: auto;
+      height: 52vw;
+      opacity: 0.2;
+    }
+
+    .copy {
+      padding-right: 0;
+      padding-bottom: var(--space-24);
     }
   }
 </style>

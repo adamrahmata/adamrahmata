@@ -2,10 +2,11 @@
 /**
  * Section 02 — "Apakah teman-teman sedang mencari ...."
  *
- * The thinking photo sits flush to the bottom-left edge with a busy cluster of
- * floating question marks around the head (chat 2: "tempatkan sangat dekat dan
- * buatkan ramai"). The photo itself stays still; only the marks move. The three
- * questions wipe in from the right, then the amber closing line scales up.
+ * Laid out as a single centred column: the questions on top, the thinking photo
+ * below them and bottom-aligned so it meets the panel edge. A busy cluster of
+ * floating question marks surrounds the head (chat 2: "tempatkan sangat dekat
+ * dan buatkan ramai"). The photo itself stays still; only the marks move. The
+ * three questions still wipe in, then the amber closing line scales up.
  */
 
 /** Floating marks clustered over the head and shoulders, never the text column. */
@@ -34,7 +35,27 @@ const questions = [
 ---
 
 <section class="panel seeking">
-  <div class="photo" data-reveal style="--reveal-delay:.4s">
+  <div class="copy">
+    <div class="overline overline-invert lead-in" data-reveal data-t>
+      Apakah teman-teman sedang mencari ....
+    </div>
+
+    {
+      questions.map((q) => (
+        <div class="line" data-reveal="right" style={`--reveal-delay:${q.delay}`}>
+          <span class="question" style={`color:${q.color}`} data-wipe data-t>
+            {q.text}
+          </span>
+        </div>
+      ))
+    }
+
+    <div class="line closer" data-reveal="scale" style="--reveal-delay:.65s">
+      <span data-t>Atau mitra karya?</span>
+    </div>
+  </div>
+
+  <div class="photo" data-reveal style="--reveal-delay:.8s">
     <img
       src="/img/adam-thinking.png"
       alt="Adam Rahmat Agung sedang berpikir"
@@ -63,26 +84,6 @@ const questions = [
       ))
     }
   </div>
-
-  <div class="copy">
-    <div class="overline overline-invert lead-in" data-reveal data-t>
-      Apakah teman-teman sedang mencari ....
-    </div>
-
-    {
-      questions.map((q) => (
-        <div class="line" data-reveal="right" style={`--reveal-delay:${q.delay}`}>
-          <span class="question" style={`color:${q.color}`} data-wipe data-t>
-            {q.text}
-          </span>
-        </div>
-      ))
-    }
-
-    <div class="line closer" data-reveal="scale" style="--reveal-delay:.65s">
-      <span data-t>Atau mitra karya?</span>
-    </div>
-  </div>
 </section>
 
 <style>
@@ -90,23 +91,27 @@ const questions = [
     background: var(--blue-700);
     color: #fff;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* No bottom padding: the figure is meant to meet the panel edge (chat 2:
+       "turunkan sehingga berbatasan dengan bagian biru"). */
     padding: var(--space-24) var(--gutter) 0;
   }
 
-  /* Flush to the bottom-left so the figure meets the panel edge (chat 2:
-     "turunkan sehingga berbatasan dengan bagian biru"). */
+  /* Takes whatever vertical room the questions leave, so the figure scales
+     with the panel instead of overflowing it. */
   .photo {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: min(37vw, 560px);
+    position: relative;
+    flex: 1 1 auto;
+    min-height: 0;
+    margin-top: var(--space-6);
     pointer-events: none;
   }
 
   .photo img {
     height: 100%;
     width: auto;
+    max-width: 100%;
     display: block;
     filter: drop-shadow(0 12px 32px rgba(4, 34, 63, 0.45));
   }
@@ -131,17 +136,13 @@ const questions = [
 
   .copy {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: var(--space-4);
     position: relative;
     z-index: 1;
-    text-align: right;
-    box-sizing: border-box;
-    /* Reserve the photo's column so long lines never run into the figure. */
-    padding-bottom: min(17vw, 240px);
-    padding-left: calc(min(37vw, 560px) * 0.68);
+    flex: none;
   }
 
   .lead-in {
@@ -158,7 +159,7 @@ const questions = [
 
   .closer {
     margin-top: var(--space-5);
-    transform-origin: 100% 80%;
+    transform-origin: 50% 80%;
   }
 
   .closer span {
@@ -170,28 +171,15 @@ const questions = [
     color: var(--sun-500);
   }
 
-  /* On narrow screens the figure would eat the copy, so it steps aside and the
-     text returns to a full-width, left-aligned block. */
   @media (max-width: 900px) {
     .seeking {
-      justify-content: flex-start;
       padding-top: var(--space-16);
     }
 
     .photo {
-      height: 46vw;
-      left: -8%;
-      opacity: 0.28;
-    }
-
-    .copy {
-      padding-left: 0;
-      padding-bottom: var(--space-24);
-      text-align: left;
-    }
-
-    .closer {
-      transform-origin: 0 80%;
+      flex: 0 0 auto;
+      height: 60vw;
+      max-height: 420px;
     }
   }
 </style>
