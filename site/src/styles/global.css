@@ -375,6 +375,13 @@ a:hover {
   50% { transform: scale(1.14); }
 }
 
+/* The "you are here" dot on the career timeline. Scales in place rather than
+   drifting, so it never leaves the junction of the rail and the connector. */
+@keyframes ara-dot-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+}
+
 @keyframes ara-tilt {
   0%, 100% { transform: rotate(-8deg); }
   50% { transform: rotate(8deg); }

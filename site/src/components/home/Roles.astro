@@ -420,10 +420,15 @@ const detail = detailRoles.map((role) => ({
     background: linear-gradient(to right, var(--blue-300), var(--green-600));
   }
 
-  /* The dot sits exactly where the horizontal rail meets the card connector;
-     the border width is included so it lands centred, not 3px off. */
+  /* The dot must land exactly where the horizontal rail meets the card
+     connector, whose centre is at x=32px (left 31 + half of its 2px width).
+     These offsets assume content-box: the 3px border adds to the box, so the
+     green dot measures 16+3+3=22 and its centre is 21+11=32. Forcing
+     border-box here would shrink it to 16 and pull the centre 3px up and to
+     the left — which is exactly how this drifted off the junction before. */
   .tl-dot {
     position: absolute;
+    box-sizing: content-box;
     top: calc(50% - 11px);
     left: 21px;
     width: 16px;
@@ -432,11 +437,11 @@ const detail = detailRoles.map((role) => ({
     background: var(--green-600);
     border: 3px solid #fff;
     box-shadow: 0 0 0 2px var(--green-600);
-    box-sizing: border-box;
     z-index: 1;
     transform: scale(0);
   }
 
+  /* Same arithmetic, one size up: 18+3+3=24, centre 20+12=32. */
   .tl-dot.is-current {
     top: calc(50% - 12px);
     left: 20px;
@@ -453,7 +458,7 @@ const detail = detailRoles.map((role) => ({
   .tl-item.is-in .tl-dot.is-current {
     animation:
       ara-pop 0.7s var(--ease-out) both,
-      ara-bob 2.4s ease-in-out 0.7s infinite;
+      ara-dot-pulse 2.4s ease-in-out 0.7s infinite;
   }
 
   .tl-phase {
