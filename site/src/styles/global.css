@@ -420,6 +420,13 @@ a:hover {
   50% { transform: scale(1.14); }
 }
 
+/* One swell and back, for a figure that has just finished counting up. */
+@keyframes ara-swell {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
 /* The "you are here" dot on the career timeline. Scales in place rather than
    drifting, so it never leaves the junction of the rail and the connector. */
 @keyframes ara-dot-pulse {

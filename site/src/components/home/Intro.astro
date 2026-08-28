@@ -37,8 +37,8 @@ const names = [
 
     <div class="lines" data-reveal="left" style="--reveal-delay:.45s">
       {
-        names.map((n) => (
-          <p class="lead">
+        names.map((n, index) => (
+          <p class="lead" data-stagger style={`--stagger-delay:${(index * 0.16).toFixed(2)}s`}>
             <span data-t>{n.prefix}</span>{' '}
             <strong class="balloon" style={`color:${n.color};animation-delay:${n.delay}`}>
               {n.name}

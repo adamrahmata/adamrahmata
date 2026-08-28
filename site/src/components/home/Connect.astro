@@ -6,13 +6,13 @@ import { waHref } from '../../data/site';
 
 <section class="section connect">
   <div class="inner" data-reveal>
-    <h2 class="display-2" data-t>Mari terhubung</h2>
-    <p class="lead" data-t>
+    <h2 class="display-2" data-stagger data-t>Mari terhubung</h2>
+    <p class="lead" data-stagger style="--stagger-delay:.16s" data-t>
       Jika teman-teman ingin mendalami tentang saya, bisa klik atau chat WA pada link berikut. Atau
       jika ingin tetap menjelajahi profil saya, dapat klik ke sini. Website ini pun tidak hanya
       tentang profil, namun tentang bagaimana teman-teman bisa berinteraksi dengan saya.
     </p>
-    <div class="actions">
+    <div class="actions" data-stagger style="--stagger-delay:.32s">
       <a class="btn btn-green" href={waHref()} target="_blank" rel="noopener" data-t>
         Chat via WhatsApp
       </a>
