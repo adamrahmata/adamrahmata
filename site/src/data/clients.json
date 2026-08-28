@@ -79,7 +79,7 @@
   },
   {
     "file": "/img/clients/Unilever.png",
-    "name": "PT. Unilever Indonesia, Tbk",
+    "name": "PT. Unilever Indonesia Tbk",
     "sector": "manufacturing",
     "sub": "Consumer Goods (Cikarang & Rungkut)"
   },
@@ -97,7 +97,7 @@
   },
   {
     "file": "/img/clients/Unicharm.svg",
-    "name": "PT. Uni-Charm Indonesia, Tbk",
+    "name": "PT. Uni-Charm Indonesia Tbk",
     "sector": "manufacturing",
     "sub": "Personal Care (Factory I & II Karawang)"
   },
@@ -127,7 +127,7 @@
   },
   {
     "file": "/img/clients/sumi_indo_kabel.png",
-    "name": "PT. Sumi Indo Kabel, Tbk",
+    "name": "PT. Sumi Indo Kabel Tbk",
     "sector": "manufacturing",
     "sub": "Cable & Wire Manufacturing"
   },
@@ -157,7 +157,7 @@
   },
   {
     "file": "/img/clients/kino.png",
-    "name": "PT. Kino Indonesia, Tbk",
+    "name": "PT. Kino Indonesia Tbk",
     "sector": "manufacturing",
     "sub": "Personal Care & Food Beverage"
   },
@@ -187,7 +187,7 @@
   },
   {
     "file": "/img/clients/adr.png",
-    "name": "PT. ADR Group of Companies",
+    "name": "PT. Selamat Sempurna Tbk (ADR Group)",
     "sector": "manufacturing",
     "sub": "Automotive Radiator & Filter Components"
   },
@@ -223,7 +223,7 @@
   },
   {
     "file": "/img/clients/tokki_engineering_fabrication.png",
-    "name": "PT. Tokki Engineering Fabrication",
+    "name": "PT. Tokki Engineering and Fabrication",
     "sector": "manufacturing",
     "sub": "Precision Engineering & Heavy Steel Fabrication"
   },
@@ -283,13 +283,13 @@
   },
   {
     "file": "/img/clients/Jasamarga.png",
-    "name": "PT. Jasa Marga (Persero), Tbk",
+    "name": "PT. Jasa Marga (Persero) Tbk",
     "sector": "mining-infra",
     "sub": "Toll Road Network Management"
   },
   {
     "file": "/img/clients/wika_pracetak_gedung.png",
-    "name": "PT. Wika Pracetak Gedung",
+    "name": "PT. Wijaya Karya Pracetak Gedung",
     "sector": "mining-infra",
     "sub": "Precast Concrete & Building Infrastructure"
   },
@@ -361,7 +361,7 @@
   },
   {
     "file": "/img/clients/pelni.png",
-    "name": "PT. Pelayaran Nasional Indonesia (PELNI)",
+    "name": "PT. Pelayaran Nasional Indonesia (Persero)",
     "sector": "services",
     "sub": "National Maritime Passenger & Cargo Fleet"
   },
