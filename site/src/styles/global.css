@@ -279,9 +279,23 @@ a:hover {
     drop-shadow(0 12px 32px rgba(4, 34, 63, 0.22));
 }
 
-/* Idle drift for a cut-out portrait. Put this on a wrapper, never on the
+/* Idle motion for a cut-out portrait. Put these on a wrapper, never on the
    element carrying .sticker: animating a transform on the filtered element
-   itself forces the whole chain to re-render every frame. */
+   itself forces the whole chain to re-render every frame.
+
+   ara-sway pivots around the bottom edge, so a figure standing on a section
+   boundary keeps its feet planted while the body drifts. Use ara-float only
+   for a portrait that is meant to hover free of any edge. */
+@keyframes ara-sway {
+  0%,
+  100% {
+    transform: rotate(-1.2deg);
+  }
+  50% {
+    transform: rotate(1.2deg);
+  }
+}
+
 @keyframes ara-float {
   0%,
   100% {

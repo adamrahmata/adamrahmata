@@ -149,12 +149,17 @@ const tiles: Tile[] = [
 
   /* With the portrait present the statement still spans the full width, and
      the statistics and the photo share the row beneath it. */
+  /* The right-hand column is left empty on purpose: the portrait is taken out
+     of flow so it can sit on the section's bottom edge, and this reserves the
+     space it occupies so the tiles never run underneath it. */
   .inner.has-photo {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) clamp(240px, 22vw, 400px);
+    /* Wide enough for the portrait at its rendered size: the photo is 768x1365,
+       so at 88% of a 16:9 panel it occupies about 28vw. */
+    grid-template-columns: minmax(0, 1fr) clamp(300px, 30vw, 580px);
     grid-template-areas:
       'statement statement'
-      'tiles     portrait';
+      'tiles     reserved';
     gap: var(--space-12) var(--space-16);
     align-items: center;
   }
@@ -177,31 +182,43 @@ const tiles: Tile[] = [
     }
   }
 
+  /* Sits on the boundary between this blue panel and the white section below.
+     The source photo is cropped mid-body, so anchoring its cut edge exactly to
+     the section edge reads as standing at the seam rather than as a mistake. */
   .portrait {
-    grid-area: portrait;
-    justify-self: center;
+    position: absolute;
+    right: var(--gutter);
+    bottom: 0;
+    height: min(88%, 1120px);
+    z-index: 1;
+    pointer-events: none;
   }
 
   .portrait-drift {
-    animation: ara-float 6s ease-in-out infinite;
+    height: 100%;
+    /* Pivots on the bottom edge so the figure stays planted while it drifts. */
+    transform-origin: 50% 100%;
+    animation: ara-sway 7s ease-in-out infinite;
   }
 
   .portrait img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
     display: block;
-    /* Slightly thinner ring than section 03: this photo renders smaller, so an
-       equal-pixel outline would read as heavier. */
-    --sticker-size: 9px;
+    --sticker-size: 10px;
   }
 
+  /* Too little room to stand the figure beside the numbers, so it returns to
+     the flow and sits below them, still meeting the section's bottom edge. */
   @media (max-width: 900px) {
     .inner.has-photo {
       grid-template-columns: 1fr;
       grid-template-areas:
         'statement'
-        'portrait'
         'tiles';
+      /* Clears the room the out-of-flow portrait needs below the tiles. Must
+         stay in step with .portrait's height below. */
+      padding-bottom: min(88vw, 420px);
     }
 
     .has-photo .tiles {
@@ -209,7 +226,11 @@ const tiles: Tile[] = [
     }
 
     .portrait {
-      max-width: 320px;
+      right: 50%;
+      transform: translateX(50%);
+      /* Sized off the viewport width: the photo is far taller than it is wide,
+         so a height in vw is what actually controls how wide it lands. */
+      height: min(88vw, 420px);
     }
   }
 
