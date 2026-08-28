@@ -8,14 +8,14 @@
 @import "./tokens/motion.css";
 @import "./tokens/base.css";
 
-/* Wider content column than the design system's 1200px default: on desktop the
-   1200px grid left noticeable empty margins either side. The tokens/ copy stays
-   faithful to the design system; this is the one project-level override.
-   Everything that has to line up with the column edge derives from this value,
-   so changing it here moves the photos and the timeline strip with it. */
+/* The design system caps content at 1200px, which left wide empty margins on
+   large screens. Card areas now run the full width of the viewport instead,
+   held off the edge only by --gutter. Running prose is still capped separately
+   (.section-head, .container-narrow) so line length stays readable however wide
+   the screen gets. The tokens/ copy stays faithful to the design system; this
+   is the one project-level override. */
 :root {
-  --container-max: 1360px;
-  --container-half: calc(var(--container-max) / 2);
+  --gutter: clamp(20px, 2.5vw, 56px);
 }
 
 /* ---------------------------------------------------------------- page base */
@@ -46,9 +46,8 @@ a:hover {
 /* ------------------------------------------------------------------- layout */
 
 .container {
-  max-width: var(--container-max);
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 
 .container-narrow {

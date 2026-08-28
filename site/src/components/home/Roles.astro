@@ -348,10 +348,10 @@ const detail = detailRoles.map((role) => ({
 
   /* -------------------------------------------------- horizontal timeline */
 
-  /* Bleed past the content column on wide screens so the strip has room, while
-     keeping at least 72px of breathing space before the first card. */
+  /* Cancel the section gutter so the strip itself runs edge to edge; the cards
+     inside keep their distance via the scroller's own inset. */
   .timeline-bleed {
-    margin: 0 min(0px, calc(var(--container-half) - 50vw));
+    margin-inline: calc(-1 * var(--gutter));
   }
 
   .timeline-bar {
@@ -386,7 +386,7 @@ const detail = detailRoles.map((role) => ({
 
   .timeline-scroll {
     /* Breathing space before the first card and after the last one. */
-    --tl-inset: max(72px, calc(50vw - var(--container-half) + 30px));
+    --tl-inset: var(--gutter);
 
     display: flex;
     gap: var(--space-5);
