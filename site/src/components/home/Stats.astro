@@ -67,9 +67,12 @@ const tiles: Tile[] = [
 
 <section class="panel stats">
   <div class="container inner">
+    {/* The explicit {' '} separators are load-bearing: Astro collapses the
+        whitespace between elements written on separate lines, which would run
+        the sentence together as "lebih dari16tahun". */}
     <p class="statement" data-reveal>
-      <span data-t>Alhamdulillah, telah berkontribusi lebih dari</span>
-      <span class="years" data-anim="pop" style="--reveal-delay:.5s">{stats.years}</span>
+      <span data-t>Alhamdulillah, telah berkontribusi lebih dari</span>{' '}
+      <span class="years" data-anim="pop" style="--reveal-delay:.5s">{stats.years}</span>{' '}
       <span data-t>tahun</span><br />
       <span data-t>perjalanan karier di bidang Quality, Health, Safety, and Environment (QHSE).</span>
     </p>
