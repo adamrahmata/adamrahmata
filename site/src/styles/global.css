@@ -323,10 +323,14 @@ a:hover {
   50% { transform: translateY(6px); }
 }
 
+/* Every entrance keyframe must state opacity at 100%. Elements carrying
+   [data-anim] start at opacity 0, and a property missing from the final
+   keyframe is filled in from that base value — so omitting it here would
+   animate the element back to invisible and fill-mode would hold it there. */
 @keyframes ara-pop {
   0% { transform: scale(0.4); opacity: 0; }
   60% { transform: scale(1.25); opacity: 1; }
-  100% { transform: scale(1); }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 /* The "balloon" swell on Adam / Rahmat / Agung, staggered 1.5s apart. */
