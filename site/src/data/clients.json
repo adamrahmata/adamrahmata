@@ -19,7 +19,7 @@
   },
   {
     "file": "/img/clients/indonesia_power.png",
-    "name": "PT. PLN / Indonesia Power",
+    "name": "PT PLN Indonesia Power",
     "sector": "energy",
     "sub": "Power Generation (Pekanbaru & Nusra)"
   },
@@ -91,7 +91,7 @@
   },
   {
     "file": "/img/clients/Procter_n_gambel.png",
-    "name": "PT. Procter & Gamble (P&G)",
+    "name": "PT Procter & Gamble Operations Indonesia",
     "sector": "manufacturing",
     "sub": "Consumer Products & Chemical Plant"
   },
@@ -145,7 +145,7 @@
   },
   {
     "file": "/img/clients/henkel_indonesia.png",
-    "name": "PT. Henkel Indonesian",
+    "name": "PT Henkel Adhesive Technologies",
     "sector": "manufacturing",
     "sub": "Adhesive Technologies & Chemical Solutions"
   },
@@ -199,7 +199,7 @@
   },
   {
     "file": "/img/clients/Utac_Indonesia.png",
-    "name": "PT. UTAC Indonesia",
+    "name": "PT UTAC Manufacturing Services Indonesia",
     "sector": "manufacturing",
     "sub": "Semiconductor Assembly & Test Services"
   },
@@ -217,7 +217,7 @@
   },
   {
     "file": "/img/clients/technoglass_duromer_indonesia.png",
-    "name": "PT. Technoglass Duromer Internusa",
+    "name": "PT Teknoglass Duromer Internusa",
     "sector": "manufacturing",
     "sub": "Specialty Glass & Polymer Manufacturing"
   },
@@ -277,7 +277,7 @@
   },
   {
     "file": "/img/clients/antam.png",
-    "name": "PT. Aneka Tambang (Antam), Tbk",
+    "name": "PT Aneka Tambang Tbk (Antam)",
     "sector": "mining-infra",
     "sub": "Mining & Mineral Refining Resources"
   },
@@ -355,7 +355,7 @@
   },
   {
     "file": "/img/clients/green_sm.png",
-    "name": "PT. GSM Indonesia (XANHSM)",
+    "name": "PT Xanh SM Green and Smart Mobility Indonesia",
     "sector": "services",
     "sub": "Green & Smart Electric Mobility Ecosystem"
   },
@@ -367,13 +367,13 @@
   },
   {
     "file": "/img/clients/tirta_kahuripan.png",
-    "name": "Perumda Air Minum Tirta Kahuripan",
+    "name": "Perumda Air Minum Tirta Kahuripan Kabupaten Bogor",
     "sector": "services",
     "sub": "Municipal Water Utility Services (Bogor)"
   },
   {
     "file": "/img/clients/pdam_tirta_balikpapan.png",
-    "name": "PT. Danum Benuo Balikpapan (PDAM)",
+    "name": "Perumda Tirta Manuntung Balikpapan (PTMB)",
     "sector": "services",
     "sub": "Water Treatment & Distribution Network"
   },
@@ -385,13 +385,13 @@
   },
   {
     "file": "/img/clients/asri_living.png",
-    "name": "PT. Asri Living (Agung Sedayu Group)",
+    "name": "PT Agung Sedayu Realestat Indonesia (ASRI)",
     "sector": "services",
     "sub": "Commercial Property & Lifestyle Malls"
   },
   {
     "file": "/img/clients/ias_support.png",
-    "name": "PT. Angkasa Pura Indonesia (IAS Support)",
+    "name": "PT IAS Support Indonesia",
     "sector": "services",
     "sub": "Airport Ground Services & Aviation Facility"
   },
@@ -421,7 +421,7 @@
   },
   {
     "file": "/img/clients/arkademi.svg",
-    "name": "PT. Arkademi Daya Mandiri",
+    "name": "PT Arkademi Daya Indonesia",
     "sector": "services",
     "sub": "Digital Education & Professional EdTech"
   },
@@ -433,7 +433,7 @@
   },
   {
     "file": "/img/clients/Univet_Bantara.png",
-    "name": "Univet Bantara Sukoharjo",
+    "name": "Universitas Veteran Bangun Nusantara (Univet Bantara) Sukoharjo",
     "sector": "services",
     "sub": "Higher Education Institution & Campus Facilities"
   },
@@ -445,7 +445,7 @@
   },
   {
     "file": "/img/clients/aai.png",
-    "name": "PT. Asosiasi Ahli Keselamatan Kerja",
+    "name": "Asosiasi Ahli Keselamatan & Kesehatan Kerja Internasional Indonesia (A2K3 Interindo)",
     "sector": "services",
     "sub": "HSE Professional Association & Certification"
   },
