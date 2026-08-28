@@ -261,6 +261,37 @@ a:hover {
   gap: var(--space-2);
 }
 
+/* ------------------------------------------------------------ cut-out photos */
+
+/* Sticker outline that follows a cut-out photo's silhouette. Chained
+   drop-shadows dilate the alpha channel outward — each one filters the result
+   of the previous, so four of them grow a ring of --sticker-size on every side.
+   Only works on images with a real alpha channel; on an opaque rectangle it
+   would just draw a box. The soft shadow comes last so it sits under the ring. */
+.sticker {
+  --sticker-size: 10px;
+  --sticker-color: var(--sun-500);
+  filter:
+    drop-shadow(var(--sticker-size) 0 0 var(--sticker-color))
+    drop-shadow(calc(var(--sticker-size) * -1) 0 0 var(--sticker-color))
+    drop-shadow(0 var(--sticker-size) 0 var(--sticker-color))
+    drop-shadow(0 calc(var(--sticker-size) * -1) 0 var(--sticker-color))
+    drop-shadow(0 12px 32px rgba(4, 34, 63, 0.22));
+}
+
+/* Idle drift for a cut-out portrait. Put this on a wrapper, never on the
+   element carrying .sticker: animating a transform on the filtered element
+   itself forces the whole chain to re-render every frame. */
+@keyframes ara-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.1deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(1.1deg);
+  }
+}
+
 /* -------------------------------------------------------- media placeholder */
 
 /* Stand-in for the prototype's <image-slot>. Renders a branded band with a

@@ -1,7 +1,17 @@
 ---
+import fs from 'node:fs';
 import Icon from '../Icon.astro';
 import type { IconName } from '../Icon.astro';
 import { stats } from '../../data/site';
+
+/**
+ * The portrait beside the statistics is optional. It is checked for at build
+ * time rather than hard-coded, so the section lays out as a single centred
+ * column until the file exists and switches to the two-column arrangement the
+ * moment it is dropped in — no broken image in between, no code change needed.
+ */
+const PHOTO = '/img/adam-thumbsup.png';
+const hasPhoto = fs.existsSync(new URL(`../../../public${PHOTO}`, import.meta.url));
 
 /**
  * Section 04 — the 16-years statement with the five counting statistics
@@ -66,7 +76,7 @@ const tiles: Tile[] = [
 ---
 
 <section class="panel stats">
-  <div class="container inner">
+  <div class:list={['container', 'inner', { 'has-photo': hasPhoto }]}>
     {/* The explicit {' '} separators are load-bearing: Astro collapses the
         whitespace between elements written on separate lines, which would run
         the sentence together as "lebih dari16tahun". */}
@@ -103,6 +113,22 @@ const tiles: Tile[] = [
         ))
       }
     </div>
+
+    {
+      hasPhoto && (
+        <div class="portrait" data-reveal="right" style="--reveal-delay:.35s">
+          <div class="portrait-drift">
+            <img
+              class="sticker"
+              src={PHOTO}
+              alt="Adam Rahmat Agung mengacungkan dua jempol"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      )
+    }
   </div>
 </section>
 
@@ -119,6 +145,72 @@ const tiles: Tile[] = [
     display: flex;
     flex-direction: column;
     gap: var(--space-16);
+  }
+
+  /* With the portrait present the statement still spans the full width, and
+     the statistics and the photo share the row beneath it. */
+  .inner.has-photo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(240px, 22vw, 400px);
+    grid-template-areas:
+      'statement statement'
+      'tiles     portrait';
+    gap: var(--space-12) var(--space-16);
+    align-items: center;
+  }
+
+  .has-photo .statement {
+    grid-area: statement;
+  }
+
+  /* Three across, not auto-fit: in the narrower column auto-fit still packed
+     all five onto one row and the large figures ran into each other. */
+  .has-photo .tiles {
+    grid-area: tiles;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-10) var(--space-8);
+  }
+
+  @media (max-width: 1240px) {
+    .has-photo .tiles {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .portrait {
+    grid-area: portrait;
+    justify-self: center;
+  }
+
+  .portrait-drift {
+    animation: ara-float 6s ease-in-out infinite;
+  }
+
+  .portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Slightly thinner ring than section 03: this photo renders smaller, so an
+       equal-pixel outline would read as heavier. */
+    --sticker-size: 9px;
+  }
+
+  @media (max-width: 900px) {
+    .inner.has-photo {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'statement'
+        'portrait'
+        'tiles';
+    }
+
+    .has-photo .tiles {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .portrait {
+      max-width: 320px;
+    }
   }
 
   .statement {
