@@ -187,9 +187,21 @@
   },
   {
     "file": "/img/clients/adr.png",
-    "name": "PT. Selamat Sempurna Tbk (ADR Group)",
-    "sector": "manufacturing",
-    "sub": "Automotive Radiator & Filter Components"
+    "name": "PT. Wahana Lestari Makmur Sukses (ADR Group)",
+    "sector": "mining-infra",
+    "sub": "Industrial Forest Plantation (HTI) — South Sumatra"
+  },
+  {
+    "file": "/img/clients/adr.png",
+    "name": "PT. Agronusa Alam Sejahtera (ADR Group)",
+    "sector": "mining-infra",
+    "sub": "Industrial Forest Plantation (HTI) Concession"
+  },
+  {
+    "file": "/img/clients/adr.png",
+    "name": "PT. Wanakasita Nusantara (ADR Group)",
+    "sector": "mining-infra",
+    "sub": "Industrial Forest Plantation (HTI) Operations"
   },
   {
     "file": "/img/clients/oppo.svg",
