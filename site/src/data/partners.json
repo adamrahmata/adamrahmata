@@ -91,12 +91,12 @@
   },
   {
     "file": "/img/lembaga/mitra-satu-rupa.png",
-    "name": "PT. Mitra Satu Rupa",
+    "name": "PT. Mitra Satu Rupa (MSR)",
     "type": "Lembaga Pelatihan & Konsultasi Manajemen Terpadu"
   },
   {
     "file": "/img/lembaga/safety-plus-consultant.png",
-    "name": "PT. Safety Plus Consultant",
+    "name": "Safety Plus Consultant",
     "type": "Konsultan K3L & Audit Keselamatan Operasi"
   },
   {
@@ -113,5 +113,10 @@
     "file": "/img/lembaga/cle.png",
     "name": "PT Cipta Lentera Edukasi (CLE)",
     "type": "Lembaga Sertifikasi Profesi & Kompetensi"
+  },
+  {
+    "file": "/img/lembaga/learning-centre-indonesia.png",
+    "name": "Learning Centre Indonesia",
+    "type": "Lembaga Pelatihan & Pengembangan SDM"
   }
 ]

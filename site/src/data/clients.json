@@ -181,9 +181,9 @@
   },
   {
     "file": "/img/clients/suai.png",
-    "name": "PT. Surabaya Autocomp Indonesia",
+    "name": "PT. Subang Autocomp Indonesia (SUAI)",
     "sector": "manufacturing",
-    "sub": "Automotive Electrical Components"
+    "sub": "Automotive Wiring Harness Components"
   },
   {
     "file": "/img/clients/adr.png",
@@ -223,7 +223,7 @@
   },
   {
     "file": "/img/clients/kumis.png",
-    "name": "PT. Kurabe Motor Indonesia (KUMIS)",
+    "name": "KUMIS Group",
     "sector": "manufacturing",
     "sub": "Automotive Wiring Harness Components"
   },
@@ -415,7 +415,7 @@
   },
   {
     "file": "/img/clients/mitra_sistematika_global.png",
-    "name": "PT. Mitra Sistematika Global",
+    "name": "PT. Mitra Sistematika Global (MSG)",
     "sector": "services",
     "sub": "Enterprise IT System Integrator"
   },
@@ -427,7 +427,7 @@
   },
   {
     "file": "/img/clients/persada.png",
-    "name": "PT. Persada Solusindo",
+    "name": "PT. Personel Alih Daya Tbk (Persada)",
     "sector": "services",
     "sub": "Integrated Facility Management & Manpower"
   },
@@ -438,12 +438,6 @@
     "sub": "Digital Education & Professional EdTech"
   },
   {
-    "file": "/img/clients/learning_centre_indonesia.png",
-    "name": "PT. Learning Centre Indonesia",
-    "sector": "services",
-    "sub": "Corporate Training & Human Capital Development"
-  },
-  {
     "file": "/img/clients/Univet_Bantara.png",
     "name": "Universitas Veteran Bangun Nusantara (Univet Bantara) Sukoharjo",
     "sector": "services",
@@ -451,7 +445,7 @@
   },
   {
     "file": "/img/clients/palang_merah_indonesia.png",
-    "name": "Palang Merah Indonesia (PMI)",
+    "name": "Palang Merah Indonesia (PMI) Kota Bekasi",
     "sector": "services",
     "sub": "Humanitarian Blood Transfusion & Healthcare"
   },
