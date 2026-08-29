@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Tekan F5: server dev dinyalakan dulu lewat task di atas, lalu Chrome
+      // dibuka otomatis ke alamatnya. Titik henti (breakpoint) di berkas
+      // <script> ikut aktif.
+      "name": "Buka situs di Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4321",
+      "webRoot": "${workspaceFolder}/site",
+      "preLaunchTask": "Jalankan situs (dev)"
+    }
+  ]
+}

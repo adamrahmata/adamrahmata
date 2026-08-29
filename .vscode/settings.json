@@ -1,0 +1,22 @@
+{
+  // Berkas .astro dikenali oleh ekstensi Astro; baris ini hanya jaga-jaga
+  // kalau ekstensinya belum sempat terpasang.
+  "files.associations": {
+    "*.astro": "astro"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "editor.formatOnSave": true,
+  // Folder-folder ini besar dan tidak pernah diedit tangan, jadi disembunyikan
+  // dari pencarian supaya Cmd+Shift+F tetap cepat.
+  "search.exclude": {
+    "**/node_modules": true,
+    "site/dist": true,
+    "project/lama": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/site/dist/**": true
+  }
+}

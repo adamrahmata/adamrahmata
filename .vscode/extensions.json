@@ -1,0 +1,9 @@
+{
+  // Muncul sebagai saran "Install" saat folder ini dibuka pertama kali.
+  "recommendations": [
+    // Wajib: syntax highlighting, IntelliSense dan format untuk berkas .astro.
+    "astro-build.astro-vscode",
+    // Merapikan .astro/.ts/.css saat menyimpan.
+    "esbenp.prettier-vscode"
+  ]
+}

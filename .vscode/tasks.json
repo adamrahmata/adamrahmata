@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Jalankan lewat: Terminal > Run Task > "Jalankan situs (dev)".
+      // Ini juga yang otomatis dipanggil oleh konfigurasi Run and Debug.
+      "label": "Jalankan situs (dev)",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "astro",
+        "pattern": {
+          "regexp": "^\\s*(.*):(\\d+):(\\d+)\\s+-\\s+(error|warning)\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        },
+        // Tugas ini tidak pernah selesai, jadi VS Code perlu tahu kapan
+        // server siap. Baris "watching for file changes" adalah penandanya.
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*astro.*",
+          "endsPattern": ".*watching for file changes.*"
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Build produksi",
+      "type": "shell",
+      "command": "npm run build",
+      "problemMatcher": []
+    },
+    {
+      // Menyajikan hasil build produksi, bukan versi dev.
+      "label": "Pratinjau hasil build",
+      "type": "shell",
+      "command": "npm run preview",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      // Pemeriksaan tipe dan tautan Astro; pakai sebelum commit.
+      "label": "Periksa (astro check)",
+      "type": "shell",
+      "command": "npm run check",
+      "problemMatcher": []
+    }
+  ]
+}
